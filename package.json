@@ -1,0 +1,16 @@
+{
+  "name": "arduboy-cloud-compiler",
+  "version": "0.1.0",
+  "description": "Dockerized cloud compiler service for the Arduboy platform",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

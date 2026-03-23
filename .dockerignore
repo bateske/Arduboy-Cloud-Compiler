@@ -1,0 +1,12 @@
+node_modules
+tmpclaude-*
+.git
+.github
+*.bat
+*.md
+reference
+scripts
+docs
+Caddyfile
+docker-compose.yml
+.env

@@ -1,0 +1,7 @@
+node_modules/
+reference/
+scripts/
+docs/
+*.bat
+tmpclaude-*
+.env

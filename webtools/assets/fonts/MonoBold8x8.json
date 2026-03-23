@@ -1,0 +1,2493 @@
+{
+  "export": {
+    "id": "monobold8x8-native",
+    "font": "MonoBold8x8.ttf",
+    "ppem": 16,
+    "mode": "all-encoded",
+    "omitCodepoints": [],
+    "preserveBlankCodepoints": [
+      32,
+      160
+    ],
+    "notes": "Inferred native pixel size of 16px from the font coordinate grid. Filename hints at a 8x8 sprite cell."
+  },
+  "font": {
+    "id": "monobold8x8-native",
+    "family": "Bold",
+    "fullname": "8x8BoldWideMono",
+    "sourceFont": "MonoBold8x8.ttf",
+    "sourcePath": "D:\\Projects\\PixelFonts\\Source Fonts\\MonoBold8x8.ttf",
+    "ppem": 16,
+    "em": 1024,
+    "ascent": 768,
+    "descent": 256,
+    "glyphCount": 96,
+    "encodedGlyphCount": 96,
+    "missingPrintableAscii": [],
+    "mode": "all-encoded",
+    "preserveBlankCodepoints": [
+      32,
+      160
+    ],
+    "notes": "Inferred native pixel size of 16px from the font coordinate grid. Filename hints at a 8x8 sprite cell.",
+    "sizeHint": {
+      "width": 8,
+      "height": 8
+    },
+    "omittedBlankCodepoints": []
+  },
+  "cell": {
+    "width": 7,
+    "height": 8,
+    "leftPad": 0,
+    "ascent": 8,
+    "descent": 0,
+    "maxAdvance": 8
+  },
+  "glyphs": [
+    {
+      "codepoint": 32,
+      "char": " ",
+      "display": "SPACE",
+      "name": "space",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 1,
+        "height": 1,
+        "left": 0,
+        "top": 1,
+        "rows": [
+          "0"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 7
+      }
+    },
+    {
+      "codepoint": 33,
+      "char": "!",
+      "display": "!",
+      "name": "exclam",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 2,
+        "height": 6,
+        "left": 2,
+        "top": 7,
+        "rows": [
+          "11",
+          "11",
+          "11",
+          "11",
+          "00",
+          "11"
+        ]
+      },
+      "preview": {
+        "x": 2,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 34,
+      "char": "\"",
+      "display": "\"",
+      "name": "quotedbl",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 5,
+        "height": 2,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "11011",
+          "01001"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 35,
+      "char": "#",
+      "display": "#",
+      "name": "numbersign",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 7,
+        "height": 5,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0110110",
+          "1111111",
+          "0110110",
+          "1111111",
+          "0110110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 36,
+      "char": "$",
+      "display": "$",
+      "name": "dollar",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 7,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "001100",
+          "111111",
+          "101100",
+          "111111",
+          "001101",
+          "111111",
+          "001100"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 37,
+      "char": "%",
+      "display": "%",
+      "name": "percent",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 7,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "110001",
+          "110011",
+          "000110",
+          "001100",
+          "011000",
+          "110011",
+          "100011"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 38,
+      "char": "&",
+      "display": "&",
+      "name": "ampersand",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "001110",
+          "010010",
+          "011100",
+          "111111",
+          "110011",
+          "011111"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 39,
+      "char": "'",
+      "display": "'",
+      "name": "quotesingle",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 2,
+        "height": 3,
+        "left": 2,
+        "top": 8,
+        "rows": [
+          "11",
+          "11",
+          "10"
+        ]
+      },
+      "preview": {
+        "x": 2,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 40,
+      "char": "(",
+      "display": "(",
+      "name": "parenleft",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 3,
+        "height": 6,
+        "left": 2,
+        "top": 8,
+        "rows": [
+          "011",
+          "110",
+          "100",
+          "100",
+          "110",
+          "011"
+        ]
+      },
+      "preview": {
+        "x": 2,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 41,
+      "char": ")",
+      "display": ")",
+      "name": "parenright",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 3,
+        "height": 6,
+        "left": 2,
+        "top": 8,
+        "rows": [
+          "110",
+          "011",
+          "001",
+          "001",
+          "011",
+          "110"
+        ]
+      },
+      "preview": {
+        "x": 2,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 42,
+      "char": "*",
+      "display": "*",
+      "name": "asterisk",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 5,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "001100",
+          "111111",
+          "011110",
+          "011110",
+          "110011"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 43,
+      "char": "+",
+      "display": "+",
+      "name": "plus",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "00100",
+          "00100",
+          "11111",
+          "00100",
+          "00100"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 44,
+      "char": ",",
+      "display": ",",
+      "name": "comma",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 2,
+        "height": 3,
+        "left": 2,
+        "top": 4,
+        "rows": [
+          "11",
+          "11",
+          "01"
+        ]
+      },
+      "preview": {
+        "x": 2,
+        "y": 4
+      }
+    },
+    {
+      "codepoint": 45,
+      "char": "-",
+      "display": "-",
+      "name": "hyphen",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 5,
+        "height": 1,
+        "left": 1,
+        "top": 5,
+        "rows": [
+          "11111"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 46,
+      "char": ".",
+      "display": ".",
+      "name": "period",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 2,
+        "height": 2,
+        "left": 3,
+        "top": 4,
+        "rows": [
+          "11",
+          "11"
+        ]
+      },
+      "preview": {
+        "x": 3,
+        "y": 4
+      }
+    },
+    {
+      "codepoint": 47,
+      "char": "/",
+      "display": "/",
+      "name": "slash",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 7,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "000001",
+          "000011",
+          "000110",
+          "001100",
+          "011000",
+          "110000",
+          "100000"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 48,
+      "char": "0",
+      "display": "0",
+      "name": "zero",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "011110",
+          "110011",
+          "110011",
+          "110011",
+          "110011",
+          "011110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 49,
+      "char": "1",
+      "display": "1",
+      "name": "one",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 4,
+        "height": 6,
+        "left": 2,
+        "top": 8,
+        "rows": [
+          "0110",
+          "1110",
+          "0110",
+          "0110",
+          "0110",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 2,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 50,
+      "char": "2",
+      "display": "2",
+      "name": "two",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "011110",
+          "110011",
+          "000011",
+          "011110",
+          "110000",
+          "111111"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 51,
+      "char": "3",
+      "display": "3",
+      "name": "three",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "011110",
+          "110011",
+          "000110",
+          "000011",
+          "110011",
+          "011110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 52,
+      "char": "4",
+      "display": "4",
+      "name": "four",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "110011",
+          "110011",
+          "110011",
+          "111111",
+          "000011",
+          "000011"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 53,
+      "char": "5",
+      "display": "5",
+      "name": "five",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "111111",
+          "110000",
+          "111110",
+          "000011",
+          "110011",
+          "011110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 54,
+      "char": "6",
+      "display": "6",
+      "name": "six",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "011110",
+          "110000",
+          "111110",
+          "110011",
+          "110011",
+          "011110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 55,
+      "char": "7",
+      "display": "7",
+      "name": "seven",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "111111",
+          "000011",
+          "000110",
+          "001100",
+          "011000",
+          "011000"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 56,
+      "char": "8",
+      "display": "8",
+      "name": "eight",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "011110",
+          "110011",
+          "011110",
+          "110011",
+          "110011",
+          "011110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 57,
+      "char": "9",
+      "display": "9",
+      "name": "nine",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "011110",
+          "110011",
+          "011111",
+          "000011",
+          "110011",
+          "011110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 58,
+      "char": ":",
+      "display": ":",
+      "name": "colon",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 2,
+        "height": 5,
+        "left": 2,
+        "top": 7,
+        "rows": [
+          "11",
+          "11",
+          "00",
+          "11",
+          "11"
+        ]
+      },
+      "preview": {
+        "x": 2,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 59,
+      "char": ";",
+      "display": ";",
+      "name": "semicolon",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 3,
+        "height": 6,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "011",
+          "011",
+          "000",
+          "011",
+          "011",
+          "110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 60,
+      "char": "<",
+      "display": "<",
+      "name": "less",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "0001",
+          "0011",
+          "0110",
+          "1100",
+          "0110",
+          "0011",
+          "0001"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 61,
+      "char": "=",
+      "display": "=",
+      "name": "equal",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 5,
+        "height": 4,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "11111",
+          "00000",
+          "00000",
+          "11111"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 62,
+      "char": ">",
+      "display": ">",
+      "name": "greater",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 2,
+        "top": 8,
+        "rows": [
+          "1000",
+          "1100",
+          "0110",
+          "0011",
+          "0110",
+          "1100",
+          "1000"
+        ]
+      },
+      "preview": {
+        "x": 2,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 63,
+      "char": "?",
+      "display": "?",
+      "name": "question",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 7,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "011110",
+          "110011",
+          "000011",
+          "001110",
+          "001100",
+          "000000",
+          "001100"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 64,
+      "char": "@",
+      "display": "@",
+      "name": "at",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "011110",
+          "110011",
+          "100111",
+          "100111",
+          "110000",
+          "011100"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 65,
+      "char": "A",
+      "display": "A",
+      "name": "A",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "011110",
+          "110011",
+          "110011",
+          "111111",
+          "110011",
+          "110011"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 66,
+      "char": "B",
+      "display": "B",
+      "name": "B",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "111110",
+          "110011",
+          "111110",
+          "110011",
+          "110011",
+          "111110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 67,
+      "char": "C",
+      "display": "C",
+      "name": "C",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "011110",
+          "110011",
+          "110000",
+          "110000",
+          "110011",
+          "011110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 68,
+      "char": "D",
+      "display": "D",
+      "name": "D",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "111110",
+          "110011",
+          "110001",
+          "110001",
+          "110011",
+          "111110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 69,
+      "char": "E",
+      "display": "E",
+      "name": "E",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "111111",
+          "110000",
+          "111110",
+          "110000",
+          "110000",
+          "111111"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 70,
+      "char": "F",
+      "display": "F",
+      "name": "F",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "111111",
+          "110000",
+          "111110",
+          "110000",
+          "110000",
+          "110000"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 71,
+      "char": "G",
+      "display": "G",
+      "name": "G",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "011110",
+          "110011",
+          "110000",
+          "110011",
+          "110001",
+          "011111"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 72,
+      "char": "H",
+      "display": "H",
+      "name": "H",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "110011",
+          "110011",
+          "111111",
+          "110011",
+          "110011",
+          "110011"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 73,
+      "char": "I",
+      "display": "I",
+      "name": "I",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 4,
+        "height": 6,
+        "left": 2,
+        "top": 8,
+        "rows": [
+          "1111",
+          "0110",
+          "0110",
+          "0110",
+          "0110",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 2,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 74,
+      "char": "J",
+      "display": "J",
+      "name": "J",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "001111",
+          "000110",
+          "000110",
+          "000110",
+          "110110",
+          "011100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 75,
+      "char": "K",
+      "display": "K",
+      "name": "K",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "110011",
+          "110110",
+          "111100",
+          "111100",
+          "110110",
+          "110011"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 76,
+      "char": "L",
+      "display": "L",
+      "name": "L",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "110000",
+          "110000",
+          "110000",
+          "110000",
+          "110000",
+          "111111"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 77,
+      "char": "M",
+      "display": "M",
+      "name": "M",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 7,
+        "height": 6,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "1100011",
+          "1110111",
+          "1111111",
+          "1111111",
+          "1101011",
+          "1100011"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 78,
+      "char": "N",
+      "display": "N",
+      "name": "N",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "110011",
+          "111011",
+          "111111",
+          "111111",
+          "110111",
+          "110011"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 79,
+      "char": "O",
+      "display": "O",
+      "name": "O",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "011110",
+          "110011",
+          "110011",
+          "110011",
+          "110011",
+          "011110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 80,
+      "char": "P",
+      "display": "P",
+      "name": "P",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "111110",
+          "110011",
+          "110011",
+          "111110",
+          "110000",
+          "110000"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 81,
+      "char": "Q",
+      "display": "Q",
+      "name": "Q",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "011110",
+          "110011",
+          "110011",
+          "110011",
+          "011110",
+          "000111"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 82,
+      "char": "R",
+      "display": "R",
+      "name": "R",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "111110",
+          "110011",
+          "110011",
+          "111110",
+          "110011",
+          "110001"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 83,
+      "char": "S",
+      "display": "S",
+      "name": "S",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "011111",
+          "110000",
+          "011110",
+          "000011",
+          "000011",
+          "111110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 84,
+      "char": "T",
+      "display": "T",
+      "name": "T",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "111111",
+          "001100",
+          "001100",
+          "001100",
+          "001100",
+          "001100"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 85,
+      "char": "U",
+      "display": "U",
+      "name": "U",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "110011",
+          "110011",
+          "110011",
+          "110011",
+          "110011",
+          "011110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 86,
+      "char": "V",
+      "display": "V",
+      "name": "V",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "110011",
+          "110011",
+          "110011",
+          "110011",
+          "011110",
+          "001100"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 87,
+      "char": "W",
+      "display": "W",
+      "name": "W",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 7,
+        "height": 6,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "1100011",
+          "1100011",
+          "1101011",
+          "1111111",
+          "1110111",
+          "1100011"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 88,
+      "char": "X",
+      "display": "X",
+      "name": "X",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "110011",
+          "011110",
+          "001100",
+          "011110",
+          "110011",
+          "110011"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 89,
+      "char": "Y",
+      "display": "Y",
+      "name": "Y",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "110011",
+          "110011",
+          "011110",
+          "001100",
+          "001100",
+          "001100"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 90,
+      "char": "Z",
+      "display": "Z",
+      "name": "Z",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "111111",
+          "000011",
+          "000110",
+          "001100",
+          "011000",
+          "111111"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 91,
+      "char": "[",
+      "display": "[",
+      "name": "bracketleft",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 4,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "1111",
+          "1100",
+          "1100",
+          "1100",
+          "1100",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 92,
+      "char": "\\",
+      "display": "\\",
+      "name": "backslash",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 7,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "100000",
+          "110000",
+          "011000",
+          "001100",
+          "000110",
+          "000011",
+          "000001"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 93,
+      "char": "]",
+      "display": "]",
+      "name": "bracketright",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 4,
+        "height": 6,
+        "left": 2,
+        "top": 8,
+        "rows": [
+          "1111",
+          "0011",
+          "0011",
+          "0011",
+          "0011",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 2,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 94,
+      "char": "^",
+      "display": "^",
+      "name": "asciicircum",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 5,
+        "height": 3,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "00100",
+          "01110",
+          "11011"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 95,
+      "char": "_",
+      "display": "_",
+      "name": "underscore",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 5,
+        "height": 1,
+        "left": 1,
+        "top": 2,
+        "rows": [
+          "11111"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 6
+      }
+    },
+    {
+      "codepoint": 96,
+      "char": "`",
+      "display": "`",
+      "name": "grave",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 3,
+        "height": 2,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "110",
+          "011"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 97,
+      "char": "a",
+      "display": "a",
+      "name": "a",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 5,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "011110",
+          "000011",
+          "011111",
+          "110011",
+          "011111"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 98,
+      "char": "b",
+      "display": "b",
+      "name": "b",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "110000",
+          "110000",
+          "111110",
+          "110011",
+          "110011",
+          "111110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 99,
+      "char": "c",
+      "display": "c",
+      "name": "c",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 5,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "011111",
+          "110000",
+          "110000",
+          "110000",
+          "011111"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 100,
+      "char": "d",
+      "display": "d",
+      "name": "d",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "000011",
+          "000011",
+          "011111",
+          "110011",
+          "110011",
+          "011111"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 101,
+      "char": "e",
+      "display": "e",
+      "name": "e",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 5,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "011110",
+          "110011",
+          "111111",
+          "110000",
+          "011110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 102,
+      "char": "f",
+      "display": "f",
+      "name": "f",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "001111",
+          "011000",
+          "111110",
+          "011000",
+          "011000",
+          "011000"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 103,
+      "char": "g",
+      "display": "g",
+      "name": "g",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "011111",
+          "110011",
+          "110011",
+          "011111",
+          "000011",
+          "011110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 104,
+      "char": "h",
+      "display": "h",
+      "name": "h",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "110000",
+          "110000",
+          "111110",
+          "110011",
+          "110011",
+          "110011"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 105,
+      "char": "i",
+      "display": "i",
+      "name": "i",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 4,
+        "height": 6,
+        "left": 2,
+        "top": 8,
+        "rows": [
+          "0110",
+          "0000",
+          "1110",
+          "0110",
+          "0110",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 2,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 106,
+      "char": "j",
+      "display": "j",
+      "name": "j",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "00011",
+          "00000",
+          "00011",
+          "00011",
+          "00011",
+          "11011",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 107,
+      "char": "k",
+      "display": "k",
+      "name": "k",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "110000",
+          "110010",
+          "110110",
+          "111100",
+          "110110",
+          "110011"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 108,
+      "char": "l",
+      "display": "l",
+      "name": "l",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 3,
+        "height": 6,
+        "left": 2,
+        "top": 8,
+        "rows": [
+          "111",
+          "011",
+          "011",
+          "011",
+          "011",
+          "011"
+        ]
+      },
+      "preview": {
+        "x": 2,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 109,
+      "char": "m",
+      "display": "m",
+      "name": "m",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 7,
+        "height": 5,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1110110",
+          "1111111",
+          "1101011",
+          "1100011",
+          "1100011"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 110,
+      "char": "n",
+      "display": "n",
+      "name": "n",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 5,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "111110",
+          "110011",
+          "110011",
+          "110011",
+          "110011"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 111,
+      "char": "o",
+      "display": "o",
+      "name": "o",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 5,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "011110",
+          "110011",
+          "110011",
+          "110011",
+          "011110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 112,
+      "char": "p",
+      "display": "p",
+      "name": "p",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "111110",
+          "110011",
+          "110011",
+          "111110",
+          "110000",
+          "110000"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 113,
+      "char": "q",
+      "display": "q",
+      "name": "q",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "011111",
+          "110011",
+          "110011",
+          "011111",
+          "000011",
+          "000011"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 114,
+      "char": "r",
+      "display": "r",
+      "name": "r",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 5,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "111110",
+          "110011",
+          "110000",
+          "110000",
+          "110000"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 115,
+      "char": "s",
+      "display": "s",
+      "name": "s",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 5,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "011111",
+          "111000",
+          "011110",
+          "000111",
+          "111110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 116,
+      "char": "t",
+      "display": "t",
+      "name": "t",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "001100",
+          "111111",
+          "001100",
+          "001100",
+          "001100",
+          "000110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 117,
+      "char": "u",
+      "display": "u",
+      "name": "u",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 5,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "110011",
+          "110011",
+          "110011",
+          "110011",
+          "011111"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 118,
+      "char": "v",
+      "display": "v",
+      "name": "v",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 5,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "110011",
+          "110011",
+          "110011",
+          "011110",
+          "001100"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 119,
+      "char": "w",
+      "display": "w",
+      "name": "w",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 7,
+        "height": 5,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1100011",
+          "1100011",
+          "1101011",
+          "1111111",
+          "0110110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 120,
+      "char": "x",
+      "display": "x",
+      "name": "x",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 5,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "110011",
+          "011110",
+          "001100",
+          "011110",
+          "110011"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 121,
+      "char": "y",
+      "display": "y",
+      "name": "y",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "110011",
+          "110011",
+          "110011",
+          "011111",
+          "000011",
+          "011110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 122,
+      "char": "z",
+      "display": "z",
+      "name": "z",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 5,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "111111",
+          "000110",
+          "001100",
+          "011000",
+          "111111"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 123,
+      "char": "{",
+      "display": "{",
+      "name": "braceleft",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 1,
+        "top": 8,
+        "rows": [
+          "0011",
+          "0110",
+          "0110",
+          "1100",
+          "0110",
+          "0110",
+          "0011"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 124,
+      "char": "|",
+      "display": "|",
+      "name": "bar",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 2,
+        "height": 7,
+        "left": 2,
+        "top": 8,
+        "rows": [
+          "11",
+          "11",
+          "11",
+          "11",
+          "11",
+          "11",
+          "11"
+        ]
+      },
+      "preview": {
+        "x": 2,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 125,
+      "char": "}",
+      "display": "}",
+      "name": "braceright",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 3,
+        "top": 8,
+        "rows": [
+          "1100",
+          "0110",
+          "0110",
+          "0011",
+          "0110",
+          "0110",
+          "1100"
+        ]
+      },
+      "preview": {
+        "x": 3,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 126,
+      "char": "~",
+      "display": "~",
+      "name": "asciitilde",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 6,
+        "height": 3,
+        "left": 1,
+        "top": 7,
+        "rows": [
+          "011001",
+          "111111",
+          "100110"
+        ]
+      },
+      "preview": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 160,
+      "char": " ",
+      "display": "U+00A0",
+      "name": "uni00A0",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 1,
+        "height": 1,
+        "left": 0,
+        "top": 1,
+        "rows": [
+          "0"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 7
+      }
+    }
+  ]
+}

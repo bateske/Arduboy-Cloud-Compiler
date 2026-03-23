@@ -1,0 +1,3114 @@
+{
+  "export": {
+    "id": "minimalfont5x7-native",
+    "font": "MinimalFont5x7.ttf",
+    "ppem": 16,
+    "mode": "all-encoded",
+    "omitCodepoints": [],
+    "preserveBlankCodepoints": [
+      32,
+      160
+    ],
+    "notes": "Inferred native pixel size of 16px from the font coordinate grid. Filename hints at a 5x7 sprite cell."
+  },
+  "font": {
+    "id": "minimalfont5x7-native",
+    "family": "Minimal",
+    "fullname": "MinimalFont5x7",
+    "sourceFont": "MinimalFont5x7.ttf",
+    "sourcePath": "D:\\Projects\\PixelFonts\\Source Fonts\\MinimalFont5x7.ttf",
+    "ppem": 16,
+    "em": 1024,
+    "ascent": 768,
+    "descent": 256,
+    "glyphCount": 118,
+    "encodedGlyphCount": 118,
+    "missingPrintableAscii": [],
+    "mode": "all-encoded",
+    "preserveBlankCodepoints": [
+      32,
+      160
+    ],
+    "notes": "Inferred native pixel size of 16px from the font coordinate grid. Filename hints at a 5x7 sprite cell.",
+    "sizeHint": {
+      "width": 5,
+      "height": 7
+    },
+    "omittedBlankCodepoints": []
+  },
+  "cell": {
+    "width": 7,
+    "height": 10,
+    "leftPad": 0,
+    "ascent": 7,
+    "descent": 3,
+    "maxAdvance": 16
+  },
+  "glyphs": [
+    {
+      "codepoint": 32,
+      "char": " ",
+      "display": "SPACE",
+      "name": "space",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 1,
+        "height": 1,
+        "left": 0,
+        "top": 1,
+        "rows": [
+          "0"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 6
+      }
+    },
+    {
+      "codepoint": 33,
+      "char": "!",
+      "display": "!",
+      "name": "exclam",
+      "include": true,
+      "advance": 2,
+      "bitmap": {
+        "width": 1,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "0",
+          "1"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 34,
+      "char": "\"",
+      "display": "\"",
+      "name": "quotedbl",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 3,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11011",
+          "11011",
+          "11011"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 35,
+      "char": "#",
+      "display": "#",
+      "name": "numbersign",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01010",
+          "01010",
+          "11111",
+          "01010",
+          "11111",
+          "01010",
+          "01010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 36,
+      "char": "$",
+      "display": "$",
+      "name": "dollar",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01110",
+          "10101",
+          "10100",
+          "01110",
+          "00101",
+          "10101",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 37,
+      "char": "%",
+      "display": "%",
+      "name": "percent",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11001",
+          "11001",
+          "00010",
+          "00100",
+          "01000",
+          "10011",
+          "10011"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 38,
+      "char": "&",
+      "display": "&",
+      "name": "ampersand",
+      "include": true,
+      "advance": 7,
+      "bitmap": {
+        "width": 6,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "111000",
+          "101000",
+          "110000",
+          "011000",
+          "100101",
+          "100010",
+          "011101"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 39,
+      "char": "'",
+      "display": "'",
+      "name": "quotesingle",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 3,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11",
+          "11",
+          "11"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 40,
+      "char": "(",
+      "display": "(",
+      "name": "parenleft",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01",
+          "10",
+          "10",
+          "10",
+          "10",
+          "10",
+          "01"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 41,
+      "char": ")",
+      "display": ")",
+      "name": "parenright",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "10",
+          "01",
+          "01",
+          "01",
+          "01",
+          "01",
+          "10"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 42,
+      "char": "*",
+      "display": "*",
+      "name": "asterisk",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 6,
+        "rows": [
+          "01010",
+          "00100",
+          "11111",
+          "00100",
+          "01010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 43,
+      "char": "+",
+      "display": "+",
+      "name": "plus",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 6,
+        "rows": [
+          "00100",
+          "00100",
+          "11111",
+          "00100",
+          "00100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 44,
+      "char": ",",
+      "display": ",",
+      "name": "comma",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 3,
+        "left": 0,
+        "top": 1,
+        "rows": [
+          "01",
+          "01",
+          "10"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 6
+      }
+    },
+    {
+      "codepoint": 45,
+      "char": "-",
+      "display": "-",
+      "name": "hyphen",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 1,
+        "left": 0,
+        "top": 4,
+        "rows": [
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 46,
+      "char": ".",
+      "display": ".",
+      "name": "period",
+      "include": true,
+      "advance": 2,
+      "bitmap": {
+        "width": 1,
+        "height": 1,
+        "left": 0,
+        "top": 1,
+        "rows": [
+          "1"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 6
+      }
+    },
+    {
+      "codepoint": 47,
+      "char": "/",
+      "display": "/",
+      "name": "slash",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "0001",
+          "0010",
+          "0010",
+          "0100",
+          "0100",
+          "1000",
+          "1000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 48,
+      "char": "0",
+      "display": "0",
+      "name": "zero",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01110",
+          "10001",
+          "10011",
+          "10101",
+          "11001",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 49,
+      "char": "1",
+      "display": "1",
+      "name": "one",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "00100",
+          "01100",
+          "10100",
+          "00100",
+          "00100",
+          "00100",
+          "11111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 50,
+      "char": "2",
+      "display": "2",
+      "name": "two",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01110",
+          "10001",
+          "00001",
+          "00010",
+          "00100",
+          "01000",
+          "11111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 51,
+      "char": "3",
+      "display": "3",
+      "name": "three",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01110",
+          "10001",
+          "00001",
+          "00110",
+          "00001",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 52,
+      "char": "4",
+      "display": "4",
+      "name": "four",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "10001",
+          "10001",
+          "10001",
+          "11111",
+          "00001",
+          "00001",
+          "00001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 53,
+      "char": "5",
+      "display": "5",
+      "name": "five",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11111",
+          "10000",
+          "11110",
+          "00001",
+          "00001",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 54,
+      "char": "6",
+      "display": "6",
+      "name": "six",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01110",
+          "10001",
+          "10000",
+          "11110",
+          "10001",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 55,
+      "char": "7",
+      "display": "7",
+      "name": "seven",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11111",
+          "00001",
+          "00010",
+          "00100",
+          "00100",
+          "00100",
+          "00100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 56,
+      "char": "8",
+      "display": "8",
+      "name": "eight",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01110",
+          "10001",
+          "10001",
+          "01110",
+          "10001",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 57,
+      "char": "9",
+      "display": "9",
+      "name": "nine",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01110",
+          "10001",
+          "10001",
+          "01111",
+          "00001",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 58,
+      "char": ":",
+      "display": ":",
+      "name": "colon",
+      "include": true,
+      "advance": 2,
+      "bitmap": {
+        "width": 1,
+        "height": 3,
+        "left": 0,
+        "top": 3,
+        "rows": [
+          "1",
+          "0",
+          "1"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 4
+      }
+    },
+    {
+      "codepoint": 59,
+      "char": ";",
+      "display": ";",
+      "name": "semicolon",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 4,
+        "left": 0,
+        "top": 3,
+        "rows": [
+          "01",
+          "00",
+          "01",
+          "10"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 4
+      }
+    },
+    {
+      "codepoint": 60,
+      "char": "<",
+      "display": "<",
+      "name": "less",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "001",
+          "010",
+          "100",
+          "010",
+          "001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 61,
+      "char": "=",
+      "display": "=",
+      "name": "equal",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 3,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "111",
+          "000",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 62,
+      "char": ">",
+      "display": ">",
+      "name": "greater",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "100",
+          "010",
+          "001",
+          "010",
+          "100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 63,
+      "char": "?",
+      "display": "?",
+      "name": "question",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01110",
+          "10001",
+          "00001",
+          "00010",
+          "00100",
+          "00000",
+          "00100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 64,
+      "char": "@",
+      "display": "@",
+      "name": "at",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 7,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "0111110",
+          "1000001",
+          "1011101",
+          "1010101",
+          "1011111",
+          "1000000",
+          "0111110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 65,
+      "char": "A",
+      "display": "A",
+      "name": "A",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01110",
+          "10001",
+          "10001",
+          "11111",
+          "10001",
+          "10001",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 66,
+      "char": "B",
+      "display": "B",
+      "name": "B",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11110",
+          "10001",
+          "10001",
+          "11110",
+          "10001",
+          "10001",
+          "11110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 67,
+      "char": "C",
+      "display": "C",
+      "name": "C",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01110",
+          "10001",
+          "10000",
+          "10000",
+          "10000",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 68,
+      "char": "D",
+      "display": "D",
+      "name": "D",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11110",
+          "10001",
+          "10001",
+          "10001",
+          "10001",
+          "10001",
+          "11110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 69,
+      "char": "E",
+      "display": "E",
+      "name": "E",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11111",
+          "10000",
+          "10000",
+          "11110",
+          "10000",
+          "10000",
+          "11111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 70,
+      "char": "F",
+      "display": "F",
+      "name": "F",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11111",
+          "10000",
+          "10000",
+          "11110",
+          "10000",
+          "10000",
+          "10000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 71,
+      "char": "G",
+      "display": "G",
+      "name": "G",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01110",
+          "10001",
+          "10000",
+          "10111",
+          "10001",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 72,
+      "char": "H",
+      "display": "H",
+      "name": "H",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "10001",
+          "10001",
+          "10001",
+          "11111",
+          "10001",
+          "10001",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 73,
+      "char": "I",
+      "display": "I",
+      "name": "I",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11111",
+          "00100",
+          "00100",
+          "00100",
+          "00100",
+          "00100",
+          "11111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 74,
+      "char": "J",
+      "display": "J",
+      "name": "J",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "00001",
+          "00001",
+          "00001",
+          "00001",
+          "00001",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 75,
+      "char": "K",
+      "display": "K",
+      "name": "K",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "10001",
+          "10010",
+          "10100",
+          "11000",
+          "10100",
+          "10010",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 76,
+      "char": "L",
+      "display": "L",
+      "name": "L",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "11111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 77,
+      "char": "M",
+      "display": "M",
+      "name": "M",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01010",
+          "10101",
+          "10101",
+          "10101",
+          "10101",
+          "10101",
+          "10101"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 78,
+      "char": "N",
+      "display": "N",
+      "name": "N",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "10001",
+          "11001",
+          "10101",
+          "10101",
+          "10011",
+          "10011",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 79,
+      "char": "O",
+      "display": "O",
+      "name": "O",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01110",
+          "10001",
+          "10001",
+          "10001",
+          "10001",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 80,
+      "char": "P",
+      "display": "P",
+      "name": "P",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11110",
+          "10001",
+          "10001",
+          "11110",
+          "10000",
+          "10000",
+          "10000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 81,
+      "char": "Q",
+      "display": "Q",
+      "name": "Q",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01110",
+          "10001",
+          "10001",
+          "10001",
+          "10101",
+          "10010",
+          "01101"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 82,
+      "char": "R",
+      "display": "R",
+      "name": "R",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11110",
+          "10001",
+          "10001",
+          "11110",
+          "10100",
+          "10010",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 83,
+      "char": "S",
+      "display": "S",
+      "name": "S",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01110",
+          "10001",
+          "10000",
+          "01110",
+          "00001",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 84,
+      "char": "T",
+      "display": "T",
+      "name": "T",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11111",
+          "00100",
+          "00100",
+          "00100",
+          "00100",
+          "00100",
+          "00100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 85,
+      "char": "U",
+      "display": "U",
+      "name": "U",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "10001",
+          "10001",
+          "10001",
+          "10001",
+          "10001",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 86,
+      "char": "V",
+      "display": "V",
+      "name": "V",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "10001",
+          "10001",
+          "10001",
+          "01010",
+          "01010",
+          "00100",
+          "00100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 87,
+      "char": "W",
+      "display": "W",
+      "name": "W",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "10101",
+          "10101",
+          "10101",
+          "10101",
+          "10101",
+          "10101",
+          "01010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 88,
+      "char": "X",
+      "display": "X",
+      "name": "X",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "10001",
+          "10001",
+          "01010",
+          "00100",
+          "01010",
+          "10001",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 89,
+      "char": "Y",
+      "display": "Y",
+      "name": "Y",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "10001",
+          "10001",
+          "01010",
+          "00100",
+          "00100",
+          "00100",
+          "00100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 90,
+      "char": "Z",
+      "display": "Z",
+      "name": "Z",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11111",
+          "00001",
+          "00010",
+          "00100",
+          "01000",
+          "10000",
+          "11111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 91,
+      "char": "[",
+      "display": "[",
+      "name": "bracketleft",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11",
+          "10",
+          "10",
+          "10",
+          "10",
+          "10",
+          "11"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 92,
+      "char": "\\",
+      "display": "\\",
+      "name": "backslash",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1000",
+          "0100",
+          "0100",
+          "0010",
+          "0010",
+          "0001",
+          "0001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 93,
+      "char": "]",
+      "display": "]",
+      "name": "bracketright",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11",
+          "01",
+          "01",
+          "01",
+          "01",
+          "01",
+          "11"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 94,
+      "char": "^",
+      "display": "^",
+      "name": "asciicircum",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "00100",
+          "01010",
+          "01010",
+          "10001",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 95,
+      "char": "_",
+      "display": "_",
+      "name": "underscore",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 1,
+        "left": 0,
+        "top": 1,
+        "rows": [
+          "11111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 6
+      }
+    },
+    {
+      "codepoint": 96,
+      "char": "`",
+      "display": "`",
+      "name": "grave",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 3,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "110",
+          "011",
+          "001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 97,
+      "char": "a",
+      "display": "a",
+      "name": "a",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01110",
+          "00001",
+          "01111",
+          "10001",
+          "01111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 98,
+      "char": "b",
+      "display": "b",
+      "name": "b",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "10000",
+          "10000",
+          "11110",
+          "10001",
+          "10001",
+          "10001",
+          "11110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 99,
+      "char": "c",
+      "display": "c",
+      "name": "c",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01110",
+          "10001",
+          "10000",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 100,
+      "char": "d",
+      "display": "d",
+      "name": "d",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "00001",
+          "00001",
+          "01111",
+          "10001",
+          "10001",
+          "10001",
+          "01111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 101,
+      "char": "e",
+      "display": "e",
+      "name": "e",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01110",
+          "10001",
+          "11111",
+          "10000",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 102,
+      "char": "f",
+      "display": "f",
+      "name": "f",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "011",
+          "010",
+          "111",
+          "010",
+          "010",
+          "010",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 103,
+      "char": "g",
+      "display": "g",
+      "name": "g",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 8,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01110",
+          "10001",
+          "10001",
+          "10001",
+          "01111",
+          "00001",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 104,
+      "char": "h",
+      "display": "h",
+      "name": "h",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "10000",
+          "10000",
+          "11110",
+          "10001",
+          "10001",
+          "10001",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 105,
+      "char": "i",
+      "display": "i",
+      "name": "i",
+      "include": true,
+      "advance": 2,
+      "bitmap": {
+        "width": 1,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1",
+          "0",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 106,
+      "char": "j",
+      "display": "j",
+      "name": "j",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 10,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "00001",
+          "00000",
+          "00001",
+          "00001",
+          "00001",
+          "00001",
+          "00001",
+          "00001",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 107,
+      "char": "k",
+      "display": "k",
+      "name": "k",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1000",
+          "1000",
+          "1001",
+          "1010",
+          "1100",
+          "1010",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 108,
+      "char": "l",
+      "display": "l",
+      "name": "l",
+      "include": true,
+      "advance": 2,
+      "bitmap": {
+        "width": 1,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 109,
+      "char": "m",
+      "display": "m",
+      "name": "m",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "11010",
+          "10101",
+          "10101",
+          "10101",
+          "10101"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 110,
+      "char": "n",
+      "display": "n",
+      "name": "n",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "11110",
+          "10001",
+          "10001",
+          "10001",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 111,
+      "char": "o",
+      "display": "o",
+      "name": "o",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01110",
+          "10001",
+          "10001",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 112,
+      "char": "p",
+      "display": "p",
+      "name": "p",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "11110",
+          "10001",
+          "10001",
+          "10001",
+          "11110",
+          "10000",
+          "10000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 113,
+      "char": "q",
+      "display": "q",
+      "name": "q",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01111",
+          "10001",
+          "10001",
+          "10001",
+          "01111",
+          "00001",
+          "00001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 114,
+      "char": "r",
+      "display": "r",
+      "name": "r",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10011",
+          "10100",
+          "11000",
+          "10000",
+          "10000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 115,
+      "char": "s",
+      "display": "s",
+      "name": "s",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01111",
+          "10000",
+          "01110",
+          "00001",
+          "11110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 116,
+      "char": "t",
+      "display": "t",
+      "name": "t",
+      "include": true,
+      "advance": 7,
+      "bitmap": {
+        "width": 6,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "010000",
+          "010000",
+          "111111",
+          "010000",
+          "010000",
+          "010001",
+          "001110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 117,
+      "char": "u",
+      "display": "u",
+      "name": "u",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10001",
+          "10001",
+          "10001",
+          "10001",
+          "01111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 118,
+      "char": "v",
+      "display": "v",
+      "name": "v",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10001",
+          "10001",
+          "01010",
+          "01010",
+          "00100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 119,
+      "char": "w",
+      "display": "w",
+      "name": "w",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10101",
+          "10101",
+          "10101",
+          "10101",
+          "01010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 120,
+      "char": "x",
+      "display": "x",
+      "name": "x",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10001",
+          "01010",
+          "00100",
+          "01010",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 121,
+      "char": "y",
+      "display": "y",
+      "name": "y",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 8,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10001",
+          "10001",
+          "10001",
+          "10001",
+          "01111",
+          "00001",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 122,
+      "char": "z",
+      "display": "z",
+      "name": "z",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "11111",
+          "00010",
+          "00100",
+          "01000",
+          "11111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 123,
+      "char": "{",
+      "display": "{",
+      "name": "braceleft",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "001",
+          "010",
+          "010",
+          "100",
+          "010",
+          "010",
+          "001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 124,
+      "char": "|",
+      "display": "|",
+      "name": "bar",
+      "include": true,
+      "advance": 2,
+      "bitmap": {
+        "width": 1,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 125,
+      "char": "}",
+      "display": "}",
+      "name": "braceright",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "100",
+          "010",
+          "010",
+          "001",
+          "010",
+          "010",
+          "100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 126,
+      "char": "~",
+      "display": "~",
+      "name": "asciitilde",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 7,
+        "height": 3,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110000",
+          "1001001",
+          "0000110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 160,
+      "char": " ",
+      "display": "U+00A0",
+      "name": "uni00A0",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 1,
+        "height": 1,
+        "left": 0,
+        "top": 1,
+        "rows": [
+          "0"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 6
+      }
+    },
+    {
+      "codepoint": 161,
+      "char": "¡",
+      "display": "¡",
+      "name": "exclamdown",
+      "include": true,
+      "advance": 2,
+      "bitmap": {
+        "width": 1,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1",
+          "0",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 162,
+      "char": "¢",
+      "display": "¢",
+      "name": "cent",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01110",
+          "10011",
+          "10100",
+          "11001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 163,
+      "char": "£",
+      "display": "£",
+      "name": "sterling",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "00110",
+          "01001",
+          "01000",
+          "11110",
+          "01000",
+          "01000",
+          "11111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 164,
+      "char": "¤",
+      "display": "¤",
+      "name": "currency",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 7,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1000001",
+          "0011100",
+          "0100010",
+          "0100010",
+          "0100010",
+          "0011100",
+          "1000001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 165,
+      "char": "¥",
+      "display": "¥",
+      "name": "yen",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "10001",
+          "10001",
+          "01010",
+          "00100",
+          "11111",
+          "00100",
+          "11111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 166,
+      "char": "¦",
+      "display": "¦",
+      "name": "brokenbar",
+      "include": true,
+      "advance": 2,
+      "bitmap": {
+        "width": 1,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1",
+          "1",
+          "1",
+          "0",
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 167,
+      "char": "§",
+      "display": "§",
+      "name": "section",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01111",
+          "10000",
+          "11110",
+          "01010",
+          "01111",
+          "00001",
+          "11110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 168,
+      "char": "¨",
+      "display": "¨",
+      "name": "dieresis",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 2,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11011",
+          "11011"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 169,
+      "char": "©",
+      "display": "©",
+      "name": "copyright",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 7,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "0111110",
+          "1000001",
+          "1011101",
+          "1010001",
+          "1011101",
+          "1000001",
+          "0111110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 170,
+      "char": "ª",
+      "display": "ª",
+      "name": "ordfeminine",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01110",
+          "00001",
+          "01111",
+          "10001",
+          "01111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 171,
+      "char": "«",
+      "display": "«",
+      "name": "guillemotleft",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 7,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "0001000",
+          "0011000",
+          "0111111",
+          "1111111",
+          "0111111",
+          "0011000",
+          "0001000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 172,
+      "char": "¬",
+      "display": "¬",
+      "name": "logicalnot",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 4,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "01",
+          "10",
+          "11",
+          "11"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 174,
+      "char": "®",
+      "display": "®",
+      "name": "registered",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 7,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "0111110",
+          "1000001",
+          "1001101",
+          "1001001",
+          "1001001",
+          "1000001",
+          "0111110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 176,
+      "char": "°",
+      "display": "°",
+      "name": "degree",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 7,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "0001000",
+          "0011100",
+          "0111110",
+          "1111111",
+          "0011100",
+          "0011100",
+          "0011100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 180,
+      "char": "´",
+      "display": "´",
+      "name": "acute",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 4,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11",
+          "11",
+          "01",
+          "10"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 183,
+      "char": "·",
+      "display": "·",
+      "name": "periodcentered",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 2,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "11",
+          "11"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 184,
+      "char": "¸",
+      "display": "¸",
+      "name": "cedilla",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 7,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "0011100",
+          "0011100",
+          "0011100",
+          "1111111",
+          "0111110",
+          "0011100",
+          "0001000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 186,
+      "char": "º",
+      "display": "º",
+      "name": "ordmasculine",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 4,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "0110",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 187,
+      "char": "»",
+      "display": "»",
+      "name": "guillemotright",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 7,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "0001000",
+          "0001100",
+          "1111110",
+          "1111111",
+          "1111110",
+          "0001100",
+          "0001000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 191,
+      "char": "¿",
+      "display": "¿",
+      "name": "questiondown",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "00100",
+          "00000",
+          "00100",
+          "01000",
+          "10000",
+          "10001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 8364,
+      "char": "€",
+      "display": "€",
+      "name": "Euro",
+      "include": true,
+      "advance": 7,
+      "bitmap": {
+        "width": 6,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "001110",
+          "010001",
+          "111100",
+          "010000",
+          "111100",
+          "010001",
+          "001110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 12288,
+      "char": "　",
+      "display": "U+3000",
+      "name": "uni3000",
+      "include": true,
+      "advance": 16,
+      "bitmap": {
+        "width": 1,
+        "height": 1,
+        "left": 0,
+        "top": 1,
+        "rows": [
+          "0"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 6
+      }
+    }
+  ]
+}

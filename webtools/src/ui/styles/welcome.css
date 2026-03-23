@@ -1,0 +1,615 @@
+/* =============================================================================
+   Welcome Page — Styles & Effects
+   ============================================================================= */
+
+/* ── Cloud Buddy Tooltip ──────────────────────────────────────────────────── */
+
+.cloud-buddy-tooltip {
+  position: fixed;
+  z-index: 1000;
+  pointer-events: auto;
+  cursor: default;
+  font-family: var(--font-family);
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1a2e;
+  text-align: center;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  background: #FBF157;
+  padding: 8px 24px;
+  border-radius: 100px;
+  letter-spacing: 0.01em;
+}
+
+/* ── Cloud Buddy Navbar Glow ──────────────────────────────────────────────── */
+
+.tab-btn--cloud-glow {
+  color: #FBF157;
+  text-shadow: 0 0 8px #1a1a2e, 0 0 20px #FBF157;
+  transition: text-shadow 0.35s ease;
+}
+
+/* ── Hero Section ─────────────────────────────────────────────────────────── */
+
+.welcome-page {
+  padding: var(--space-xl) var(--space-lg);
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.welcome-hero {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-lg) var(--space-xl);
+  position: relative;
+}
+
+.welcome-hero::before {
+  content: '';
+  position: absolute;
+  inset: -25%;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(139, 45, 180, 0.18) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 50% at 30% 70%, rgba(251, 241, 87, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 80% 60%, rgba(96, 165, 250, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+  animation: heroAmbientShift 12s ease-in-out infinite alternate;
+}
+
+@keyframes heroAmbientShift {
+  0%   { opacity: 0.7; transform: scale(1); }
+  50%  { opacity: 1;   transform: scale(1.05); }
+  100% { opacity: 0.8; transform: scale(0.98); }
+}
+
+.welcome-logo-glow {
+  display: inline-block;
+  position: relative;
+  margin-bottom: var(--space-lg);
+}
+
+.welcome-logo-glow img {
+  width: 96px;
+  height: 96px;
+  border-radius: var(--radius-lg);
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 0 24px rgba(139, 45, 180, 0.5)) drop-shadow(0 0 48px rgba(251, 241, 87, 0.25));
+  animation: logoPulse 4s ease-in-out infinite;
+}
+
+@keyframes logoPulse {
+  0%, 100% { filter: drop-shadow(0 0 24px rgba(139, 45, 180, 0.5)) drop-shadow(0 0 48px rgba(251, 241, 87, 0.25)); }
+  50%      { filter: drop-shadow(0 0 32px rgba(139, 45, 180, 0.7)) drop-shadow(0 0 64px rgba(251, 241, 87, 0.4)); }
+}
+
+.welcome-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-primary-light) 50%, var(--color-accent) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: titleShimmer 6s ease-in-out infinite;
+  margin-bottom: var(--space-sm);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+@keyframes titleShimmer {
+  0%   { background-position: 0% center; }
+  50%  { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+.welcome-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.35rem);
+  color: var(--color-text-secondary);
+  max-width: 650px;
+  margin: 0 auto var(--space-lg);
+  line-height: 1.6;
+}
+
+.welcome-tagline {
+  display: inline-block;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  background: rgba(139, 45, 180, 0.12);
+  border: 1px solid rgba(139, 45, 180, 0.2);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* ── Feature Cards ────────────────────────────────────────────────────────── */
+
+.welcome-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-lg);
+  margin: var(--space-2xl) 0;
+}
+
+.welcome-feature-card {
+  background: var(--glass-bg);
+  border: var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-feature-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(139, 45, 180, 0.08), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.welcome-feature-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(139, 45, 180, 0.3);
+  box-shadow: var(--glow-primary), 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-feature-card:hover::before {
+  opacity: 1;
+}
+
+.welcome-feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+  display: block;
+  filter: drop-shadow(0 0 8px rgba(251, 241, 87, 0.3));
+}
+
+.welcome-feature-card h3 {
+  font-size: var(--font-size-lg);
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+  font-weight: 600;
+}
+
+.welcome-feature-card p {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+}
+
+/* ── Sections ─────────────────────────────────────────────────────────────── */
+
+.welcome-section {
+  margin: var(--space-2xl) 0;
+  position: relative;
+}
+
+.welcome-section-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--space-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.welcome-section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(139, 45, 180, 0.4), transparent);
+}
+
+.welcome-body-text {
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  font-size: var(--font-size-base);
+  max-width: 720px;
+}
+
+.welcome-body-text p {
+  margin-bottom: var(--space-md);
+}
+
+/* ── Credits — Hall of Fame ───────────────────────────────────────────────── */
+
+.welcome-credits-intro {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-base);
+  line-height: 1.75;
+  margin-bottom: var(--space-xl);
+  max-width: 720px;
+}
+
+.welcome-credits-stage {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl) var(--space-lg);
+  background:
+    radial-gradient(ellipse 100% 80% at 50% 100%, rgba(139, 45, 180, 0.12) 0%, transparent 60%),
+    var(--glass-bg);
+  border: var(--glass-border);
+}
+
+/* Animated starfield behind credits */
+.welcome-credits-stage::before {
+  content: '';
+  position: absolute;
+  inset: -50%;
+  background-image:
+    radial-gradient(1.5px 1.5px at 10% 20%, rgba(251, 241, 87, 0.7) 50%, transparent 50%),
+    radial-gradient(1px 1px at 25% 60%, rgba(168, 77, 212, 0.6) 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 40% 15%, rgba(251, 241, 87, 0.5) 50%, transparent 50%),
+    radial-gradient(1px 1px at 55% 45%, rgba(96, 165, 250, 0.5) 50%, transparent 50%),
+    radial-gradient(2px 2px at 70% 80%, rgba(251, 241, 87, 0.6) 50%, transparent 50%),
+    radial-gradient(1px 1px at 80% 30%, rgba(168, 77, 212, 0.5) 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 90% 70%, rgba(251, 241, 87, 0.4) 50%, transparent 50%),
+    radial-gradient(1px 1px at 15% 85%, rgba(96, 165, 250, 0.6) 50%, transparent 50%),
+    radial-gradient(2px 2px at 45% 90%, rgba(139, 45, 180, 0.5) 50%, transparent 50%),
+    radial-gradient(1px 1px at 65% 10%, rgba(251, 241, 87, 0.5) 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 35% 40%, rgba(52, 211, 153, 0.4) 50%, transparent 50%),
+    radial-gradient(1px 1px at 85% 55%, rgba(251, 241, 87, 0.6) 50%, transparent 50%);
+  animation: starDrift 40s linear infinite;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+@keyframes starDrift {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(50%); }
+}
+
+.welcome-credits-grid {
+  display: grid;
+  gap: var(--space-lg);
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Credit Card — Tiered ─────────────────────────────────────────────────── */
+
+.credit-card {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: center;
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  background: rgba(15, 15, 30, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.credit-card, .credit-card * {
+  cursor: pointer;
+}
+
+.credit-card:hover {
+  transform: translateY(-3px) scale(1.01);
+  border-color: rgba(139, 45, 180, 0.35);
+  box-shadow: 0 0 30px rgba(139, 45, 180, 0.15), 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Tier: Legendary (core Arduboy ecosystem) */
+.credit-card.tier-legendary {
+  border-color: rgba(251, 241, 87, 0.2);
+  background: linear-gradient(135deg, rgba(251, 241, 87, 0.04) 0%, rgba(139, 45, 180, 0.06) 100%);
+}
+
+.credit-card.tier-legendary::after {
+  content: '';
+  position: absolute;
+  inset: -200%;
+  background: conic-gradient(from 0deg, rgba(251, 241, 87, 0.15), rgba(218, 185, 50, 0.12), rgba(255, 215, 0, 0.15), rgba(200, 170, 40, 0.10), rgba(251, 241, 87, 0.15));
+  z-index: -1;
+  animation: borderRotate 6s linear infinite;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.credit-card.tier-legendary:hover::after {
+  opacity: 1;
+}
+
+@keyframes borderRotate {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.credit-card.tier-legendary .credit-badge {
+  background: linear-gradient(135deg, var(--color-accent), #ffd700);
+  color: #1a1a2e;
+  font-weight: 700;
+  box-shadow: 0 0 20px rgba(251, 241, 87, 0.4);
+  animation: badgePulse 3s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(251, 241, 87, 0.3); }
+  50%      { box-shadow: 0 0 30px rgba(251, 241, 87, 0.6), 0 0 60px rgba(251, 241, 87, 0.2); }
+}
+
+/* Tier: Epic */
+.credit-card.tier-epic {
+  border-color: rgba(168, 77, 212, 0.2);
+}
+
+.credit-card.tier-epic .credit-badge {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  color: white;
+  font-weight: 600;
+}
+
+/* Tier: Rare */
+.credit-card.tier-rare {
+  border-color: rgba(96, 165, 250, 0.15);
+}
+
+.credit-card.tier-rare .credit-badge {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  color: white;
+  font-weight: 600;
+}
+
+.credit-badge {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.credit-card:hover .credit-badge {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.credit-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.credit-name {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 2px;
+}
+
+.credit-name a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.credit-name a:hover {
+  color: var(--color-accent);
+}
+
+.credit-author {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xs);
+}
+
+.credit-desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.credit-tier-label {
+  flex-shrink: 0;
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tier-legendary .credit-tier-label {
+  color: var(--color-accent);
+  background: rgba(251, 241, 87, 0.08);
+  text-shadow: 0 0 10px rgba(251, 241, 87, 0.3);
+}
+
+.tier-epic .credit-tier-label {
+  color: var(--color-primary-light);
+  background: rgba(168, 77, 212, 0.1);
+}
+
+.tier-rare .credit-tier-label {
+  color: var(--color-info);
+  background: rgba(96, 165, 250, 0.08);
+}
+
+/* ── Celebration Particles (canvas overlay inside credits stage) ──────────── */
+
+.welcome-credits-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ── Licenses Section ─────────────────────────────────────────────────────── */
+
+.welcome-licenses {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.license-entry {
+  background: var(--glass-bg);
+  border: var(--glass-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.license-entry:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.license-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-lg);
+  cursor: pointer;
+  user-select: none;
+  gap: var(--space-md);
+}
+
+.license-header:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.license-project-name {
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+}
+
+.license-type {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.license-toggle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.license-entry.open .license-toggle {
+  transform: rotate(180deg);
+}
+
+.license-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.license-entry.open .license-body {
+  max-height: 600px;
+}
+
+.license-text {
+  padding: 0 var(--space-lg) var(--space-lg);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ── Footer ───────────────────────────────────────────────────────────────── */
+
+.welcome-footer {
+  text-align: center;
+  padding: var(--space-2xl) 0 var(--space-lg);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  border-top: 1px solid var(--color-border-subtle);
+  margin-top: var(--space-2xl);
+}
+
+.welcome-footer-heart {
+  color: var(--color-danger);
+  display: inline-block;
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  14%      { transform: scale(1.2); }
+  28%      { transform: scale(1); }
+  42%      { transform: scale(1.15); }
+  56%      { transform: scale(1); }
+}
+
+.welcome-footer a {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.welcome-footer a:hover {
+  color: var(--color-accent);
+}
+
+/* ── Scroll-reveal animations ─────────────────────────────────────────────── */
+
+.welcome-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.welcome-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.welcome-reveal.delay-1 { transition-delay: 0.1s; }
+.welcome-reveal.delay-2 { transition-delay: 0.2s; }
+.welcome-reveal.delay-3 { transition-delay: 0.3s; }
+.welcome-reveal.delay-4 { transition-delay: 0.4s; }
+
+/* ── Brand link in navbar ─────────────────────────────────────────────────── */
+
+.navbar-brand.brand-clickable {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  user-select: none;
+}
+
+.navbar-brand.brand-clickable:hover {
+  opacity: 0.85;
+}
+
+.navbar-brand.brand-clickable.active .brand-text {
+  text-shadow: 0 0 12px rgba(251, 241, 87, 0.4);
+}
+
+/* ── Responsive ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .welcome-page {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .credit-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .credit-tier-label {
+    align-self: center;
+  }
+}

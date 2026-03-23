@@ -1,0 +1,2461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arduboy Cloud</title>
+
+  <!-- ============================================================
+       SOCIAL CARDS — Platform-by-platform meta tags
+       ============================================================
+       SETUP: Replace cloud.arduboy.com with your actual domain, e.g.
+              cloud.arduboy.com
+       IMAGES: You must create these files and place them in /webtools/:
+         - social-card-og.png    — 1200×630 px (Facebook/LinkedIn/Discord/Slack)
+         - social-card-tw.png    — 1200×600 px (Twitter/X summary_large_image)
+         - social-card-square.png — 400×400 px (Telegram, fallback square)
+       ============================================================ -->
+
+  <!-- ==========================================================
+       GENERAL / SEO — Not tied to a specific social platform.
+       Shows up in: Google search results, browser tab, bookmarks,
+       and as fallback for any platform that reads standard meta.
+       ========================================================== -->
+  <meta name="description"          content="Write, compile, simulate, and flash Arduboy games — all from your browser. Cloud compiler, FX data editor, pixel art tools, and device manager in one place.">
+  <meta name="author"               content="Arduboy">
+  <meta name="keywords"             content="Arduboy, game development, Arduino, retro gaming, 8-bit, compiler, IDE, pixel art, FX flash, EEPROM">
+  <meta name="theme-color"          content="#7c3aed"> <!-- purple accent — colors the address bar on mobile Chrome/Edge -->
+  <link rel="canonical"             href="https://cloud.arduboy.com/">
+
+  <!-- ==========================================================
+       OPEN GRAPH (og:) — The universal social card standard.
+       ——————————————————————————————————————————————————————————
+       Shows up in:
+         • Facebook         — feed post / link preview
+         • LinkedIn         — feed post / shared link
+         • Discord          — embedded link card in chat
+         • Slack            — unfurled link preview
+         • iMessage         — link preview bubble
+         • WhatsApp         — link preview in chat
+         • Pinterest        — rich pin preview
+         • Telegram         — link preview (also reads og: tags)
+         • Reddit           — link post card
+         • Signal           — link preview
+         • Facebook Messenger — shared link bubble
+         • Microsoft Teams  — link unfurl in chat
+       ——————————————————————————————————————————————————————————
+       Image: 1200×630 px recommended (minimum 600×315).
+              Must be an absolute URL. Max file size ~5 MB (Facebook).
+       ========================================================== -->
+  <meta property="og:type"          content="website">
+  <meta property="og:site_name"     content="Arduboy Cloud">
+  <meta property="og:title"         content="Arduboy Cloud — Browser IDE for Arduboy">
+  <meta property="og:description"   content="Write, compile, simulate, and flash Arduboy games entirely in your browser. Includes a cloud compiler, FX data editor, pixel art tools, and device manager.">
+  <meta property="og:url"           content="https://cloud.arduboy.com/">
+  <meta property="og:image"         content="https://cloud.arduboy.com/social-card-og.png">
+  <meta property="og:image:alt"     content="Arduboy Cloud — a browser-based IDE showing code editor, simulator, and pixel art tools">
+  <meta property="og:image:width"   content="1200">
+  <meta property="og:image:height"  content="630">
+  <meta property="og:image:type"    content="image/png">
+  <meta property="og:locale"        content="en_US">
+
+  <!-- ==========================================================
+       TWITTER / X (twitter:) — Twitter Card tags.
+       ——————————————————————————————————————————————————————————
+       Shows up in:
+         • Twitter/X        — tweet card when a link is shared
+         • Twitter/X DMs    — link preview in direct messages
+       ——————————————————————————————————————————————————————————
+       "summary_large_image" = wide card with big image on top.
+       "summary"             = small square thumbnail on the left.
+       Image: 1200×600 px recommended for summary_large_image.
+              Minimum 300×157. Max 5 MB. Must be absolute URL.
+       twitter:site = your brand's @handle (shown under the title).
+       twitter:creator = the individual author's @handle (optional).
+       If twitter: tags are missing, Twitter falls back to og: tags.
+       ========================================================== -->
+  <meta name="twitter:card"         content="summary_large_image">
+  <meta name="twitter:site"         content="@Arduboy">
+  <meta name="twitter:creator"      content="@Arduboy">
+  <meta name="twitter:title"        content="Arduboy Cloud — Browser IDE for Arduboy">
+  <meta name="twitter:description"  content="Write, compile, simulate, and flash Arduboy games entirely in your browser.">
+  <meta name="twitter:image"        content="https://cloud.arduboy.com/social-card-tw.png">
+  <meta name="twitter:image:alt"    content="Arduboy Cloud IDE showing code editor, game simulator, and pixel art tools">
+
+  <!-- ==========================================================
+       SLACK — Slack-specific overrides (optional).
+       ——————————————————————————————————————————————————————————
+       Shows up in:
+         • Slack             — unfurled link preview in channels/DMs
+       ——————————————————————————————————————————————————————————
+       Slack primarily reads og: tags but also recognizes these
+       for richer label/value pairs shown below the card preview.
+       ========================================================== -->
+  <meta name="slack-app-id"         content=""> <!-- fill in if you have a Slack app ID -->
+  <meta name="twitter:label1"       content="Platform"> <!-- Slack reads twitter:label/data pairs -->
+  <meta name="twitter:data1"        content="Arduboy (ATmega32U4)">
+  <meta name="twitter:label2"       content="Tools">
+  <meta name="twitter:data2"        content="Compiler, Simulator, Pixel Editor, FX Data">
+
+  <!-- ==========================================================
+       TELEGRAM — Telegram link preview tags.
+       ——————————————————————————————————————————————————————————
+       Shows up in:
+         • Telegram          — link preview in chats/channels
+       ——————————————————————————————————————————————————————————
+       Telegram reads og: tags. For better control you can also use
+       its proprietary tags. Telegram prefers square images when
+       using "telegram:image" but falls back to og:image otherwise.
+       ========================================================== -->
+  <!-- Telegram uses og: tags above. For a square preview image: -->
+  <meta property="og:image"         content="https://cloud.arduboy.com/social-card-square.png">
+  <meta property="og:image:width"   content="400">
+  <meta property="og:image:height"  content="400">
+  <!-- NOTE: Telegram picks the LAST og:image it encounters, so this
+       square image takes priority in Telegram. Facebook/LinkedIn pick
+       the first one (1200×630). If this causes issues, remove these
+       three lines and Telegram will use the main og:image instead. -->
+
+  <!-- ==========================================================
+       DISCORD — Discord embed tags.
+       ——————————————————————————————————————————————————————————
+       Shows up in:
+         • Discord           — embedded link card in channels/DMs
+       ——————————————————————————————————————————————————————————
+       Discord reads og: tags exclusively. The theme-color meta tag
+       sets the colored stripe on the left side of the embed card.
+       Discord uses og:site_name as the embed header, og:title as
+       the bold title, og:description as body text, and og:image
+       as the card image. No Discord-specific tags needed.
+       The <meta name="theme-color"> above sets the embed accent. -->
+
+  <!-- ==========================================================
+       MICROSOFT TEAMS — Teams link unfurl.
+       ——————————————————————————————————————————————————————————
+       Shows up in:
+         • Microsoft Teams   — link card in chat messages
+       ——————————————————————————————————————————————————————————
+       Teams reads og: tags. No proprietary tags needed.
+       Ensure og:image is HTTPS — Teams rejects HTTP image URLs. -->
+
+  <!-- ==========================================================
+       LINKEDIN — LinkedIn post preview.
+       ——————————————————————————————————————————————————————————
+       Shows up in:
+         • LinkedIn          — shared link in feed / messages
+       ——————————————————————————————————————————————————————————
+       LinkedIn reads og: tags. It caches aggressively — use the
+       LinkedIn Post Inspector to clear cache after changing tags:
+       https://www.linkedin.com/post-inspector/
+       Image must be ≥ 1200×627 px for the large card format.
+       Below that, LinkedIn shows a small square thumbnail instead. -->
+
+  <!-- ==========================================================
+       PINTEREST — Rich Pin tags.
+       ——————————————————————————————————————————————————————————
+       Shows up in:
+         • Pinterest         — rich pin when page URL is pinned
+       ——————————————————————————————————————————————————————————
+       Pinterest reads og: tags. For additional rich pin data you
+       can add structured data (JSON-LD), but og: is sufficient
+       for a basic rich link preview. -->
+
+  <!-- ==========================================================
+       APPLE / iMESSAGE / SAFARI — iOS link previews.
+       ——————————————————————————————————————————————————————————
+       Shows up in:
+         • iMessage          — link preview bubble
+         • Safari            — tab preview / share sheet
+         • Apple News        — if article is indexed
+       ——————————————————————————————————————————————————————————
+       Apple uses og: tags. The apple-mobile-web-app tags below
+       control "Add to Home Screen" behavior on iOS/iPadOS. -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Arduboy Cloud">
+  <link rel="apple-touch-icon"      href="/apple-touch-icon.png"> <!-- 180×180 -->
+
+  <!-- ==========================================================
+       STRUCTURED DATA (JSON-LD) — For Google rich results & more.
+       ——————————————————————————————————————————————————————————
+       Shows up in:
+         • Google Search     — rich result / knowledge panel
+         • Google Discover   — card in feed
+         • Bing Search       — rich result snippet
+       ——————————————————————————————————————————————————————————
+       This gives search engines structured info about the app. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Arduboy Cloud",
+    "url": "https://cloud.arduboy.com/",
+    "description": "Write, compile, simulate, and flash Arduboy games entirely in your browser. Includes a cloud compiler, FX data editor, pixel art tools, and device manager.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any (Web Browser)",
+    "image": "https://cloud.arduboy.com/social-card-og.png",
+    "screenshot": "https://cloud.arduboy.com/social-card-og.png",
+    "author": {
+      "@type": "Organization",
+      "name": "Arduboy",
+      "url": "https://www.arduboy.com"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Webtools styles -->
+  <link rel="stylesheet" href="/src/ui/styles/variables.css">
+  <link rel="stylesheet" href="/src/ui/styles/main.css">
+  <link rel="stylesheet" href="/src/ui/styles/components.css">
+  <link rel="stylesheet" href="/src/ui/styles/fxdata.css">
+  <link rel="stylesheet" href="/src/ui/styles/pixel-editor.css">
+  <link rel="stylesheet" href="/src/ui/styles/welcome.css">
+  <!-- Cloud Compiler scoped styles -->
+  <link rel="stylesheet" href="/compiler/style-scoped.css">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <!-- Import map for npm packages used by webtools modules -->
+  <script type="importmap">
+  {
+    "imports": {
+      "jszip": "https://cdn.jsdelivr.net/npm/jszip@3.10.1/+esm",
+      "@tonejs/midi": "https://cdn.jsdelivr.net/npm/@tonejs/midi@2.0.28/+esm",
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+    }
+  }
+  </script>
+  <!-- Stamp the saved tab onto <html> synchronously so CSS can show the right
+       panel on the very first paint, before the deferred module script runs. -->
+  <script>(function(){var t=localStorage.getItem('activeMainTab')||'welcome';document.documentElement.dataset.tab=t;})()</script>
+  <!-- Restore saved background gradient before first paint to avoid flash -->
+  <script>(function(){var c=localStorage.getItem('bgGradientCSS');if(c){var s=document.createElement('style');s.id='bg-easter-egg-style';s.textContent=c;document.head.appendChild(s);}})()</script>
+</head>
+<body>
+  <div id="app">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+      <div class="navbar-brand brand-clickable" data-panel="welcome" role="button" tabindex="0">
+        <img class="brand-icon" src="/brand-icon.png" alt="Arduboy" width="32" height="32">
+        <span class="brand-text">Arduboy Cloud</span>
+      </div>
+      <div class="navbar-tabs">
+        <button class="tab-btn" data-panel="code">Code</button>
+        <button class="tab-btn" data-panel="sketch">Sketch</button>
+        <button class="tab-btn" data-panel="fx">FX Flash</button>
+        <button class="tab-btn" data-panel="eeprom">EEPROM</button>
+        <button class="tab-btn" data-panel="package">Package</button>
+        <button class="tab-btn" data-panel="cart">Cart Editor</button>
+        <button class="tab-btn" data-panel="image">Image</button>
+        <button class="tab-btn" data-panel="music">Music</button>
+        <button class="tab-btn" data-panel="fxdata">FX Data</button>
+      </div>
+      <div class="navbar-actions">
+        <button class="btn-serial-menu" id="btn-serial-menu" title="Serial connection settings">
+          <svg width="9" height="9" viewBox="0 0 16 16" fill="none"><rect y="2" width="16" height="1.5" rx=".75" fill="currentColor"/><rect y="7.25" width="16" height="1.5" rx=".75" fill="currentColor"/><rect y="12.5" width="16" height="1.5" rx=".75" fill="currentColor"/></svg>
+        </button>
+        <button class="btn-reset" id="btn-reset" disabled title="Reset device into bootloader">
+          &#x21bb; Reset
+        </button>
+        <button class="btn-status" id="connection-status" title="Click to connect/disconnect">
+          <span class="status-dot disconnected"></span>
+          <span class="status-text">No device</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Panel Container -->
+    <main id="panels" class="panels">
+
+      <!-- Welcome / About Panel -->
+      <section id="panel-welcome" class="panel">
+        <div class="welcome-page">
+
+          <!-- Hero -->
+          <div class="welcome-hero welcome-reveal">
+            <div class="welcome-logo-glow">
+              <img src="/brand-icon.png" alt="Arduboy Cloud" width="96" height="96">
+            </div>
+            <h1 class="welcome-title">Arduboy Cloud</h1>
+            <p class="welcome-subtitle">
+              A complete browser-based development studio for the world's most adorable open-source handheld gaming console.
+              Write code, compile, emulate, and flash — all without leaving your browser.
+            </p>
+            <span class="welcome-tagline">Build &bull; Play &bull; Share</span>
+          </div>
+
+          <!-- Feature Highlights -->
+          <div class="welcome-features">
+            <div class="welcome-feature-card welcome-reveal delay-1">
+              <span class="welcome-feature-icon">&#x1F4BB;</span>
+              <h3>Cloud Compiler</h3>
+              <p>Full Arduino IDE experience powered by Monaco Editor. Syntax highlighting, autocomplete, and one-click compilation — no local install required.</p>
+            </div>
+            <div class="welcome-feature-card welcome-reveal delay-2">
+              <span class="welcome-feature-icon">&#x1F3AE;</span>
+              <h3>In-Browser Emulator</h3>
+              <p>Test your games instantly with Ardens, a cycle-accurate Arduboy emulator compiled to WebAssembly. Includes debugger, profiler, and memory inspector.</p>
+            </div>
+            <div class="welcome-feature-card welcome-reveal delay-3">
+              <span class="welcome-feature-icon">&#x1F50C;</span>
+              <h3>Web Serial Flash</h3>
+              <p>Connect your Arduboy via USB and flash sketches, manage FX data, backup EEPROM saves, and build flash carts direct from Chrome or Edge.</p>
+            </div>
+            <div class="welcome-feature-card welcome-reveal delay-4">
+              <span class="welcome-feature-icon">&#x1F3B5;</span>
+              <h3>Creative Tools</h3>
+              <p>Pixel editor, image converter, music composer, FX data builder, and cart editor. Everything you need to bring your 8-bit vision to life.</p>
+            </div>
+          </div>
+
+          <!-- About -->
+          <div class="welcome-section welcome-reveal">
+            <h2 class="welcome-section-title">About This Project</h2>
+            <div class="welcome-body-text">
+              <p>
+                Arduboy Cloud began as an ambitious thought experiment: what if you could take the entire
+                Arduboy development workflow from writing your first line of C++ to flashing a finished
+                game onto real hardware and put it entirely in a web browser?
+              </p>
+              <p>
+                What started as a compiler wrapper grew into something far bigger: a full-featured IDE
+                with syntax-aware editing, a cycle-accurate emulator running in WebAssembly, a suite of
+                creative tools for graphics and music, deep integration with the FX flash cart ecosystem,
+                and direct hardware communication over Web Serial.
+              </p>
+              <p>
+                This project is built on the shoulders of an incredible open-source community: the
+                Arduboy community, the Arduino ecosystem, and dozens of brilliant libraries and tools
+                that made this possible. Every tool on this page exists because someone, somewhere,
+                decided to share their work with the world.
+              </p>
+              <p>
+                Whether you're a seasoned Arduboy developer looking for a faster workflow, or a
+                curious newcomer who just wants to make a tiny game on a tiny screen — welcome.
+                You're in the right place. Let's build something wonderful.
+              </p>
+            </div>
+          </div>
+
+          <!-- Credits — Hall of Fame -->
+          <div class="welcome-section welcome-reveal">
+            <h2 class="welcome-section-title">&#x1F3C6; Hall of Fame</h2>
+            <p class="welcome-credits-intro">
+              Arduboy Cloud is made possible by these extraordinary open-source projects and their creators.
+              We stand on the shoulders of giants — and we celebrate every single one of them.
+            </p>
+
+            <div class="welcome-credits-stage">
+              <div class="welcome-credits-particles"></div>
+              <div class="welcome-credits-grid">
+
+                <!-- Legendary Tier — Core Arduboy ecosystem -->
+
+                <a class="credit-card tier-legendary" href="https://github.com/MrBlinky/Arduboy-homemade-package" target="_blank" rel="noopener">
+                  <div class="credit-badge">&#x1F451;</div>
+                  <div class="credit-info">
+                    <div class="credit-name">Arduboy Homemade Package</div>
+                    <div class="credit-author">by MrBlinky</div>
+                    <div class="credit-desc">The heartbeat of Arduboy compilation. Board definitions, bundled libraries (Arduboy2, ArduboyFX, ArduboyTones, ArduboyPlaytune), optimized AVR core, and Cathy3K bootloader support for every Arduboy variant. This package IS the platform.</div>
+                  </div>
+                  <span class="credit-tier-label">Legendary</span>
+                </a>
+
+                <a class="credit-card tier-legendary" href="https://github.com/tiberiusbrown/Ardens" target="_blank" rel="noopener">
+                  <div class="credit-badge">&#x2728;</div>
+                  <div class="credit-info">
+                    <div class="credit-name">Ardens</div>
+                    <div class="credit-author">by Tiberiusbrown</div>
+                    <div class="credit-desc">A cycle-accurate Arduboy emulator and debugger compiled to WebAssembly. Provides in-browser simulation with CPU profiling, memory inspection, display emulation, EEPROM editing, and full FX external flash support. The magic that lets you test without hardware.</div>
+                  </div>
+                  <span class="credit-tier-label">Legendary</span>
+                </a>
+
+                <a class="credit-card tier-legendary" href="https://github.com/MrBlinky/Arduboy-Python-Utilities" target="_blank" rel="noopener">
+                  <div class="credit-badge">&#x1F6E0;&#xFE0F;</div>
+                  <div class="credit-info">
+                    <div class="credit-name">Arduboy Python Utilities</div>
+                    <div class="credit-author">by MrBlinky</div>
+                    <div class="credit-desc">The reference implementation for flashcart building, FX data compilation, image conversion, and EEPROM tools. This project defined the formats and protocols that Arduboy Cloud reimplements in JavaScript for the browser.</div>
+                  </div>
+                  <span class="credit-tier-label">Legendary</span>
+                </a>
+
+                <a class="credit-card tier-legendary" href="https://github.com/arduboy/arduboy" target="_blank" rel="noopener">
+                  <div class="credit-badge">&#x1F3AE;</div>
+                  <div class="credit-info">
+                    <div class="credit-name">Arduboy</div>
+                    <div class="credit-author">by bateske &amp; the Arduboy Community</div>
+                    <div class="credit-desc">The open-source credit-card-sized gaming console that started it all. A community-driven hardware platform built on Arduino that proves you don't need millions of pixels to have millions of fun.</div>
+                  </div>
+                  <span class="credit-tier-label">Legendary</span>
+                </a>
+
+                <!-- Epic Tier — Critical infrastructure -->
+
+                <a class="credit-card tier-epic" href="https://github.com/microsoft/monaco-editor" target="_blank" rel="noopener">
+                  <div class="credit-badge">&#x1F4DD;</div>
+                  <div class="credit-info">
+                    <div class="credit-name">Monaco Editor</div>
+                    <div class="credit-author">by Microsoft</div>
+                    <div class="credit-desc">The code editor that powers VS Code, brought to the browser. Provides syntax highlighting, IntelliSense, and a world-class editing experience for the Cloud Compiler IDE.</div>
+                  </div>
+                  <span class="credit-tier-label">Epic</span>
+                </a>
+
+                <a class="credit-card tier-epic" href="https://github.com/arduino/arduino-cli" target="_blank" rel="noopener">
+                  <div class="credit-badge">&#x2699;&#xFE0F;</div>
+                  <div class="credit-info">
+                    <div class="credit-name">Arduino CLI</div>
+                    <div class="credit-author">by Arduino</div>
+                    <div class="credit-desc">The command-line backbone of cloud compilation. Manages board packages, resolves libraries, and drives avr-gcc to turn your C++ sketches into flashable binaries — all inside a Docker container.</div>
+                  </div>
+                  <span class="credit-tier-label">Epic</span>
+                </a>
+
+                <a class="credit-card tier-epic" href="https://github.com/docker" target="_blank" rel="noopener">
+                  <div class="credit-badge">&#x1F433;</div>
+                  <div class="credit-info">
+                    <div class="credit-name">Docker</div>
+                    <div class="credit-author">by Docker, Inc.</div>
+                    <div class="credit-desc">Containerization platform that packages the entire AVR toolchain, Arduino CLI, board packages, and compilation server into a reproducible, deployable environment.</div>
+                  </div>
+                  <span class="credit-tier-label">Epic</span>
+                </a>
+
+                <a class="credit-card tier-epic" href="https://github.com/expressjs/express" target="_blank" rel="noopener">
+                  <div class="credit-badge">&#x1F310;</div>
+                  <div class="credit-info">
+                    <div class="credit-name">Express.js</div>
+                    <div class="credit-author">by TJ Holowaychuk &amp; community</div>
+                    <div class="credit-desc">Fast, minimal Node.js web framework powering the compilation API server, static file serving, and build orchestration.</div>
+                  </div>
+                  <span class="credit-tier-label">Epic</span>
+                </a>
+
+                <!-- Rare Tier — Important tools -->
+
+                <a class="credit-card tier-rare" href="https://github.com/stuk/jszip" target="_blank" rel="noopener">
+                  <div class="credit-badge">&#x1F4E6;</div>
+                  <div class="credit-info">
+                    <div class="credit-name">JSZip</div>
+                    <div class="credit-author">by Stuart Knightley</div>
+                    <div class="credit-desc">In-browser ZIP creation and extraction. Powers .arduboy package handling, cart import/export, and multi-file download bundles.</div>
+                  </div>
+                  <span class="credit-tier-label">Rare</span>
+                </a>
+
+                <a class="credit-card tier-rare" href="https://github.com/mrdoob/three.js" target="_blank" rel="noopener">
+                  <div class="credit-badge">&#x1F30C;</div>
+                  <div class="credit-info">
+                    <div class="credit-name">Three.js</div>
+                    <div class="credit-author">by Ricardo Cabello (mrdoob)</div>
+                    <div class="credit-desc">3D graphics library used for advanced visual effects and rendering capabilities within the web tools.</div>
+                  </div>
+                  <span class="credit-tier-label">Rare</span>
+                </a>
+
+                <a class="credit-card tier-rare" href="https://github.com/Tonejs/Midi" target="_blank" rel="noopener">
+                  <div class="credit-badge">&#x1F3B9;</div>
+                  <div class="credit-info">
+                    <div class="credit-name">@tonejs/midi</div>
+                    <div class="credit-author">by Yotam Mann</div>
+                    <div class="credit-desc">MIDI file parsing and generation library powering the Music Editor's import and export functionality.</div>
+                  </div>
+                  <span class="credit-tier-label">Rare</span>
+                </a>
+
+                <a class="credit-card tier-rare" href="https://github.com/nodejs/node" target="_blank" rel="noopener">
+                  <div class="credit-badge">&#x1F4E1;</div>
+                  <div class="credit-info">
+                    <div class="credit-name">Node.js</div>
+                    <div class="credit-author">by OpenJS Foundation</div>
+                    <div class="credit-desc">The server-side JavaScript runtime that hosts the compilation backend, API server, and development tooling.</div>
+                  </div>
+                  <span class="credit-tier-label">Rare</span>
+                </a>
+
+              </div><!-- /.welcome-credits-grid -->
+            </div><!-- /.welcome-credits-stage -->
+          </div>
+
+          <!-- Licenses -->
+          <div class="welcome-section welcome-reveal">
+            <h2 class="welcome-section-title">&#x1F4DC; Open Source Licenses</h2>
+            <p class="welcome-credits-intro">
+              This project gratefully uses the following open-source software. Click any entry to view the license.
+            </p>
+
+            <div class="welcome-licenses">
+
+              <div class="license-entry">
+                <div class="license-header">
+                  <span class="license-project-name">Arduboy Homemade Package</span>
+                  <span class="license-type">Mixed (MIT / LGPL)</span>
+                  <span class="license-toggle">&#x25BC;</span>
+                </div>
+                <div class="license-body">
+                  <div class="license-text">Arduboy Homemade Package by MrBlinky
+https://github.com/MrBlinky/Arduboy-homemade-package
+
+Contains multiple components with varying licenses:
+- Board definitions and core: open source
+- Bundled libraries (Arduboy2, ArduboyFX, etc.): BSD / MIT
+- Cathy3K bootloader: open source
+
+See the repository for individual component licenses.</div>
+                </div>
+              </div>
+
+              <div class="license-entry">
+                <div class="license-header">
+                  <span class="license-project-name">Ardens Emulator</span>
+                  <span class="license-type">MIT</span>
+                  <span class="license-toggle">&#x25BC;</span>
+                </div>
+                <div class="license-body">
+                  <div class="license-text">Ardens by tiberiusbrown
+https://github.com/tiberiusbrown/Ardens
+
+MIT License
+
+Copyright (c) tiberiusbrown
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</div>
+                </div>
+              </div>
+
+              <div class="license-entry">
+                <div class="license-header">
+                  <span class="license-project-name">Monaco Editor</span>
+                  <span class="license-type">MIT</span>
+                  <span class="license-toggle">&#x25BC;</span>
+                </div>
+                <div class="license-body">
+                  <div class="license-text">Monaco Editor by Microsoft
+https://github.com/microsoft/monaco-editor
+
+MIT License
+
+Copyright (c) Microsoft Corporation
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</div>
+                </div>
+              </div>
+
+              <div class="license-entry">
+                <div class="license-header">
+                  <span class="license-project-name">Arduino CLI</span>
+                  <span class="license-type">Apache 2.0</span>
+                  <span class="license-toggle">&#x25BC;</span>
+                </div>
+                <div class="license-body">
+                  <div class="license-text">Arduino CLI by Arduino
+https://github.com/arduino/arduino-cli
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</div>
+                </div>
+              </div>
+
+              <div class="license-entry">
+                <div class="license-header">
+                  <span class="license-project-name">Express.js</span>
+                  <span class="license-type">MIT</span>
+                  <span class="license-toggle">&#x25BC;</span>
+                </div>
+                <div class="license-body">
+                  <div class="license-text">Express by TJ Holowaychuk &amp; community
+https://github.com/expressjs/express
+
+MIT License
+
+Copyright (c) 2009-2014 TJ Holowaychuk
+Copyright (c) 2013-2014 Roman Shtylman
+Copyright (c) 2014-2015 Douglas Christopher Wilson
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</div>
+                </div>
+              </div>
+
+              <div class="license-entry">
+                <div class="license-header">
+                  <span class="license-project-name">JSZip</span>
+                  <span class="license-type">MIT / GPL-3.0</span>
+                  <span class="license-toggle">&#x25BC;</span>
+                </div>
+                <div class="license-body">
+                  <div class="license-text">JSZip by Stuart Knightley
+https://github.com/stuk/jszip
+
+Dual-licensed under MIT and GPL-3.0.
+
+MIT License
+
+Copyright (c) 2009-2016 Stuart Knightley, David Duponchel, Franz Buchinger, António Afonso
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.</div>
+                </div>
+              </div>
+
+              <div class="license-entry">
+                <div class="license-header">
+                  <span class="license-project-name">Three.js</span>
+                  <span class="license-type">MIT</span>
+                  <span class="license-toggle">&#x25BC;</span>
+                </div>
+                <div class="license-body">
+                  <div class="license-text">Three.js by Ricardo Cabello (mrdoob)
+https://github.com/mrdoob/three.js
+
+MIT License
+
+Copyright (c) 2010-2024 three.js authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.</div>
+                </div>
+              </div>
+
+              <div class="license-entry">
+                <div class="license-header">
+                  <span class="license-project-name">@tonejs/midi</span>
+                  <span class="license-type">MIT</span>
+                  <span class="license-toggle">&#x25BC;</span>
+                </div>
+                <div class="license-body">
+                  <div class="license-text">@tonejs/midi by Yotam Mann
+https://github.com/Tonejs/Midi
+
+MIT License
+
+Copyright (c) 2019 Yotam Mann
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.</div>
+                </div>
+              </div>
+
+              <div class="license-entry">
+                <div class="license-header">
+                  <span class="license-project-name">Docker</span>
+                  <span class="license-type">Apache 2.0</span>
+                  <span class="license-toggle">&#x25BC;</span>
+                </div>
+                <div class="license-body">
+                  <div class="license-text">Docker by Docker, Inc.
+https://www.docker.com
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</div>
+                </div>
+              </div>
+
+              <div class="license-entry">
+                <div class="license-header">
+                  <span class="license-project-name">Node.js</span>
+                  <span class="license-type">MIT</span>
+                  <span class="license-toggle">&#x25BC;</span>
+                </div>
+                <div class="license-body">
+                  <div class="license-text">Node.js by OpenJS Foundation &amp; contributors
+https://nodejs.org
+
+MIT License
+
+Copyright Node.js contributors. All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.</div>
+                </div>
+              </div>
+
+            </div><!-- /.welcome-licenses -->
+          </div>
+
+          <!-- Footer -->
+          <div class="welcome-footer welcome-reveal">
+            <p>Made with <span class="welcome-footer-heart">&hearts;</span> for the Arduboy community</p>
+            <p style="margin-top: var(--space-sm);">
+              <a href="https://www.arduboy.com" target="_blank" rel="noopener">arduboy.com</a>
+              &nbsp;&bull;&nbsp;
+              <a href="https://community.arduboy.com" target="_blank" rel="noopener">community</a>
+              &nbsp;&bull;&nbsp;
+              <a href="https://github.com/arduboy" target="_blank" rel="noopener">github</a>
+            </p>
+            <p style="margin-top: var(--space-sm);">Copyright &copy; 2026 Arduboy Inc.</p>
+          </div>
+
+        </div><!-- /.welcome-page -->
+      </section>
+
+      <!-- Code Panel — Cloud Compiler IDE -->
+      <section id="panel-code" class="panel">
+        <div id="compiler-root">
+          <!-- ===== COMPILER TOP TOOLBAR ===== -->
+          <header id="toolbar">
+            <div class="toolbar-left">
+                <div class="hmenu-wrap">
+                <button id="fileMenuBtn" class="toolbar-btn" title="File operations" aria-expanded="false">File &#9662;</button>
+                <div id="fileMenu" class="hmenu-dropdown hidden">
+                  <button id="newProjectBtn" class="hmenu-row" title="New project — clear all files">
+                    <span class="hmenu-row-label">&#128196; New</span>
+                  </button>
+                  <div class="hmenu-divider"></div>
+                  <button id="syncFolderBtn" class="hmenu-row hidden" title="Sync with local folder">
+                    <span class="hmenu-row-label">&#128193; Sync</span>
+                  </button>
+                  <button id="checkUpdatesBtn" class="hmenu-row hidden" title="Check for file changes">
+                    <span class="hmenu-row-label">&#8635; Check Updates</span>
+                  </button>
+                  <button id="importZipBtn" class="hmenu-row" title="Import files or ZIP archive">
+                    <span class="hmenu-row-label">&#128230; Import</span>
+                  </button>
+                  <div class="hmenu-divider"></div>
+                  <button id="exportZipBtn" class="hmenu-row" title="Export project as ZIP">
+                    <span class="hmenu-row-label">&#128229; Export</span>
+                  </button>
+                  <input type="file" id="zipFileInput" multiple style="display:none">
+                </div>
+              </div>
+
+              <div class="hmenu-wrap">
+                <button id="fxMenuBtn" class="toolbar-btn fx-menu-btn" title="FX tools" aria-expanded="false">FX &#9662;</button>
+                <div id="fxMenu" class="hmenu-dropdown hidden">
+                  <button id="fxCreateDataBtn" class="hmenu-row" title="Create an fxdata.txt file for FX flash data">
+                    <span class="hmenu-row-label">&#128209; Create FX Data</span>
+                  </button>
+                  <button id="fxBuildDataMenuBtn" class="hmenu-row" title="Build FX data from fxdata.txt">
+                    <span class="hmenu-row-label">&#128295; Build FX Data</span>
+                  </button>
+                  <div class="hmenu-divider"></div>
+                  <button id="fxLoadDataBtn" class="hmenu-row" title="Load FX data into the simulator using the last compiled sketch">
+                    <span class="hmenu-row-label">&#128666; Load FX Data</span>
+                  </button>
+                  <input type="checkbox" id="loadDevDataCheckbox" checked class="hmenu-hidden-check">
+                  <label id="loadDevDataLabel" class="hmenu-row" for="loadDevDataCheckbox" title="Automatically load selected .bin file as FX development data on build">
+                    <span class="hmenu-row-label">Auto Load FX Data</span>
+                    <span class="hmenu-pill"><span class="hmenu-pill-thumb"></span></span>
+                  </label>
+                  <div class="hmenu-divider"></div>
+                  <input type="checkbox" id="fxAutoBuildCheckbox" class="hmenu-hidden-check">
+                  <label class="hmenu-row" for="fxAutoBuildCheckbox" title="Automatically build FX data after sketch compilation, before loading into simulator">
+                    <span class="hmenu-row-label">Auto Build FX Data</span>
+                    <span class="hmenu-pill"><span class="hmenu-pill-thumb"></span></span>
+                  </label>
+                  <input type="checkbox" id="fxConfirmOverwriteCheckbox" checked class="hmenu-hidden-check">
+                  <label class="hmenu-row" for="fxConfirmOverwriteCheckbox" title="Show confirmation dialog before overwriting existing files when building FX data">
+                    <span class="hmenu-row-label">Confirm FX Overwrite</span>
+                    <span class="hmenu-pill"><span class="hmenu-pill-thumb"></span></span>
+                  </label>
+                </div>
+              </div>
+              <div class="hmenu-wrap">
+                <button id="hamburgerBtn" class="toolbar-btn" title="Options" aria-expanded="false">Options &#9662;</button>
+                <div id="hamburgerMenu" class="hmenu-dropdown hidden">
+                  <button id="themeToggleBtn" class="hmenu-row" title="Toggle light/dark theme">
+                    <span class="hmenu-row-label">Dark Mode</span>
+                    <span class="hmenu-pill"><span class="hmenu-pill-thumb"></span></span>
+                  </button>
+                  <button id="highlightToggleBtn" class="hmenu-row highlight-btn--on" title="Toggle inline error/warning highlighting">
+                    <span class="hmenu-row-label">Highlight Errors</span>
+                    <span class="hmenu-pill"><span class="hmenu-pill-thumb"></span></span>
+                  </button>
+                  <input type="checkbox" id="autoSimCheckbox" checked class="hmenu-hidden-check">
+                  <label class="hmenu-row" for="autoSimCheckbox" title="Auto-open simulator on successful build">
+                    <span class="hmenu-row-label">Auto Show Sim</span>
+                    <span class="hmenu-pill"><span class="hmenu-pill-thumb"></span></span>
+                  </label>
+                  <input type="checkbox" id="autoShowOutputCheckbox" checked class="hmenu-hidden-check">
+                  <label class="hmenu-row" for="autoShowOutputCheckbox" title="Auto-show build output when build completes">
+                    <span class="hmenu-row-label">Auto Show Output</span>
+                    <span class="hmenu-pill"><span class="hmenu-pill-thumb"></span></span>
+                  </label>
+                  <input type="checkbox" id="autoSyncCheckbox" class="hmenu-hidden-check">
+                  <label class="hmenu-row hmenu-sync-row hidden" for="autoSyncCheckbox" title="Automatically check for file changes when window receives focus">
+                    <span class="hmenu-row-label">Auto Sync</span>
+                    <span class="hmenu-pill"><span class="hmenu-pill-thumb"></span></span>
+                  </label>
+                  <input type="checkbox" id="confirmChangesCheckbox" checked class="hmenu-hidden-check">
+                  <label class="hmenu-row" for="confirmChangesCheckbox" title="Ask before applying file changes from imports and sync">
+                    <span class="hmenu-row-label">Confirm Changes</span>
+                    <span class="hmenu-pill"><span class="hmenu-pill-thumb"></span></span>
+                  </label>
+                  <input type="checkbox" id="buildAnimCheckbox" checked class="hmenu-hidden-check">
+                  <label class="hmenu-row" for="buildAnimCheckbox" title="Show cloud animation during builds">
+                    <span class="hmenu-row-label">Build Animation</span>
+                    <span class="hmenu-pill"><span class="hmenu-pill-thumb"></span></span>
+                  </label>
+                  <input type="checkbox" id="pixelEditorCodeLensCheckbox" checked class="hmenu-hidden-check">
+                  <label class="hmenu-row" for="pixelEditorCodeLensCheckbox" title="Show inline Edit Bitmap links above sprite data">
+                    <span class="hmenu-row-label">Pixel Editor CodeLens</span>
+                    <span class="hmenu-pill"><span class="hmenu-pill-thumb"></span></span>
+                  </label>
+                  <input type="checkbox" id="exampleLinksCheckbox" checked class="hmenu-hidden-check">
+                  <label class="hmenu-row" for="exampleLinksCheckbox" title="Make // Example: lines clickable — click to copy the code snippet">
+                    <span class="hmenu-row-label">Example Links</span>
+                    <span class="hmenu-pill"><span class="hmenu-pill-thumb"></span></span>
+                  </label>
+                  <input type="checkbox" id="combineImageMasksCheckbox" class="hmenu-hidden-check" checked>
+                  <label class="hmenu-row" for="combineImageMasksCheckbox" title="Show image and mask as a combined transparent view; turn off to edit channels independently">
+                    <span class="hmenu-row-label">Combine Image Masks</span>
+                    <span class="hmenu-pill"><span class="hmenu-pill-thumb"></span></span>
+                  </label>
+                  <div class="hmenu-divider"></div>
+                  <button id="clearStorageBtn" class="hmenu-row hmenu-row--danger" title="Clear all saved data and reset to defaults">
+                    <span class="hmenu-row-label">&#129512; Reset All</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="toolbar-center">
+              
+              <select id="target" title="Target Hardware">
+                <option value="arduboy-fxc">Arduboy FX-C</option>
+                <option value="arduboy-fx">Arduboy FX</option>
+                <option value="arduboy">Arduboy</option>
+                <option value="arduboy-mini">Arduboy Mini</option>
+                <option value="arduboy-devkit">Arduboy DevKit</option>
+                <option value="arduboy-homemade">Homemade Arduboy</option>
+              </select>
+
+              <div class="toolbar-advanced-wrap">
+                <button id="advancedToggle" class="toolbar-btn" title="Advanced options">Advanced &#9662;</button>
+                <div id="advancedDropdown" class="advanced-dropdown hidden">
+                  <div class="adv-field">
+                    <label for="core">Core</label>
+                    <select id="core">
+                      <option value="arduboy-core">Arduboy Optimized</option>
+                      <option value="arduino-core">Standard Arduino</option>
+                    </select>
+                  </div>
+
+                  <div id="contrastGroup" class="adv-field hidden">
+                    <label for="contrast">Display Contrast</label>
+                    <select id="contrast">
+                      <option value="normal">Normal</option>
+                      <option value="dimmed">Dimmed</option>
+                      <option value="low">Low</option>
+                      <option value="lowest">Lowest</option>
+                      <option value="highest">Highest</option>
+                    </select>
+                  </div>
+
+                  <div id="homemadeGroup" class="hidden">
+                    <div class="adv-field">
+                      <label for="basedOn">Based On</label>
+                      <select id="basedOn">
+                        <option value="promicro">Pro Micro 5V - Standard Wiring</option>
+                        <option value="promicro_alt">Pro Micro 5V - Alternate Wiring</option>
+                        <option value="leonardo">Arduino Leonardo</option>
+                        <option value="micro">Arduino / Genuino Micro</option>
+                      </select>
+                    </div>
+
+                    <div class="adv-field">
+                      <label for="display">Display</label>
+                      <select id="display">
+                        <optgroup label="SSD1306">
+                          <option value="ssd1306" selected>SSD1306 (SPI)</option>
+                          <option value="ssd1306i2c">SSD1306 I2C</option>
+                          <option value="ssd1306i2cx">SSD1306 I2C 2.66 Mbps</option>
+                        </optgroup>
+                        <optgroup label="SH1106">
+                          <option value="sh1106">SH1106 (SPI)</option>
+                          <option value="sh1106i2c">SH1106 I2C</option>
+                        </optgroup>
+                        <optgroup label="SSD1309">
+                          <option value="ssd1309">SSD1309 (SPI)</option>
+                        </optgroup>
+                        <optgroup label="SSD1327 / SSD1329">
+                          <option value="64x128on96x96">128x64 on 96x96</option>
+                          <option value="64x128on128x96">128x64 on 128x96</option>
+                          <option value="64x128on128x128">128x64 on 128x128</option>
+                          <option value="128x64on128x128">64x128 on 128x128</option>
+                          <option value="96x96">96x96</option>
+                          <option value="96x96on128x128">96x96 on 128x128</option>
+                          <option value="128x96">128x96</option>
+                          <option value="128x96on128x128">128x96 on 128x128</option>
+                          <option value="128x128">128x128</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                          <option value="st7565">LCD ST7565</option>
+                          <option value="gu12864_800b">GU12864-800B (VFD)</option>
+                        </optgroup>
+                      </select>
+                    </div>
+
+                    <div class="adv-field">
+                      <label for="flashSelect">Flash Select (CS Pin)</label>
+                      <select id="flashSelect">
+                        <option value="sda">Pin2 / SDA (Arduboy FX official)</option>
+                        <option value="rx">Pin0 / Rx</option>
+                        <option value="hwb">Port E2 / HWB</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="fqbn-display">
+                    <label>FQBN</label>
+                    <code id="fqbnDisplay"></code>
+                  </div>
+
+                  <div class="adv-libraries">
+                    <label>Available Libraries</label>
+                    <div id="libraryList" class="library-list">
+                      <span class="library-list-loading">Loading…</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="toolbar-right">
+              <button id="hideToolsBtn" class="toolbar-btn" title="Hide navigation bar">Hide Tools</button>
+              <button id="simToggleBtn" class="toolbar-btn sim-toggle-btn" title="Toggle simulator">&#128640; Sim</button>
+              <button id="buildBtn" class="build-btn">&#128296; Build</button>
+              <button id="downloadHexBtn" class="download-hex-btn" title="Download Firmware" disabled>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 1v9M3.5 6.5 7 10l3.5-3.5M2 13h10"/>
+                </svg>
+              </button>
+              <button id="uploadToDeviceBtn" class="upload-to-device-btn" title="Upload to Arduboy" disabled>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 8L4 2.5L5.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M4 2.5L2.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 8L10 2.5L11.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 2.5L8.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <line x1="1" y1="12" x2="13" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <button id="pushToPkgBtn" class="push-to-pkg-btn" title="Push to Package Editor" disabled>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.08 0.95L11.04 0L14.21 3.18L11.04 6.35L10.08 5.4L11.63 3.85H9.21C7.35 3.85 5.84 5.36 5.84 7.23V9.32C7.38 9.63 8.54 10.99 8.54 12.63C8.54 14.49 7.02 16 5.16 16C3.3 16 1.79 14.49 1.79 12.63C1.79 10.99 2.94 9.63 4.49 9.32V7.23C4.49 4.62 6.6 2.5 9.21 2.5H11.63L10.08 0.95Z" fill="currentColor"/></svg>
+              </button>
+            </div>
+          </header>
+
+          <!-- ===== TOAST NOTIFICATION CONTAINER ===== -->
+          <div id="toastContainer"></div>
+
+          <!-- ===== MAIN CONTENT (editor + simulator side by side) ===== -->
+          <div id="mainContent">
+            <main id="editorArea">
+              <div id="tabBar">
+                <!-- Tabs inserted dynamically by app.js -->
+                <button id="addTabBtn" title="New file">+</button>
+              </div>
+              <div id="fxdataRibbon" class="fxdata-ribbon">
+                <label id="fxdataViewToggle" class="fxdata-toggle" title="Toggle FX Data view">
+                  <span class="fxdata-toggle-label">FX Data View</span>
+                  <input type="checkbox" checked>
+                  <span class="fxdata-toggle-slider"></span>
+                </label>
+                <button id="fxBuildDataBtn" class="fxdata-ribbon-btn fxdata-build-btn" title="Build FX data from fxdata.txt">
+                  &#128295; Build FX Data
+                </button>
+                <button id="fxLoadDataBtnRibbon" class="fxdata-ribbon-btn hmenu-row--disabled" title="Load FX data into the simulator using the last compiled sketch">
+                  &#128666; Load FX Data
+                </button>
+              </div>
+              <div id="editorContainer">
+                <div id="editorLoading">Loading editor...</div>
+                <div id="fxdataPlaceholder">
+                  <!-- 2-column FX Data View -->
+                  <div id="fxdataViewLayout" class="fxdata-view-layout">
+                    <!-- Left: Entries panel -->
+                    <div id="fxdataEntriesPanel" class="fxdata-view-entries">
+                      <div class="fxdata-view-panel-header">
+                        <span>FX Data</span>
+                      </div>
+                      <div id="fxdataEntriesList" class="fxdata-view-entries-list">
+                        <div class="fxdata-view-empty-entries">
+                          <p>No entries yet.</p>
+                          <p>Click + to add, or edit fxdata.txt directly.</p>
+                        </div>
+                      </div>
+                      <div id="fxdataAddRow" class="fxdata-view-add-row">
+                        <div id="fxdataAddHub" class="fxdata-view-add-hub">
+                          <div class="fxdata-view-add-chips hidden" id="fxdataAddChips">
+                            <button class="fxdata-view-chip fxdata-chip-data" data-category="number">Number</button>
+                            <button class="fxdata-view-chip fxdata-chip-data" data-category="string">String</button>
+                            <button class="fxdata-view-chip fxdata-chip-asset" data-category="image">Image</button>
+                            <button class="fxdata-view-chip fxdata-chip-asset" data-category="raw">Raw</button>
+                            <button class="fxdata-view-chip fxdata-chip-directive" data-category="directive">Directive</button>
+                          </div>
+                          <button id="fxdataAddEntryBtn" class="fxdata-view-add-btn" title="Add entry">
+                            + Add Item
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Resize handle -->
+                    <div id="fxdataResizeHandle" class="fxdata-view-resize-handle"></div>
+
+                    <!-- Right: Preview panel (collapsible) -->
+                    <div id="fxdataPreviewPanel" class="fxdata-view-preview">
+                      <div class="fxdata-view-panel-header">
+                        <span>Preview</span>
+                        <button id="fxdataPreviewCollapseBtn" class="fxdata-view-collapse-btn" title="Collapse preview">&#9654;</button>
+                      </div>
+                      <div id="fxdataPreviewRibbon" class="fxdata-view-preview-ribbon hidden"></div>
+                      <div id="fxdataPreviewContent" class="fxdata-view-preview-content">
+                        <div class="fxdata-view-empty-preview">Select an entry to preview.</div>
+                      </div>
+                      <div id="fxdataImageControls" class="fxdata-view-image-controls hidden">
+                        <input type="range" id="fxdataThresholdSlider" min="0" max="255" value="128" style="display:none">
+                        <span id="fxdataThresholdVal" style="display:none">128</span>
+                        <div class="fxdata-view-sprite-header">
+                          <span class="fxdata-view-sprite-header-title">Sprite Settings</span>
+                          <label class="fxdata-view-override-toggle">
+                            <input type="checkbox" id="fxdataSpriteOverride">
+                            <span>Override</span>
+                          </label>
+                        </div>
+                        <div id="fxdataSpriteFields" class="fxdata-view-sprite-fields">
+                          <label class="fxdata-view-sprite-field">
+                            <span>W</span>
+                            <span id="fxdataSpriteWVal" class="fxdata-view-sprite-val">0</span>
+                          </label>
+                          <label class="fxdata-view-sprite-field">
+                            <span>H</span>
+                            <span id="fxdataSpriteHVal" class="fxdata-view-sprite-val">0</span>
+                          </label>
+                          <label class="fxdata-view-sprite-field">
+                            <span>Spacing</span>
+                            <span id="fxdataSpriteSpacingVal" class="fxdata-view-sprite-val">0</span>
+                          </label>
+                          <label class="fxdata-view-sprite-field">
+                            <span>Frames</span>
+                            <span id="fxdataSpriteFramesVal" class="fxdata-view-sprite-val">1</span>
+                          </label>
+                        </div>
+                        <div id="fxdataFramesView" class="fxdata-view-frames hidden"></div>
+                      </div>
+                      <div id="fxdataHexAccordion" class="fxdata-view-hex-accordion hidden">
+                        <button id="fxdataHexToggle" class="fxdata-view-accordion-toggle">
+                          <span>Hex Data</span>
+                          <span class="fxdata-view-arrow">&#9660;</span>
+                        </button>
+                        <div id="fxdataHexBody" class="fxdata-view-hex-body"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="binaryFileInfo">
+                  <div class="binaries-header">
+                    <span class="binaries-icon">&#128451;</span>
+                    <span class="binaries-title">Binary Files</span>
+                    <div class="binaries-toolbar">
+                      <button id="binNewFolderBtn" class="binaries-toolbar-btn" title="New Folder">&#128193; New Folder</button>
+                      <button id="binNewImageBtn" class="binaries-toolbar-btn" title="New Image">&#128444; New Image</button>
+                    </div>
+                  </div>
+                  <div class="binaries-list" id="binariesList"></div>
+                </div>
+              </div>
+            </main>
+
+            <!-- ===== SIMULATOR PANEL ===== -->
+            <aside id="simulatorPanel" class="sim-hidden">
+              <div id="simHeader">
+                <span class="sim-title">Simulator</span>
+                <div class="sim-header-controls">
+                  <button id="simPopoutBtn" class="sim-icon-btn" title="Open simulator in popup window">&#8599; Popout</button>
+                  <button id="simDevToolsBtn" class="sim-icon-btn" title="Developer Tools">&#9881; Dev Tools</button>
+                  <button id="simCloseBtn" class="sim-icon-btn" title="Hide simulator">&#10005;</button>
+                </div>
+              </div>
+
+              <div id="simCanvasWrap">
+                <canvas id="canvas" tabindex="0" oncontextmenu="event.preventDefault()"></canvas>
+                <div id="simPlaceholder">
+                  <span>Build a sketch to start the simulator</span>
+                </div>
+                <div id="simPopoutPlaceholder" class="hidden">
+                  <span>Popout Window Active</span>
+                </div>
+              </div>
+
+              <div class="sim-controls-hint">
+                <div class="sim-controls-column">
+                  <span><strong>Arrows</strong> = D-pad</span>
+                  <span><strong>A/Z</strong> = A button</span>
+                  <span><strong>S/X/B</strong> = B button</span>
+                </div>
+                <div class="sim-controls-column">
+                  <span><strong>F2</strong> = Save screenshot</span>
+                  <span><strong>F3</strong> = Toggle GIF recording</span>
+                  <span><strong>F8</strong> = Reset</span>
+                </div>
+              </div>
+
+              <div class="sim-accordion">
+                <button id="simSettingsToggle" class="sim-accordion-header">
+                  <span>&#9881; Settings</span>
+                  <span class="sim-accordion-arrow">&#9660;</span>
+                </button>
+                <div id="simSettingsDropdown" class="hidden">
+                  <div class="sim-setting-group">
+                    <label for="simPalette">Palette</label>
+                    <select id="simPalette">
+                      <option value="default">Default</option>
+                      <option value="retro">Retro</option>
+                      <option value="lowcontrast">Low Contrast</option>
+                      <option value="highcontrast">High Contrast</option>
+                    </select>
+                  </div>
+                  <div class="sim-setting-group">
+                    <label for="simGrid">Pixel Grid</label>
+                    <select id="simGrid">
+                      <option value="none">Off</option>
+                      <option value="normal">Normal</option>
+                      <option value="red">Red</option>
+                      <option value="green">Green</option>
+                      <option value="blue">Blue</option>
+                      <option value="cyan">Cyan</option>
+                      <option value="magenta">Magenta</option>
+                      <option value="yellow">Yellow</option>
+                      <option value="white">White</option>
+                    </select>
+                  </div>
+                  <div class="sim-setting-group">
+                    <label for="simFilter">Filter</label>
+                    <select id="simFilter">
+                      <option value="none">None</option>
+                      <option value="scale2x">Scale2x</option>
+                      <option value="scale3x">Scale3x</option>
+                      <option value="scale4x">Scale4x</option>
+                      <option value="hq2x">HQ2x</option>
+                      <option value="hq3x">HQ3x</option>
+                      <option value="hq4x">HQ4x</option>
+                    </select>
+                  </div>
+                  <div class="sim-setting-group">
+                    <label for="simOrientation">Orientation</label>
+                    <select id="simOrientation">
+                      <option value="normal">Normal</option>
+                      <option value="cw">CW 90</option>
+                      <option value="flip">180</option>
+                      <option value="ccw">CCW 90</option>
+                    </select>
+                  </div>
+                  <div class="sim-setting-group">
+                    <label for="simVolume">Volume</label>
+                    <div class="sim-range-wrap">
+                      <input type="range" id="simVolume" min="0" max="200" value="100">
+                      <span id="simVolumeLabel">100%</span>
+                    </div>
+                  </div>
+                  <div class="sim-setting-group">
+                    <label class="sim-checkbox-label">
+                      <input type="checkbox" id="simAutoFilter" checked> Auto Filter
+                    </label>
+                  </div>
+                  <div class="sim-setting-group">
+                    <label class="sim-checkbox-label">
+                      <input type="checkbox" id="simIntScale"> Integer Scaling
+                    </label>
+                  </div>
+
+                  <div class="sim-settings-divider"></div>
+
+                  <div class="sim-setting-group">
+                    <label for="simDisplayType">Display Type</label>
+                    <select id="simDisplayType">
+                      <option value="ssd1306">SSD1306 (Official)</option>
+                      <option value="ssd1309">SSD1309</option>
+                      <option value="sh1106">SH1106</option>
+                    </select>
+                  </div>
+                  <div class="sim-setting-group">
+                    <label for="simFxPort">FX Port</label>
+                    <select id="simFxPort">
+                      <option value="fx">D1 (Arduboy FX)</option>
+                      <option value="fxdevkit">D2 (Original)</option>
+                      <option value="mini">E2 (Arduboy Mini)</option>
+                    </select>
+                  </div>
+                  <div class="sim-setting-group">
+                    <label for="simCurrent">Current Modeling</label>
+                    <select id="simCurrent">
+                      <option value="0">Off</option>
+                      <option value="1">Subtle</option>
+                      <option value="2">Normal</option>
+                      <option value="3">Exaggerated</option>
+                    </select>
+                  </div>
+
+                  <!-- Divider -->
+                  <div class="sim-settings-divider"></div>
+
+                  <div class="sim-setting-group">
+                    <button id="simClearStorageBtn" class="sim-clear-storage-btn" title="Clear simulator layout and preferences stored by Ardens">&#128163; Clear Sim Settings</button>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+
+          <!-- ===== BUILD OUTPUT PANEL ===== -->
+          <div id="outputPanel" class="collapsed">
+            <div id="outputHeader">
+              <div id="outputHeaderLeft">
+                <span id="outputTitle">Build Output</span>
+                <span id="outputErrorCount" class="hidden"></span>
+              </div>
+              <div id="outputHeaderRight">
+                <button id="copyRawOutputBtn" class="output-copy-btn hidden" title="Copy raw build output" aria-label="Copy raw build output"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><rect x="3" y="3" width="13" height="13" rx="1" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M9 9h10v10h-10z" fill="currentColor" opacity="0.2"/><path d="M20 9v10a1 1 0 0 1-1 1H9" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></button>
+                <button id="toggleOutputBtn" class="output-toggle-btn" title="Toggle output panel">&#9660;</button>
+              </div>
+            </div>
+            <div id="outputContent">
+              <div id="memorySection" class="hidden">
+                <div class="memory-meters">
+                  <div class="meter-group">
+                    <div class="meter-label">
+                      <span class="meter-name">Program Storage (Flash)</span>
+                      <span id="flashInfo" class="meter-info"></span>
+                    </div>
+                    <div class="meter-track">
+                      <div id="flashBar" class="meter-bar"></div>
+                    </div>
+                  </div>
+                  <div class="meter-group">
+                    <div class="meter-label">
+                      <span class="meter-name">Global Variables (SRAM)</span>
+                      <span id="ramInfo" class="meter-info"></span>
+                    </div>
+                    <div class="meter-track">
+                      <div id="ramBar" class="meter-bar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="fxDataMeterGroup" class="meter-group hidden">
+                <div class="meter-label">
+                  <span class="meter-name meter-name--fx">FX Data (External Flash)</span>
+                  <span id="fxDataInfo" class="meter-info"></span>
+                </div>
+                <div class="meter-track">
+                  <div id="fxDataBar" class="meter-bar"></div>
+                </div>
+              </div>
+              <div id="fxMemoryMapSection" class="fxdata-output-memmap hidden">
+                <div class="fxdata-output-memmap-header">FX Memory Map</div>
+                <div id="fxMemoryMapBar" class="fxdata-output-map-bar"></div>
+                <div id="fxMemoryMapList" class="fxdata-output-map-list"></div>
+                <div id="fxMemoryMapSummary" class="fxdata-output-map-summary"></div>
+              </div>
+              <pre id="logPre"></pre>
+            </div>
+          </div>
+
+          <!-- ===== DEV TOOLS MODAL OVERLAY ===== -->
+          <div id="devtoolsModal" class="hidden">
+            <div id="devtoolsBackdrop"></div>
+            <div id="devtoolsHeader">
+              <span class="devtools-title">Ardens Simulator &mdash; Developer Tools</span>
+              <button id="devtoolsCloseBtn" class="devtools-close-btn" title="Exit Developer Tools">&#10005;</button>
+            </div>
+          </div>
+
+          <!-- ===== GENERIC CONFIRM MODAL ===== -->
+          <div id="confirmModal" class="modal-overlay hidden">
+            <div class="modal-box">
+              <div class="modal-title" id="confirmModalTitle">Confirm</div>
+              <div class="modal-body">
+                <p id="confirmModalMessage"></p>
+              </div>
+              <div class="modal-actions">
+                <button id="confirmModalOk" class="modal-btn modal-btn--primary">Confirm</button>
+                <button id="confirmModalCancel" class="modal-btn modal-btn--secondary">Cancel</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== GENERIC PROMPT MODAL ===== -->
+          <div id="promptModal" class="modal-overlay hidden">
+            <div class="modal-box">
+              <div class="modal-title" id="promptModalTitle">Enter value</div>
+              <div class="modal-body">
+                <p id="promptModalMessage"></p>
+                <input type="text" id="promptModalInput" class="modal-input" autocomplete="off" spellcheck="false" />
+                <p id="promptModalError" class="modal-error hidden"></p>
+              </div>
+              <div class="modal-actions">
+                <button id="promptModalOk" class="modal-btn modal-btn--primary">OK</button>
+                <button id="promptModalCancel" class="modal-btn modal-btn--secondary">Cancel</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== IMPORT CONFLICT MODAL ===== -->
+          <div id="conflictModal" class="modal-overlay hidden">
+            <div class="modal-box">
+              <div class="modal-title">File Conflict</div>
+              <div class="modal-body">
+                <p id="conflictMessage"></p>
+                <div class="modal-checks">
+                  <label class="modal-check-label"><input type="checkbox" id="conflictApplyAll"> Apply to all remaining conflicts</label>
+                  <label class="modal-check-label"><input type="checkbox" id="conflictDontAsk"> Do not ask again</label>
+                </div>
+              </div>
+              <div class="modal-actions">
+                <button id="conflictOverwriteBtn" class="modal-btn modal-btn--primary">Overwrite</button>
+                <button id="conflictSkipBtn" class="modal-btn modal-btn--secondary">Skip</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== SYNC CHANGES MODAL ===== -->
+          <div id="syncModal" class="modal-overlay hidden">
+            <div class="modal-box sync-modal-box">
+              <div class="modal-title" id="syncModalTitle">File Changes Detected</div>
+              <div class="modal-body">
+                <div id="syncChangesList" class="sync-changes-list"></div>
+              </div>
+              <div class="modal-actions">
+                <label class="modal-check-label" style="margin-right:auto"><input type="checkbox" id="syncAlwaysAsk" checked> Always ask</label>
+                <button id="syncApplyBtn" class="modal-btn modal-btn--primary">Apply Changes</button>
+                <button id="syncDismissBtn" class="modal-btn modal-btn--secondary">Dismiss</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== DRAG-AND-DROP OVERLAY ===== -->
+          <div id="dropOverlay" class="drop-overlay hidden">
+            <div class="drop-overlay-content">
+              <div class="drop-icon">&#128230;</div>
+              <div class="drop-label">Drop ZIP file to import</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sketch Panel -->
+      <section id="panel-sketch" class="panel">
+        <h2>Sketch Manager</h2>
+        <p class="panel-description">Upload, backup, or erase the game stored on your Arduboy.</p>
+
+        <div class="action-group">
+          <h3>Upload Sketch</h3>
+          <div class="file-input-row file-input-row--inline">
+            <input type="file" id="sketch-file" accept=".hex,.arduboy" class="file-input">
+            <label for="sketch-file" class="file-label">Choose .hex or .arduboy file</label>
+            <div class="patch-settings patch-settings--inline hidden" id="sketch-patch-settings">
+              <label class="cart-setting-label" title="Target hardware">
+                Target:
+                <select id="sketch-target-device" class="cart-setting-select">
+                  <option value="ArduboyFXC">Arduboy FX-C</option>
+                  <option value="ArduboyFX">Arduboy FX</option>
+                  <option value="ArduboyMini">Arduboy Mini</option>
+                </select>
+              </label>
+              <label class="cart-setting-label" title="Display type">
+                Display:
+                <select id="sketch-display-type" class="cart-setting-select">
+                  <option value="SSD1306">SSD1306</option>
+                  <option value="SSD1309">SSD1309</option>
+                </select>
+              </label>
+            </div>
+          </div>
+
+          <!-- .arduboy metadata card -->
+          <div id="sketch-arduboy-meta" class="info-box sketch-meta-card hidden">
+            <div class="sketch-meta-layout">
+              <div class="sketch-meta-image-wrap">
+                <img id="sketch-meta-img" class="sketch-meta-img" alt="Cart image">
+              </div>
+              <div class="sketch-meta-fields">
+                <div class="sketch-meta-title-row">
+                  <span id="sketch-meta-title" class="sketch-meta-title"></span>
+                  <span id="sketch-meta-version" class="sketch-meta-version"></span>
+                </div>
+                <div class="sketch-meta-row">
+                  <span class="sketch-meta-label">Author</span>
+                  <span id="sketch-meta-author" class="sketch-meta-value"></span>
+                </div>
+                <div class="sketch-meta-row" id="sketch-meta-genre-row">
+                  <span class="sketch-meta-label">Genre</span>
+                  <span id="sketch-meta-genre" class="sketch-meta-value"></span>
+                </div>
+                <div class="sketch-meta-row" id="sketch-meta-desc-row">
+                  <span class="sketch-meta-label">Description</span>
+                  <span id="sketch-meta-desc" class="sketch-meta-value sketch-meta-desc"></span>
+                </div>
+                <div class="sketch-meta-links" id="sketch-meta-links"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="action-row hidden" id="sketch-upload-controls">
+            <button id="btn-sketch-upload" class="btn btn-primary"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 8L4 2.5L5.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 2.5L2.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8L10 2.5L11.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 2.5L8.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="1" y1="12" x2="13" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Upload Sketch</button>
+            <div class="options-row" style="margin-left: 0">
+              <label><input type="checkbox" id="sketch-verify" checked> Verify</label>
+            </div>
+            <button id="btn-sketch-push-pkg" class="btn btn-accent hidden" style="margin-left: auto" title="Load this .arduboy file into the Package Editor"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.08 0.95L11.04 0L14.21 3.18L11.04 6.35L10.08 5.4L11.63 3.85H9.21C7.35 3.85 5.84 5.36 5.84 7.23V9.32C7.38 9.63 8.54 10.99 8.54 12.63C8.54 14.49 7.02 16 5.16 16C3.3 16 1.79 14.49 1.79 12.63C1.79 10.99 2.94 9.63 4.49 9.32V7.23C4.49 4.62 6.6 2.5 9.21 2.5H11.63L10.08 0.95Z" fill="currentColor"/></svg>Push to Package Editor</button>
+          </div>
+        </div>
+
+        <div class="action-group">
+          <h3>Backup & Erase</h3>
+          <div class="button-row">
+            <button id="btn-sketch-backup" class="btn btn-secondary">Backup Sketch</button>
+            <button id="btn-sketch-erase" class="btn btn-danger">Erase Sketch</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FX Flash Panel -->
+      <section id="panel-fx" class="panel">
+        <h2>FX Flash Manager</h2>
+        <p class="panel-description">Manage the external flash memory (game collection, FX data).</p>
+
+        <div class="action-group">
+          <h3>Write Flash Cart</h3>
+          <div class="file-input-row file-input-row--inline">
+            <input type="file" id="fx-file" accept=".bin" class="file-input">
+            <label for="fx-file" class="file-label">Choose .bin file</label>
+            <div class="patch-settings patch-settings--inline hidden" id="fx-patch-settings">
+              <label class="cart-setting-label" title="Target hardware for this cart">
+                Target:
+                <select id="fx-target-device" class="cart-setting-select">
+                  <option value="ArduboyFXC">Arduboy FX-C</option>
+                  <option value="ArduboyFX">Arduboy FX</option>
+                  <option value="ArduboyMini">Arduboy Mini</option>
+                </select>
+              </label>
+              <label class="cart-setting-label" title="Display type">
+                Display:
+                <select id="fx-display-type" class="cart-setting-select">
+                  <option value="SSD1306">SSD1306</option>
+                  <option value="SSD1309">SSD1309</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div id="fx-file-info" class="info-box hidden">
+            <h4>Flash Cart Summary</h4>
+            <div class="info-columns">
+              <dl class="info-grid">
+                <dt>Total Slots</dt><dd id="file-scan-slots">—</dd>
+                <dt>Games</dt><dd id="file-scan-games">—</dd>
+                <dt>Categories</dt><dd id="file-scan-categories">—</dd>
+                <dt>Used Pages</dt><dd id="file-scan-pages">—</dd>
+                <dt>File Size</dt><dd id="file-scan-size">—</dd>
+              </dl>
+              <dl class="info-grid hidden" id="file-scan-detection">
+                <dt>FX Games Detected</dt><dd id="file-scan-fx-games">—</dd>
+                <dt>Build Target</dt><dd id="file-scan-target">—</dd>
+                <dt>Display Mode</dt><dd id="file-scan-display">—</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="action-row hidden" id="fx-write-controls">
+            <button id="btn-fx-write" class="btn btn-primary"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 8L4 2.5L5.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 2.5L2.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8L10 2.5L11.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 2.5L8.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="1" y1="12" x2="13" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Write to FX Flash</button>
+            <div class="options-row" style="margin-left: 0">
+              <label><input type="checkbox" id="fx-verify"> Verify</label>
+              <label title="Write data to the development area at the end of external flash instead of as a full flash cart"><input type="checkbox" id="fx-dev-data"> Dev Data</label>
+            </div>
+            <button id="btn-fx-push-cart" class="btn btn-accent hidden" style="margin-left: auto" title="Load this .bin file into the Cart Editor"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.08 0.95L11.04 0L14.21 3.18L11.04 6.35L10.08 5.4L11.63 3.85H9.21C7.35 3.85 5.84 5.36 5.84 7.23V9.32C7.38 9.63 8.54 10.99 8.54 12.63C8.54 14.49 7.02 16 5.16 16C3.3 16 1.79 14.49 1.79 12.63C1.79 10.99 2.94 9.63 4.49 9.32V7.23C4.49 4.62 6.6 2.5 9.21 2.5H11.63L10.08 0.95Z" fill="currentColor"/></svg>Push to Cart Editor</button>
+          </div>
+        </div>
+
+        <div class="action-group">
+          <h3>Backup & Info</h3>
+          <div class="action-row">
+            <div class="button-row">
+              <button id="btn-fx-backup" class="btn btn-secondary">Backup FX Flash</button>
+              <button id="btn-fx-scan" class="btn btn-secondary">Scan Cart Info</button>
+            </div>
+            <div class="options-row">
+              <label><input type="checkbox" id="fx-cart-only" checked> Cart data only (faster)</label>
+            </div>
+          </div>
+          <div id="fx-scan-results" class="info-box hidden">
+            <h4>Flash Cart Summary</h4>
+            <dl class="info-grid">
+              <dt>Total Slots</dt><dd id="scan-slots">—</dd>
+              <dt>Games</dt><dd id="scan-games">—</dd>
+              <dt>Categories</dt><dd id="scan-categories">—</dd>
+              <dt>Used Pages</dt><dd id="scan-pages">—</dd>
+              <dt>Used Space</dt><dd id="scan-size">—</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- EEPROM Panel -->
+      <section id="panel-eeprom" class="panel">
+        <h2>EEPROM Manager</h2>
+        <p class="panel-description">Backup, restore, or erase the 1KB EEPROM (game saves).</p>
+
+        <div class="action-group">
+          <h3>Restore EEPROM</h3>
+          <div class="file-input-row">
+            <input type="file" id="eeprom-file" accept=".eep" class="file-input">
+            <label for="eeprom-file" class="file-label">Choose .eep file</label>
+          </div>
+          <button id="btn-eeprom-restore" class="btn btn-primary hidden" style="display: none;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 8L4 2.5L5.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 2.5L2.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8L10 2.5L11.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 2.5L8.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="1" y1="12" x2="13" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Restore EEPROM</button>
+        </div>
+
+        <div class="action-group">
+          <h3>Backup & Erase</h3>
+          <div class="button-row">
+            <button id="btn-eeprom-backup" class="btn btn-secondary">Backup EEPROM</button>
+            <button id="btn-eeprom-erase" class="btn btn-danger">Erase EEPROM</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cart Editor Panel -->
+      <section id="panel-cart" class="panel">
+        <h2>Cart Editor</h2>
+        <div class="cart-header-row">
+          <p class="panel-description">Edit, reorder, and manage your flash cart game collection.</p>
+          <div class="cart-toolbar-group cart-toolbar-settings-group hidden" id="cart-toolbar-settings">
+            <label class="cart-setting-label" id="cart-target-device-label" title="Target hardware for this cart">
+              Target:
+              <select id="cart-target-device" class="cart-setting-select">
+                <option value="ArduboyFXC">Arduboy FX-C</option>
+                <option value="ArduboyFX">Arduboy FX</option>
+                <option value="ArduboyMini">Arduboy Mini</option>
+              </select>
+            </label>
+            <label class="cart-setting-label" id="cart-display-type-label" title="Display type — patches games when saving/writing to match the selected display">
+              Display:
+              <select id="cart-display-type" class="cart-setting-select">
+                <option value="SSD1306">SSD1306</option>
+                <option value="SSD1309">SSD1309</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <!-- Toolbar -->
+        <div class="cart-toolbar">
+          <div class="cart-toolbar-group">
+            <button id="btn-cart-new" class="btn btn-sm btn-secondary" title="Create a new empty cart">New</button>
+            <button id="btn-cart-open" class="btn btn-sm btn-secondary" title="Open a cart .bin file">Load</button>
+            <input type="file" id="cart-open-file" accept=".bin" class="file-input">
+            <button id="btn-cart-save" class="btn btn-sm btn-primary" title="Compile and save cart as .bin" disabled>Save</button>
+          </div>
+          <div class="cart-toolbar-separator"></div>
+          <div class="cart-toolbar-group">
+            <button id="btn-cart-load-device" class="btn btn-sm btn-secondary" title="Load cart from connected device">Load from Device</button>
+            <button id="btn-cart-write-device" class="btn btn-sm btn-primary" title="Write cart to connected device" disabled><svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 8L4 2.5L5.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 2.5L2.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8L10 2.5L11.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 2.5L8.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="1" y1="12" x2="13" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Write to Device</button>
+          </div>
+          <div class="cart-toolbar-separator"></div>
+          <div class="cart-toolbar-group hidden" id="cart-export-group">
+            <button id="btn-cart-export-slot" class="btn btn-sm btn-outline" title="Export selected slot as .arduboy">Export</button>
+            <button id="btn-cart-export-all" class="btn btn-sm btn-outline" title="Export all slots as .arduboy files in a ZIP">Export All</button>
+          </div>
+        </div>
+        <div class="cart-toolbar cart-toolbar-row2 hidden" id="cart-toolbar-row2">
+          <div class="cart-toolbar-group">
+            <button id="btn-cart-move-up" class="btn btn-sm btn-outline btn-icon" title="Move slot up">&#x25B2;</button>
+            <button id="btn-cart-move-down" class="btn btn-sm btn-outline btn-icon" title="Move slot down">&#x25BC;</button>
+            <button id="btn-cart-move-cat-up" class="btn btn-sm btn-outline btn-icon" title="Move entire category up">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="4" x2="7" y2="1"/><line x1="7" y1="1" x2="11" y2="4"/><line x1="7" y1="1" x2="7" y2="10"/><line x1="3" y1="13" x2="11" y2="13"/>
+              </svg>
+            </button>
+            <button id="btn-cart-move-cat-down" class="btn btn-sm btn-outline btn-icon" title="Move entire category down">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="10" x2="7" y2="13"/><line x1="7" y1="13" x2="11" y2="10"/><line x1="7" y1="13" x2="7" y2="4"/><line x1="3" y1="1" x2="11" y2="1"/>
+              </svg>
+            </button>
+            <input type="text" id="cart-search" placeholder="Search slots..." class="cart-search-input">
+          </div>
+          <div class="cart-toolbar-separator"></div>
+          <div class="cart-toolbar-group">
+            <button id="btn-cart-add-game" class="btn btn-sm btn-secondary" title="Add game from .arduboy or .hex file">+ Game</button>
+            <input type="file" id="cart-game-file" accept=".arduboy,.hex" class="file-input">
+            <button id="btn-cart-add-category" class="btn btn-sm btn-secondary" title="Add new category header">+ Category</button>
+            <button id="btn-cart-delete" class="btn btn-sm btn-danger" title="Delete selected slot">Delete</button>
+            <button id="btn-cart-delete-category" class="btn btn-sm btn-danger" title="Delete entire category and all its games">Delete Category</button>
+            <label class="cart-confirm-delete-label" title="When checked, ask for confirmation before deleting">
+              <input type="checkbox" id="cart-confirm-delete" checked> Confirm
+            </label>
+          </div>
+        </div>
+
+        <!-- Main content: slot list + detail panel -->
+        <div class="cart-content hidden" id="cart-content">
+          <div class="cart-slot-list-container">
+            <div id="cart-slot-list" class="cart-slot-list">
+              <div class="cart-empty-state">
+                <p>No cart loaded</p>
+                <p class="cart-empty-hint">Open a .bin cart file, load from device, or create a new cart.<br>
+                You can also drag &amp; drop .arduboy or .hex files here.</p>
+              </div>
+            </div>
+          </div>
+          <div class="cart-mobile-resize-handle" id="cart-mobile-resize-handle"></div>
+          <div class="cart-resize-handle" id="cart-resize-handle"></div>
+          <div class="cart-detail-panel" id="cart-detail">
+            <div class="cart-detail-empty">
+              <p>Select a slot to view and edit its details</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="cart-footer">
+          <span id="cart-counts">No cart loaded</span>
+        </div>
+      </section>
+
+      <!-- Image Converter Panel -->
+      <section id="panel-image" class="panel">
+        <h2>Image Converter</h2>
+        <p class="panel-description">Convert images to Arduboy sprite format (C++ PROGMEM code).</p>
+
+        <!-- Load Image -->
+        <div class="action-group" id="img-input-group">
+          <button id="btn-img-close" class="action-group-close" title="Clear image converter" aria-label="Close">&times;</button>
+          <h3>Load Image</h3>
+          <div class="file-input-row" style="display: flex; align-items: center; gap: 0.5em; flex-wrap: wrap;">
+              <input type="file" id="img-file" accept=".png,.jpg,.jpeg,.gif,.bmp,.webp" class="file-input">
+              <label for="img-file" class="file-label">Choose image file (.png, .jpg, .gif, .bmp, .webp)</label>
+              <button id="btn-img-new" class="file-label" title="Create a new blank image">New Image</button>
+              <button id="btn-img-edit" class="file-label hidden" title="Open pixel editor">Edit</button>
+              <button id="btn-img-revert" class="file-label file-label-danger hidden" title="Revert to original imported image">Revert</button>
+          </div>
+
+          <div id="img-preview-section" class="img-preview-section hidden">
+            <div class="img-preview-wrap">
+              <canvas id="img-preview-canvas" class="img-preview-canvas"></canvas>
+            </div>
+            <div class="img-preview-controls">
+              <div id="img-dimensions" class="img-dimensions"></div>
+            </div>
+          </div>
+
+          <!-- Output Settings (without extra frame wrapper) -->
+          <div id="img-settings-group" class="hidden">
+            <h3 class="img-settings-heading">Settings</h3>
+            <div class="img-settings-grid">
+              <label class="form-label img-settings-label" for="img-format">Format</label>
+              <select id="img-format" class="img-select img-settings-control">
+                <option value="drawBitmap">drawBitmap()</option>
+                <option value="drawSlowXYBitmap">drawSlowXYBitmap()</option>
+                <option value="spritesOverwrite" selected>Sprites (drawOverwrite)</option>
+                <option value="spritesExternalMask">Sprites + External Mask</option>
+                <option value="spritesPlusMask">Sprites + Plus Mask</option>
+              </select>
+              <label class="form-label img-settings-label" for="img-threshold">Brightness Threshold</label>
+              <div class="img-settings-threshold">
+                <input type="range" id="img-threshold" min="0" max="255" value="128" class="img-slider">
+                <span id="img-threshold-value" class="img-threshold-value">128</span>
+              </div>
+
+              <label class="form-label img-settings-label" for="img-varname">Variable Name</label>
+              <input type="text" id="img-varname" value="image" class="img-text-input img-settings-control" placeholder="image">
+
+              <label class="form-label img-settings-label" for="img-preview-scale">Preview Zoom</label>
+              <select id="img-preview-scale" class="img-select img-settings-control">
+                <option value="1x">1×</option>
+                <option value="2x">2×</option>
+                <option value="4x" selected>4×</option>
+                <option value="8x">8×</option>
+                <option value="12x">12×</option>
+                <option value="16x">16×</option>
+                <option value="24x">24×</option>
+                <option value="32x">32×</option>
+                <option value="fill">Fill</option>
+              </select>
+              <span></span><span></span>
+
+              <div class="form-row hidden img-settings-full-row" id="img-manual-offset-row">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="img-manual-offset" checked> Enable manual pointer offsets
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div id="img-sprite-settings" class="img-sprite-settings hidden">
+            <button type="button" id="img-accordion-toggle" class="img-accordion-toggle" aria-expanded="false">
+              <span class="img-accordion-icon">▶</span>
+              <span class="img-accordion-label">Sprite Sheet Settings</span>
+            </button>
+            <div id="img-accordion-content" class="img-accordion-content collapsed">
+              <div class="form-row">
+                <label class="form-label" for="img-frame-width">Frame Width</label>
+                <div class="img-num-input-group">
+                  <input type="number" id="img-frame-width" min="1" max="1024" value="0" class="img-num-input">
+                  <button type="button" class="img-num-btn img-num-btn-down" data-target="img-frame-width" title="Decrease">−</button>
+                  <button type="button" class="img-num-btn img-num-btn-up" data-target="img-frame-width" title="Increase">+</button>
+                </div>
+                <label class="form-label" for="img-frame-height">Frame Height</label>
+                <div class="img-num-input-group">
+                  <input type="number" id="img-frame-height" min="1" max="1024" value="0" class="img-num-input">
+                  <button type="button" class="img-num-btn img-num-btn-down" data-target="img-frame-height" title="Decrease">−</button>
+                  <button type="button" class="img-num-btn img-num-btn-up" data-target="img-frame-height" title="Increase">+</button>
+                </div>
+                <label class="form-label" for="img-spacing">Spacing</label>
+                <div class="img-num-input-group">
+                  <input type="number" id="img-spacing" min="0" max="64" value="0" class="img-num-input">
+                  <button type="button" class="img-num-btn img-num-btn-down" data-target="img-spacing" title="Decrease">−</button>
+                  <button type="button" class="img-num-btn img-num-btn-up" data-target="img-spacing" title="Increase">+</button>
+                </div>
+              </div>
+              <div class="img-frame-info-row">
+                <div id="img-frame-info" class="img-frame-info"></div>
+                <div class="img-scale-btns" role="group" aria-label="Frame strip scale">
+                  <label class="img-scale-btn"><input type="radio" name="img-strip-scale" value="1" checked> 1×</label>
+                  <label class="img-scale-btn"><input type="radio" name="img-strip-scale" value="2"> 2×</label>
+                  <label class="img-scale-btn"><input type="radio" name="img-strip-scale" value="4"> 4×</label>
+                </div>
+              </div>
+              <div id="img-frame-strip" class="img-frame-strip"></div>
+              <div id="img-frame-more" class="img-frame-more hidden"></div>
+              <div id="img-format-warning" class="img-format-warning hidden">
+                <span class="img-format-warning-icon">&#9888;</span>
+                <span class="img-format-warning-body">
+                  <span id="img-format-warning-text"></span><a href="#" id="img-format-switch-link" class="img-format-switch-link"></a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Generated Code Output -->
+        <div class="action-group hidden" id="img-output-group">
+          <h3>Generated Code</h3>
+          <button class="icon-btn-copy" id="btn-img-copy-icon" title="Copy to clipboard" aria-label="Copy code">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+          </button>
+          <div id="img-output-info" class="img-output-info"></div>
+          <div id="img-first-frame-notice" class="img-first-frame-notice hidden">
+            &#x2139; Manual pointer offset disabled, only first frame generated.
+          </div>
+          <pre id="img-code-output" class="img-code-block"></pre>
+          <div class="button-row">
+            <button class="btn btn-primary" id="btn-img-copy">Copy Variable</button>
+            <button class="btn btn-secondary" id="btn-img-copy-bytes">Copy Bytes</button>
+            <button class="btn btn-secondary" id="btn-img-download">Download .h</button>
+            <button class="btn btn-accent" id="btn-img-push-code"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.92 0.95L4.96 0L1.79 3.18L4.96 6.35L5.92 5.4L4.37 3.85H6.79C8.65 3.85 10.16 5.36 10.16 7.23V9.32C8.62 9.63 7.46 10.99 7.46 12.63C7.46 14.49 8.98 16 10.84 16C12.7 16 14.21 14.49 14.21 12.63C14.21 10.99 13.06 9.63 11.51 9.32V7.23C11.51 4.62 9.4 2.5 6.79 2.5H4.37L5.92 0.95Z" fill="currentColor"/></svg>Push to Code</button>
+          </div>
+        </div>
+
+        <!-- Example Usage -->
+        <div class="action-group hidden" id="img-usage-group">
+          <h3>Example Usage</h3>
+          <button class="icon-btn-copy" id="btn-img-copy-usage-icon" title="Copy to clipboard" aria-label="Copy example">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+          </button>
+          <div class="img-usage-options">
+            <label class="checkbox-label">
+              <input type="checkbox" id="img-full-sketch"> Show complete Arduboy sketch
+            </label>
+          </div>
+          <pre id="img-usage-output" class="img-code-block"></pre>
+          <div class="button-row">
+            <button class="btn btn-secondary" id="btn-img-copy-usage">Copy Example</button>
+            <button class="btn btn-accent hidden" id="btn-img-push-sketch"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.92 0.95L4.96 0L1.79 3.18L4.96 6.35L5.92 5.4L4.37 3.85H6.79C8.65 3.85 10.16 5.36 10.16 7.23V9.32C8.62 9.63 7.46 10.99 7.46 12.63C7.46 14.49 8.98 16 10.84 16C12.7 16 14.21 14.49 14.21 12.63C14.21 10.99 13.06 9.63 11.51 9.32V7.23C11.51 4.62 9.4 2.5 6.79 2.5H4.37L5.92 0.95Z" fill="currentColor"/></svg>Push to Code</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Package Editor Panel -->
+      <section id="panel-package" class="panel">
+        <h2>Package Editor</h2>
+        <p class="panel-description">Create and edit .arduboy game packages.</p>
+
+        <!-- Toolbar -->
+        <div class="pkg-toolbar">
+          <button class="btn btn-outline" id="btn-pkg-reset">New</button>
+          <button class="btn btn-outline" id="btn-pkg-load">Load</button>
+          <input type="file" id="pkg-load-file" accept=".arduboy" class="file-input">
+          <button class="btn btn-primary" id="btn-pkg-save">Save</button>
+          <div class="cart-toolbar-separator"></div>
+          <button class="btn btn-primary" id="btn-pkg-upload"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 8L4 2.5L5.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 2.5L2.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8L10 2.5L11.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 2.5L8.5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="1" y1="12" x2="13" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Upload</button>
+          <button class="btn btn-accent" id="btn-pkg-push-cart"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.08 0.95L11.04 0L14.21 3.18L11.04 6.35L10.08 5.4L11.63 3.85H9.21C7.35 3.85 5.84 5.36 5.84 7.23V9.32C7.38 9.63 8.54 10.99 8.54 12.63C8.54 14.49 7.02 16 5.16 16C3.3 16 1.79 14.49 1.79 12.63C1.79 10.99 2.94 9.63 4.49 9.32V7.23C4.49 4.62 6.6 2.5 9.21 2.5H11.63L10.08 0.95Z" fill="currentColor"/></svg>Push to Cart Editor</button>
+        </div>
+
+        <!-- Two-pane layout -->
+        <div class="pkg-content">
+
+          <!-- Left pane: Package Info -->
+          <div class="pkg-left-pane" id="pkg-left-pane">
+            <h3 class="pkg-pane-title">Package Info</h3>
+
+            <div class="pkg-section">
+              <div class="pkg-field-group">
+                <label class="pkg-label" for="pkg-title">Title <span class="pkg-required">*</span></label>
+                <input type="text" id="pkg-title" class="pkg-field-input" placeholder="Game Title">
+              </div>
+              <div class="pkg-field-group">
+                <label class="pkg-label" for="pkg-version">Version <span class="pkg-required">*</span></label>
+                <input type="text" id="pkg-version" class="pkg-field-input" placeholder="1.0">
+              </div>
+              <div class="pkg-field-group">
+                <label class="pkg-label" for="pkg-author">Author <span class="pkg-required">*</span></label>
+                <input type="text" id="pkg-author" class="pkg-field-input" placeholder="Your Name">
+              </div>
+              <div class="pkg-field-group">
+                <label class="pkg-label" for="pkg-description">Description</label>
+                <textarea id="pkg-description" class="pkg-field-textarea" rows="3" placeholder="Short description..."></textarea>
+              </div>
+              <div class="pkg-field-group">
+                <label class="pkg-label" for="pkg-genre">Genre</label>
+                <input type="text" id="pkg-genre" class="pkg-field-input" placeholder="e.g. Platformer, Puzzle...">
+              </div>
+              <div class="pkg-field-group">
+                <label class="pkg-label" for="pkg-url">URL</label>
+                <input type="text" id="pkg-url" class="pkg-field-input" placeholder="https://...">
+              </div>
+              <div class="pkg-field-group">
+                <label class="pkg-label" for="pkg-sourceurl">Source URL</label>
+                <input type="text" id="pkg-sourceurl" class="pkg-field-input" placeholder="https://github.com/...">
+              </div>
+              <div class="pkg-field-group">
+                <label class="pkg-label" for="pkg-email">Email</label>
+                <input type="text" id="pkg-email" class="pkg-field-input" placeholder="contact@example.com">
+              </div>
+            </div>
+
+            <!-- Contributors -->
+            <div class="pkg-section">
+              <h4 class="pkg-section-title">Contributors</h4>
+              <div class="pkg-contributors-controls">
+                <button class="btn btn-sm btn-secondary" id="btn-pkg-add-contributor">+ Add</button>
+                <button class="btn btn-sm btn-outline" id="btn-pkg-remove-contributor">- Remove</button>
+              </div>
+              <div class="pkg-contributors-wrap">
+                <table id="pkg-contributors-table" class="pkg-contributors-table">
+                  <thead>
+                    <tr><th>Name</th><th>Roles</th><th>URLs</th></tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- License -->
+            <div class="pkg-section">
+              <h4 class="pkg-section-title">LICENSE</h4>
+              <textarea id="pkg-license" class="pkg-license-textarea" rows="6" placeholder="Paste license text here (MIT, BSD, etc.)"></textarea>
+              <p class="pkg-license-help">Need help choosing? <a href="https://choosealicense.com/" target="_blank" rel="noopener">choosealicense.com</a></p>
+            </div>
+          </div>
+
+          <div class="pkg-resize-handle" id="pkg-resize-handle"></div>
+
+          <!-- Right pane: Binaries -->
+          <div class="pkg-right-pane" id="pkg-right-pane">
+            <h3 class="pkg-pane-title">Binaries</h3>
+            <div class="pkg-binary-toolbar">
+              <button class="btn btn-sm btn-secondary" id="btn-pkg-add-binary">+ Add Binary</button>
+              <button class="btn btn-sm btn-outline" id="btn-pkg-remove-binary">- Remove</button>
+            </div>
+            <div id="pkg-binary-list" class="pkg-binary-list"></div>
+            <div id="pkg-binary-detail" class="pkg-binary-detail">
+              <p class="pkg-binary-empty">No binary selected</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Music Editor Panel -->
+      <section id="panel-music" class="panel">
+        <h2>Music Editor</h2>
+        <p class="panel-description">Create Arduboy music and export as ArduboyTones or ArduboyPlaytune code.</p>
+
+        <!-- Toolbar -->
+        <div class="mus-toolbar">
+          <div class="mus-toolbar-group">
+            <button id="btn-mus-new" class="btn btn-secondary" title="New empty song">New</button>
+            <button id="btn-mus-import-midi" class="btn btn-secondary" title="Import a MIDI file">Import</button>
+            <button id="btn-mus-download-mid" class="btn btn-secondary" title="Export as MIDI file">Export</button>
+            <input type="file" id="mus-midi-file" accept=".mid,.midi" class="file-input">
+          </div>
+          <div class="cart-toolbar-separator"></div>
+          <div class="mus-toolbar-group">
+            <label class="mus-toolbar-label" for="mus-target-library">Target:</label>
+            <select id="mus-target-library" class="mus-select">
+              <option value="tones">ArduboyTones (mono)</option>
+              <option value="playtune">ArduboyPlaytune (2-voice)</option>
+            </select>
+          </div>
+          <div class="cart-toolbar-separator"></div>
+          <div class="mus-toolbar-group">
+            <label class="mus-toolbar-label" for="mus-bpm">BPM:</label>
+            <input type="number" id="mus-bpm" class="mus-bpm-input" min="30" max="3000" value="120">
+            <button id="btn-mus-bpm-dec" class="btn btn-outline" title="Decrease BPM">−</button>
+            <button id="btn-mus-bpm-inc" class="btn btn-outline" title="Increase BPM">+</button>
+            <div class="cart-toolbar-separator"></div>
+            <button id="btn-mus-tempo-half" class="btn btn-outline" title="Half tempo">&times;0.5</button>
+            <button id="btn-mus-tempo-075" class="btn btn-outline" title="75% tempo">&times;0.75</button>
+            <button id="btn-mus-tempo-125" class="btn btn-outline" title="125% tempo">&times;1.25</button>
+            <button id="btn-mus-tempo-double" class="btn btn-outline" title="Double tempo">&times;2</button>
+          </div>
+          <div class="cart-toolbar-separator"></div>
+          <div class="mus-toolbar-group">
+            <label class="mus-toolbar-label" for="mus-quantize">Quantize:</label>
+            <select id="mus-quantize" class="mus-select">
+              <option value="0">Off</option>
+              <option value="4">1/4</option>
+              <option value="8" selected>1/8</option>
+              <option value="16">1/16</option>
+              <option value="32">1/32</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Main Editor Area: sidebar + piano roll -->
+        <div class="mus-editor-layout" id="mus-editor-layout">
+          <!-- Left sidebar: voice panel -->
+          <div class="mus-sidebar" id="mus-sidebar">
+            <h4 class="mus-sidebar-title">Voices</h4>
+            <div id="mus-voice-list" class="mus-voice-list"></div>
+
+            <div class="mus-array-name-section">
+              <label class="mus-setting-label" for="mus-array-name">Array Name</label>
+              <input type="text" id="mus-array-name" class="mus-text-input" value="" placeholder="song">
+            </div>
+
+            <div class="mus-loop-section">
+              <label class="checkbox-label">
+                <input type="checkbox" id="mus-loop-enabled"> Enable Loop
+              </label>
+            </div>
+
+            <div class="mus-settings-section">
+              <details>
+                <summary class="mus-accordion-summary">Settings</summary>
+                <div class="mus-settings-content">
+                  <div class="mus-setting-row">
+                    <label class="mus-setting-label" for="mus-velocity-threshold">High Volume Threshold</label>
+                    <div class="mus-slider-row">
+                      <input type="range" id="mus-velocity-threshold" min="0" max="127" value="96" class="mus-slider">
+                      <span id="mus-velocity-threshold-value" class="mus-slider-value">96</span>
+                    </div>
+                  </div>
+                  <div class="mus-setting-row">
+                    <label class="checkbox-label">
+                      <input type="checkbox" id="mus-show-full-range"> Show full range (C1–C10)
+                    </label>
+                  </div>
+                  <div class="mus-setting-row">
+                    <label class="checkbox-label">
+                      <input type="checkbox" id="mus-use-constants" checked> Use NOTE_* constants
+                    </label>
+                  </div>
+                </div>
+              </details>
+            </div>
+
+            <div class="mus-controls-section">
+              <details>
+                <summary class="mus-controls-summary">Controls</summary>
+                <ul class="mus-controls-list">
+                  <li><kbd>Click</kbd> <span class="mus-control-desc">Place a note <em>(Note mode)</em></span></li>
+                  <li><kbd>Right-click</kbd> <span class="mus-control-desc">Delete a note <em>(Note mode)</em></span></li>
+                  <li><kbd>Drag note</kbd> <span class="mus-control-desc">Move a note</span></li>
+                  <li><kbd>Drag edge</kbd> <span class="mus-control-desc">Resize note duration</span></li>
+                  <li><kbd>Shift+Drag</kbd> <span class="mus-control-desc">Box select notes <em>(Note mode)</em></span></li>
+                  <li><kbd>Scroll</kbd> <span class="mus-control-desc">Vertical scroll</span></li>
+                  <li><kbd>Shift+Scroll</kbd> <span class="mus-control-desc">Horizontal scroll</span></li>
+                  <li><kbd>Ctrl+Scroll</kbd> <span class="mus-control-desc">Zoom in/out</span></li>
+                  <li><kbd>Ctrl+A</kbd> <span class="mus-control-desc">Select all notes</span></li>
+                  <li><kbd>Delete</kbd> <span class="mus-control-desc">Delete selected notes; or delete time range &amp; shift (Select mode)</span></li>
+                  <li><kbd>Escape</kbd> <span class="mus-control-desc">Clear selection &amp; time range <em>(Select mode)</em></span></li>
+                  <li><kbd>Space</kbd> <span class="mus-control-desc">Play / Pause</span></li>
+                  <li style="margin-top:6px;font-style:italic;color:var(--color-text-secondary);font-size:10px">Select mode: drag seek bar to mark a time range, then Delete to remove it and close the gap.</li>
+                </ul>
+              </details>
+            </div>
+          </div>
+
+          <!-- Piano Roll Canvas Area -->
+          <div class="mus-pianoroll-container" id="mus-pianoroll-container">
+            <!-- Transport bar -->
+            <div class="mus-transport">
+              <button id="btn-mus-play" class="btn btn-sm btn-primary" title="Play (Space)">&#9654; Play</button>
+              <button id="btn-mus-pause" class="btn btn-sm btn-secondary" title="Pause">&#10074;&#10074;</button>
+              <button id="btn-mus-stop" class="btn btn-sm btn-secondary" title="Stop">&#9632; Stop</button>
+              <span class="mus-transport-separator"></span>
+              <span id="mus-playback-position" class="mus-playback-position">0:00.000</span>
+              <span class="mus-transport-separator"></span>
+              <div class="mus-mode-group">
+                <button id="btn-mus-mode-note" class="mus-mode-btn active" title="Note mode: draw and erase notes (Click / Right-click)">✏ Note</button>
+                <button id="btn-mus-mode-select" class="mus-mode-btn" title="Select mode: box-select, drag, and time-range delete">⬚ Select</button>
+              </div>
+              <label id="mus-select-both-label" class="mus-select-both-label hidden" title="Box selection and time-range selection includes all voices">
+                <input type="checkbox" id="mus-select-both-voices"> Both voices
+              </label>
+              <span class="mus-transport-spacer"></span>
+              <label class="mus-toolbar-label" for="mus-zoom-h">Zoom:</label>
+              <input type="range" id="mus-zoom-h" min="0.25" max="4" step="0.25" value="1" class="mus-zoom-slider" title="Horizontal zoom">
+            </div>
+
+            <!-- Canvas: keyboard + grid -->
+            <canvas id="mus-pianoroll-canvas" class="mus-pianoroll-canvas"></canvas>
+            <!-- Minimap: full-score overview -->
+            <canvas id="mus-minimap-canvas" class="mus-minimap-canvas"></canvas>
+          </div>
+        </div>
+
+        <!-- Vertical resize handle -->
+        <div id="mus-pianoroll-resize-handle" class="mus-pianoroll-resize-handle" title="Drag to resize editor"></div>
+
+        <!-- Generated Code Output -->
+        <div class="action-group" id="mus-export-group">
+          <h3>Generated Code</h3>
+          <button class="icon-btn-copy" id="btn-mus-copy-icon" title="Copy to clipboard" aria-label="Copy code">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+          </button>
+          <div id="mus-export-info" class="img-output-info"></div>
+          <pre id="mus-code-output" class="img-code-block"></pre>
+          <div class="button-row">
+            <button class="btn btn-primary" id="btn-mus-copy">Copy Variable</button>
+            <button class="btn btn-secondary" id="btn-mus-download-h">Download .h</button>
+            <button class="btn btn-accent" id="btn-mus-push-code"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.92 0.95L4.96 0L1.79 3.18L4.96 6.35L5.92 5.4L4.37 3.85H6.79C8.65 3.85 10.16 5.36 10.16 7.23V9.32C8.62 9.63 7.46 10.99 7.46 12.63C7.46 14.49 8.98 16 10.84 16C12.7 16 14.21 14.49 14.21 12.63C14.21 10.99 13.06 9.63 11.51 9.32V7.23C11.51 4.62 9.4 2.5 6.79 2.5H4.37L5.92 0.95Z" fill="currentColor"/></svg>Push to Code</button>
+          </div>
+        </div>
+
+        <!-- Example Usage -->
+        <div class="action-group" id="mus-usage-group">
+          <h3>Example Usage</h3>
+          <label class="checkbox-label">
+            <input type="checkbox" id="mus-show-complete-sketch"> Show complete Arduboy sketch
+          </label>
+          <button class="icon-btn-copy" id="btn-mus-copy-usage-icon" title="Copy to clipboard" aria-label="Copy example">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+          </button>
+          <pre id="mus-usage-output" class="img-code-block"></pre>
+          <div class="button-row">
+            <button class="btn btn-secondary" id="btn-mus-copy-usage">Copy Example</button>
+            <button class="btn btn-accent hidden" id="btn-mus-push-sketch"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.92 0.95L4.96 0L1.79 3.18L4.96 6.35L5.92 5.4L4.37 3.85H6.79C8.65 3.85 10.16 5.36 10.16 7.23V9.32C8.62 9.63 7.46 10.99 7.46 12.63C7.46 14.49 8.98 16 10.84 16C12.7 16 14.21 14.49 14.21 12.63C14.21 10.99 13.06 9.63 11.51 9.32V7.23C11.51 4.62 9.4 2.5 6.79 2.5H4.37L5.92 0.95Z" fill="currentColor"/></svg>Push to Code</button>
+          </div>
+        </div>
+
+        <!-- Warnings -->
+        <div class="action-group hidden" id="mus-warnings-group">
+          <h3>Warnings</h3>
+          <ul id="mus-warnings-list" class="mus-warnings-list"></ul>
+        </div>
+      </section>
+
+      <!-- FX Data Editor Panel -->
+      <section id="panel-fxdata" class="panel">
+        <div class="fxdata-toolbar">
+          <div class="fxdata-toolbar-left">
+            <h2>FX Data Editor</h2>
+            <p class="panel-description">Create and build FX data for Arduboy games.</p>
+          </div>
+          <div class="fxdata-toolbar-right">
+            <button class="btn btn-secondary btn-sm" id="fxdata-btn-new" title="Start a new empty FX data project">New</button>
+            <button class="btn btn-secondary btn-sm" id="fxdata-btn-import" title="Import project files or ZIP">Import</button>
+            <input type="file" id="fxdata-import-input" multiple hidden>
+            <input type="file" id="fxdata-import-folder" webkitdirectory hidden>
+            <button class="btn btn-secondary btn-sm" id="fxdata-btn-export" title="Export project as ZIP" disabled>Export</button>
+            <button class="btn btn-primary btn-sm" id="fxdata-btn-build" title="Build fxdata outputs" disabled>Build</button>
+            <button class="btn btn-accent btn-sm" id="fxdata-btn-push" title="Push FX data project to the Code editor" disabled><svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.92 0.95L4.96 0L1.79 3.18L4.96 6.35L5.92 5.4L4.37 3.85H6.79C8.65 3.85 10.16 5.36 10.16 7.23V9.32C8.62 9.63 7.46 10.99 7.46 12.63C7.46 14.49 8.98 16 10.84 16C12.7 16 14.21 14.49 14.21 12.63C14.21 10.99 13.06 9.63 11.51 9.32V7.23C11.51 4.62 9.4 2.5 6.79 2.5H4.37L5.92 0.95Z" fill="currentColor"/></svg>Push to Code</button>
+          </div>
+        </div>
+
+        <!-- Main editor layout: 3-column resizable -->
+        <div class="fxdata-editor-layout" id="fxdata-editor-layout">
+
+          <!-- Left: FX Entries (top) + Assets (bottom) + Settings -->
+          <div class="fxdata-panel-left" id="fxdata-col-left">
+
+            <!-- FX Entries graphical editor -->
+            <div class="fxdata-entries-section">
+              <div class="fxdata-panel-header">
+                <span>FX Data</span>
+              </div>
+
+              <!-- Draggable entry cards -->
+              <div class="fxdata-entries-list" id="fxdata-entries-list">
+                <div class="fxdata-empty-entries">
+                  <p>No entries yet.</p>
+                  <p class="fxdata-hint">Click + below to add an entry, or import a fxdata.txt.</p>
+                </div>
+              </div>
+
+              <!-- Add button: JS moves this into the list as last child on every render -->
+              <div class="fxdata-add-row" id="fxdata-add-row">
+                <div class="fxdata-add-hub" id="fxdata-add-hub">
+                  <!-- Button row first — chips expand BELOW so button never gets pushed -->
+                  <div class="fxdata-add-btn-row">
+                    <button class="fxdata-add-main-btn" id="fxdata-btn-add-entry" title="Add entry">
+                      <span class="fxdata-add-plus">+</span>
+                    </button>
+                  </div>
+                  <!-- Chip row expands downward when open -->
+                  <div class="fxdata-add-chips-row">
+                    <button class="fxdata-add-flyout-chip fxdata-type-data" data-category="number">Number</button>
+                    <button class="fxdata-add-flyout-chip fxdata-type-data" data-category="string">String</button>
+                    <button class="fxdata-add-flyout-chip fxdata-type-asset" data-category="image">Image</button>
+                    <button class="fxdata-add-flyout-chip fxdata-type-asset" data-category="raw">Raw</button>
+                    <button class="fxdata-add-flyout-chip fxdata-type-directive" data-category="directive">Directive</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resize handle between FX Entries and Assets -->
+            <div class="fxdata-resize-handle fxdata-resize-vertical" id="fxdata-resize-entries"></div>
+
+            <!-- Asset files (images, raw binaries) -->
+            <div class="fxdata-project-section">
+              <div class="fxdata-panel-header">
+                <span>Assets</span>
+                <div class="fxdata-assets-actions">
+                  <label class="fxdata-overwrite-label" title="When checked, adding files with existing names will overwrite without asking">
+                    <input type="checkbox" id="fxdata-overwrite-toggle">
+                    <span>Overwrite</span>
+                  </label>
+                  <button class="fxdata-assets-btn" id="fxdata-btn-add-file" title="Add asset file">+ Asset</button>
+                  <button class="fxdata-assets-btn" id="fxdata-btn-add-folder" title="New folder">+ Folder</button>
+                  <button class="fxdata-assets-btn" id="fxdata-btn-new-image" title="Create new blank image">+ Image</button>
+                  <input type="file" id="fxdata-add-file-input" multiple hidden>
+                </div>
+              </div>
+              <div class="fxdata-file-tree" id="fxdata-file-tree">
+                <div class="fxdata-empty-tree">
+                  <p class="fxdata-hint">Images and binary files appear here.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile resize handle for Assets section (visible at <=900px) -->
+            <div class="fxdata-mobile-resize-handle" id="fxdata-mobile-resize-assets" data-target="fxdata-project-section"></div>
+
+          </div>
+
+          <!-- Resize handle: left ↔ center -->
+          <div class="fxdata-resize-handle" id="fxdata-resize-1" title="Drag to resize"></div>
+
+          <!-- Center: Preview (top, fixed height + resizable) + fxdata.txt (fills rest) -->
+          <div class="fxdata-panel-center" id="fxdata-col-center">
+
+            <!-- Preview at top with fixed resizable height -->
+            <div class="fxdata-center-preview-section" id="fxdata-preview-section">
+              <div class="fxdata-panel-header">Preview</div>
+              <div id="fxdata-asset-preview" class="fxdata-asset-preview">
+                <div class="fxdata-empty-preview">
+                  <p>Select an asset to preview.</p>
+                </div>
+              </div>
+
+              <!-- Image controls — shown only when an image is being previewed -->
+              <div id="fxdata-image-controls" class="fxdata-image-controls hidden">
+                <div class="fxdata-image-controls-row">
+                  <label class="fxdata-setting">
+                    <span>Threshold:</span>
+                    <input type="range" id="fxdata-threshold" min="0" max="255" value="128" class="fxdata-slider">
+                    <span id="fxdata-threshold-value" class="fxdata-slider-value">128</span>
+                  </label>
+                  <span class="fxdata-global-note">global</span>
+                </div>
+                <div class="fxdata-image-controls-row">
+                  <label class="fxdata-setting fxdata-override-toggle">
+                    <input type="checkbox" id="fxdata-sprite-override" class="fxdata-checkbox">
+                    <span>Override sprite settings</span>
+                  </label>
+                </div>
+                <div id="fxdata-sprite-override-fields" class="fxdata-sprite-override-fields hidden">
+                  <label class="fxdata-setting">
+                    <span>W:</span>
+                    <input type="number" id="fxdata-sprite-width" class="fxdata-sprite-input" min="1" max="1024" value="0">
+                  </label>
+                  <label class="fxdata-setting">
+                    <span>H:</span>
+                    <input type="number" id="fxdata-sprite-height" class="fxdata-sprite-input" min="1" max="1024" value="0">
+                  </label>
+                  <label class="fxdata-setting">
+                    <span>Spacing:</span>
+                    <input type="number" id="fxdata-sprite-spacing" class="fxdata-sprite-input" min="0" max="256" value="0">
+                  </label>
+                </div>
+                <!-- Frames view -->
+                <div id="fxdata-frames-view" class="fxdata-frames-view hidden"></div>
+              </div>
+
+              <!-- Hex data accordion (within preview section) -->
+              <div class="fxdata-preview-hex-accordion fxdata-accordion-hidden">
+                <button class="fxdata-accordion-toggle fxdata-hex-toggle" id="fxdata-hex-toggle" aria-expanded="false">
+                  <span class="fxdata-accordion-label">Hex Data</span>
+                  <span class="fxdata-accordion-arrow">▼</span>
+                </button>
+                <div id="fxdata-preview-hex" class="fxdata-preview-hex-body fxdata-accordion-body"></div>
+              </div>
+            </div>
+
+            <!-- Mobile resize handle for Preview section (visible at <=900px) -->
+            <div class="fxdata-mobile-resize-handle" id="fxdata-mobile-resize-preview" data-target="fxdata-preview-section"></div>
+
+          </div>
+
+          <!-- Resize handle: center ↔ right -->
+          <div class="fxdata-resize-handle" id="fxdata-resize-2" title="Drag to resize"></div>
+
+          <!-- Right: Structured Memory Map + Memory Layout + Build Accordion + Downloads -->
+          <div class="fxdata-panel-right fxdata-panel" id="fxdata-col-right">
+
+            <!-- Download header + actions -->
+            <div class="fxdata-download-container hidden" id="fxdata-download-container">
+              <!-- Download buttons at top — shown after a successful build -->
+              <div class="fxdata-panel-header">
+                Download
+                <button class="fxdata-help-btn" id="fxdata-download-help" title="What are these files?">?</button>
+              </div>
+              <div id="fxdata-build-actions" class="fxdata-build-actions hidden">
+                <div class="fxdata-dl-grid">
+                  <button class="btn btn-sm btn-secondary fxdata-dl-btn" id="fxdata-dl-header" title="Download fxdata.h"><svg class="fxdata-dl-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1v9m0 0L5 7m3 3 3-3M2 12v2h12v-2"/></svg>fxdata.h</button>
+                  <button class="btn btn-sm btn-secondary fxdata-dl-btn" id="fxdata-dl-dev" title="Download fxdata.bin"><svg class="fxdata-dl-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1v9m0 0L5 7m3 3 3-3M2 12v2h12v-2"/></svg>fxdata.bin</button>
+                  <button class="btn btn-sm btn-secondary fxdata-dl-btn" id="fxdata-dl-data" title="Download fxdata-data.bin"><svg class="fxdata-dl-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1v9m0 0L5 7m3 3 3-3M2 12v2h12v-2"/></svg>fxdata-data.bin</button>
+                  <button class="btn btn-sm btn-secondary fxdata-dl-btn hidden" id="fxdata-dl-save" title="Download fxdata-save.bin"><svg class="fxdata-dl-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1v9m0 0L5 7m3 3 3-3M2 12v2h12v-2"/></svg>fxdata-save.bin</button>
+                </div>
+                <button class="btn btn-sm btn-secondary fxdata-dl-btn fxdata-dl-all" id="fxdata-dl-all" title="Download all as ZIP"><svg class="fxdata-dl-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1v9m0 0L5 7m3 3 3-3M2 12v2h12v-2"/></svg>All</button>
+              </div>
+            </div>
+
+            <!-- Build accordion + tabbed section -->
+            <div class="fxdata-content-container">
+              <!-- Build output accordion -->
+              <div class="fxdata-build-accordion" id="fxdata-build-accordion">
+                <button class="fxdata-accordion-toggle" id="fxdata-build-accordion-toggle" aria-expanded="false">
+                  <span class="fxdata-accordion-label">Build Output</span>
+                  <span class="fxdata-accordion-arrow">▼</span>
+                </button>
+                <div id="fxdata-build-output" class="fxdata-build-output fxdata-accordion-body">
+                  <div class="fxdata-empty-output">No build results yet.</div>
+                </div>
+              </div>
+
+              <!-- Tabbed section: Memory Map / fxdata.txt -->
+              <div class="fxdata-tabbed-section" id="fxdata-right-tabs">
+                <div class="fxdata-tab-bar">
+                  <button class="fxdata-tab active" data-tab="memory-map">Memory Map</button>
+                  <button class="fxdata-tab" data-tab="fxdata-source">fxdata.txt</button>
+                </div>
+
+                <!-- Tab: Memory Map -->
+                <div class="fxdata-tab-content active" id="fxdata-tab-memory-map" data-tab="memory-map">
+                  <div id="fxdata-structured-list" class="fxdata-structured-list">
+                    <div class="fxdata-empty-structured">
+                      <p>Build the project to see structured entries.</p>
+                    </div>
+                  </div>
+                  <div class="fxdata-map-subheader">Memory Layout</div>
+                  <div id="fxdata-memory-map" class="fxdata-memory-map">
+                    <div class="fxdata-empty-map">Build to see memory layout.</div>
+                  </div>
+                  <div id="fxdata-memory-summary" class="fxdata-memory-summary hidden"></div>
+                </div>
+
+                <!-- Tab: fxdata.txt source -->
+                <div class="fxdata-tab-content" id="fxdata-tab-fxdata-source" data-tab="fxdata-source">
+                  <div class="fxdata-source-header">
+                    <span id="fxdata-source-filename" class="fxdata-source-filename">—</span>
+                    <span id="fxdata-dirty-indicator" class="fxdata-dirty hidden">*</span>
+                  </div>
+                  <textarea id="fxdata-source-editor" class="fxdata-source-textarea" spellcheck="false"
+                    placeholder="// FX Data source file&#10;// Import a project or start typing...&#10;&#10;image_t mySprite = &quot;assets/sprite.png&quot;&#10;&#10;uint8_t data[] = {&#10;  0x01, 0x02, 0x03&#10;};">
+                  </textarea>
+                </div>
+              </div>
+            </div><!-- /.fxdata-content-container -->
+
+            <!-- Mobile resize handle for Content section (visible at <=900px) -->
+            <div class="fxdata-mobile-resize-handle" id="fxdata-mobile-resize-content" data-target="fxdata-content-container"></div>
+
+          </div><!-- /.fxdata-panel-right -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Progress Dialog (hidden by default) -->
+    <div id="progress-overlay" class="modal-overlay hidden">
+      <div class="modal-card progress-card">
+        <h3 id="progress-title">Working...</h3>
+        <div class="progress-bar-container">
+          <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+        </div>
+        <p id="progress-status" class="progress-status">Initializing...</p>
+        <p id="progress-percent" class="progress-percent">0%</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="module" src="/src/main.js"></script>
+
+  <!-- Lazy-load compiler scripts when Code tab is activated -->
+  <script>
+  (function() {
+    var loaded = false;
+    function loadCompilerScripts() {
+      if (loaded) return;
+      loaded = true;
+      // Load sentient cloud overlay module
+      var cloudMod = document.createElement('script');
+      cloudMod.type = 'module';
+      cloudMod.textContent = "import { SentientCloudOverlay } from '/cloud-overlay/sentient-cloud.js'; window.__sentientCloud = new SentientCloudOverlay();";
+      document.head.appendChild(cloudMod);
+
+      var scripts = [
+        'https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js',
+        'https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs/loader.js',
+        '/compiler/arduboy-completions.js',
+        '/compiler/bitmap-detector.js',
+        '/compiler/app.js'
+      ];
+      function loadNext(i) {
+        if (i >= scripts.length) return;
+        var s = document.createElement('script');
+        s.src = scripts[i];
+        s.onload = function() { loadNext(i + 1); };
+        document.head.appendChild(s);
+      }
+      loadNext(0);
+    }
+    document.addEventListener('click', function(e) {
+      if (e.target.closest('[data-panel="code"]')) loadCompilerScripts();
+    });
+    if (localStorage.getItem('activeMainTab') === 'code') {
+      loadCompilerScripts();
+    }
+    window.__loadCompilerScripts = loadCompilerScripts;
+  })();
+  </script>
+</body>
+</html>

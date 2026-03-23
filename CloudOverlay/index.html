@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentient Cloud – Demo</title>
+    <style>
+        /* Demo page styles – NOT part of the library */
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; font-family: system-ui, sans-serif; color: #fff; background: #0a0e1a; }
+        .demo { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 16px; }
+        .demo h1 { font-size: 2rem; font-weight: 300; opacity: .8; }
+        .demo button { padding: 12px 32px; font-size: 1rem; border: none; border-radius: 6px; cursor: pointer; color: #fff; font-weight: 600; }
+        .demo .success { background: #2563eb; }
+        .demo .failure { background: #dc2626; }
+    </style>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="demo">
+        <h1>Sentient Cloud Overlay – Demo</h1>
+        <div>
+            <button class="success" id="btn-success">Start → Success</button>
+            <button class="failure" id="btn-fail">Start → Fail</button>
+        </div>
+    </div>
+
+    <script type="module">
+        import { SentientCloudOverlay } from './sentient-cloud.js';
+
+        const cloud = new SentientCloudOverlay();
+
+        document.getElementById('btn-success').addEventListener('click', () => {
+            cloud.start();
+            setTimeout(() => cloud.stop(), 3000);
+        });
+
+        document.getElementById('btn-fail').addEventListener('click', () => {
+            cloud.start();
+            setTimeout(() => cloud.fail(), 3000);
+        });
+    </script>
+</body>
+</html>

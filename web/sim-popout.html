@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arduboy Simulator</title>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0a0a14;
+      color: #d0d0e8;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body.light-theme {
+      background: #f5f5f5;
+      color: #1a1a2e;
+    }
+
+    /* ── Header ─────────────────────────────────────────────────────── */
+    #popoutHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 34px;
+      flex-shrink: 0;
+      padding: 0 12px;
+      background: #1a1a2e;
+      border-bottom: 1px solid #2a2a4a;
+    }
+
+    body.light-theme #popoutHeader {
+      background: #e0e0e8;
+      border-bottom-color: #c0c0d0;
+    }
+
+    .popout-title {
+      font-size: 0.78rem;
+      color: #58d6ff;
+      letter-spacing: 0.08em;
+      font-weight: bold;
+    }
+
+    body.light-theme .popout-title {
+      color: #1a6baa;
+    }
+
+    .popout-controls {
+      display: flex;
+      gap: 6px;
+    }
+
+    .popout-btn {
+      background: transparent;
+      border: 1px solid #2a2a4a;
+      color: #8888aa;
+      cursor: pointer;
+      border-radius: 3px;
+      font-size: 0.78rem;
+      padding: 2px 8px;
+      font-family: inherit;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .popout-btn:hover {
+      border-color: #58d6ff;
+      color: #58d6ff;
+    }
+
+    .popout-btn.active {
+      border-color: #58d6ff;
+      color: #58d6ff;
+      background: rgba(88, 214, 255, 0.1);
+    }
+
+    body.light-theme .popout-btn {
+      border-color: #c0c0d0;
+      color: #666688;
+    }
+
+    body.light-theme .popout-btn:hover,
+    body.light-theme .popout-btn.active {
+      border-color: #1a6baa;
+      color: #1a6baa;
+    }
+
+    body.light-theme .popout-btn.active {
+      background: rgba(26, 107, 170, 0.1);
+    }
+
+    /* ── Canvas area ────────────────────────────────────────────────── */
+    #canvasWrap {
+      position: relative;
+      flex: 1;
+      background: #000;
+      overflow: hidden;
+    }
+
+    #canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      image-rendering: optimizeSpeed;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+      image-rendering: pixelated;
+      outline: none;
+    }
+
+    #placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4a4a6a;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+      pointer-events: none;
+    }
+
+    body.light-theme #placeholder {
+      color: #aaaaaa;
+    }
+
+    /* ── Controls hint ──────────────────────────────────────────────── */
+    .controls-hint {
+      display: flex;
+      gap: 24px;
+      padding: 8px 12px;
+      font-size: 0.68rem;
+      color: #666699;
+      border-top: 1px solid #2a2a4a;
+      flex-shrink: 0;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    body.light-theme .controls-hint {
+      color: #999999;
+      border-top-color: #c0c0d0;
+    }
+
+    .controls-column {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    /* ── Dev Tools fullscreen mode ──────────────────────────────────── */
+    body.devtools-active #popoutHeader { display: none; }
+    body.devtools-active .controls-hint { display: none; }
+
+    body.devtools-active #devtoolsBar {
+      display: flex;
+    }
+
+    #devtoolsBar {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 36px;
+      z-index: 10;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 12px;
+      background: #1a1a2e;
+      border-bottom: 1px solid #2a2a4a;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    body.light-theme #devtoolsBar {
+      background: #e0e0e8;
+      border-bottom-color: #c0c0d0;
+    }
+
+    .devtools-title {
+      font-size: 0.82rem;
+      font-weight: bold;
+      color: #58d6ff;
+      letter-spacing: 0.04em;
+    }
+
+    body.light-theme .devtools-title {
+      color: #1a6baa;
+    }
+
+    .devtools-close-btn {
+      background: transparent;
+      border: 1px solid #2a2a4a;
+      color: #8888aa;
+      cursor: pointer;
+      border-radius: 3px;
+      font-family: inherit;
+      font-size: 1rem;
+      line-height: 1;
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+    }
+
+    .devtools-close-btn:hover {
+      border-color: #ff6b6b;
+      color: #ff6b6b;
+      background: rgba(255, 107, 107, 0.12);
+    }
+
+    body.devtools-active #canvasWrap {
+      position: fixed;
+      top: 36px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100vw;
+      height: calc(100vh - 36px);
+    }
+  </style>
+</head>
+<body>
+  <div id="popoutHeader">
+    <span class="popout-title">Arduboy Simulator</span>
+    <div class="popout-controls">
+      <button id="devToolsBtn" class="popout-btn" title="Developer Tools">&#9881; Dev Tools</button>
+    </div>
+  </div>
+
+  <div id="devtoolsBar">
+    <span class="devtools-title">Ardens Simulator &mdash; Developer Tools</span>
+    <button id="devtoolsCloseBtn" class="devtools-close-btn" title="Exit Developer Tools">&#10005;</button>
+  </div>
+
+  <div id="canvasWrap">
+    <canvas id="canvas" tabindex="0" oncontextmenu="event.preventDefault()"></canvas>
+    <div id="placeholder">
+      <span>Waiting for build data...</span>
+    </div>
+  </div>
+
+  <div class="controls-hint">
+    <div class="controls-column">
+      <span><strong>Arrows</strong> = D-pad</span>
+      <span><strong>A/Z</strong> = A button</span>
+      <span><strong>S/X/B</strong> = B button</span>
+    </div>
+    <div class="controls-column">
+      <span><strong>F2</strong> = Save screenshot</span>
+      <span><strong>F3</strong> = Toggle GIF recording</span>
+      <span><strong>F8</strong> = Reset</span>
+    </div>
+  </div>
+
+  <script>
+  (function () {
+    var canvas = document.getElementById('canvas');
+    var placeholder = document.getElementById('placeholder');
+    var devToolsBtn = document.getElementById('devToolsBtn');
+    var devtoolsCloseBtn = document.getElementById('devtoolsCloseBtn');
+
+    var ardensModule = null;
+    var ardensReady = false;
+    var ardensLoading = false;
+    var devToolsActive = false;
+
+    /* ── Theme sync ───────────────────────────────────────────────── */
+    function applyTheme(theme) {
+      if (theme === 'light') {
+        document.body.classList.add('light-theme');
+      } else {
+        document.body.classList.remove('light-theme');
+      }
+    }
+
+    /* ── Ardens init ──────────────────────────────────────────────── */
+    function initArdens() {
+      if (ardensReady) return Promise.resolve(ardensModule);
+      if (ardensLoading) {
+        return new Promise(function (resolve) {
+          var check = setInterval(function () {
+            if (ardensReady) { clearInterval(check); resolve(ardensModule); }
+          }, 100);
+        });
+      }
+
+      ardensLoading = true;
+
+      return new Promise(function (resolve, reject) {
+        window.Module = {
+          canvas: canvas,
+          onRuntimeInitialized: function () {
+            ardensModule = window.Module;
+            ardensReady = true;
+            ardensLoading = false;
+            resolve(ardensModule);
+          },
+        };
+
+        var script = document.createElement('script');
+        script.src = 'ardens/Ardens.js';
+        script.onerror = function () {
+          ardensLoading = false;
+          reject(new Error('Failed to load Ardens.js'));
+        };
+        document.head.appendChild(script);
+      });
+    }
+
+    function setSimParam(name, value) {
+      if (!ardensReady || !ardensModule) return;
+      try {
+        ardensModule.ccall('setparam', null, ['string', 'string'], [name, value]);
+      } catch (e) {
+        console.warn('[Popout] setparam error:', e);
+      }
+    }
+
+    function loadHex(hexText) {
+      if (!ardensReady || !ardensModule) return;
+      var encoder = new TextEncoder();
+      var fdata = encoder.encode(hexText);
+      var ptr = ardensModule._malloc(fdata.length);
+      ardensModule.HEAPU8.set(fdata, ptr);
+      ardensModule.ccall(
+        'load_file', 'number',
+        ['string', 'string', 'number', 'number'],
+        ['file', 'firmware.hex', ptr, fdata.length]
+      );
+      ardensModule._free(ptr);
+    }
+
+    function loadArduboyPackage(hexText, fxBinArray) {
+      if (!ardensReady || !ardensModule) return Promise.resolve();
+      var info = {
+        title: 'Cloud Build',
+        binaries: [{
+          title: 'Cloud Build',
+          filename: 'firmware.hex',
+          flashdata: 'fxdata.bin',
+        }],
+      };
+      var zip = new JSZip();
+      zip.file('info.json', JSON.stringify(info));
+      zip.file('firmware.hex', hexText);
+      zip.file('fxdata.bin', new Uint8Array(fxBinArray));
+
+      return zip.generateAsync({ type: 'uint8array' }).then(function (zipData) {
+        var ptr = ardensModule._malloc(zipData.length);
+        ardensModule.HEAPU8.set(zipData, ptr);
+        ardensModule.ccall(
+          'load_file', 'number',
+          ['string', 'string', 'number', 'number'],
+          ['file', 'project.arduboy', ptr, zipData.length]
+        );
+        ardensModule._free(ptr);
+      });
+    }
+
+    /* ── Dev Tools ────────────────────────────────────────────────── */
+    function openDevTools() {
+      devToolsActive = true;
+      setSimParam('z', '0');
+      document.body.classList.add('devtools-active');
+      devToolsBtn.classList.add('active');
+      setTimeout(function () {
+        window.dispatchEvent(new Event('resize'));
+      }, 50);
+    }
+
+    function closeDevTools() {
+      devToolsActive = false;
+      setSimParam('z', '1');
+      document.body.classList.remove('devtools-active');
+      devToolsBtn.classList.remove('active');
+      setTimeout(function () {
+        window.dispatchEvent(new Event('resize'));
+      }, 50);
+    }
+
+    devToolsBtn.addEventListener('click', function () {
+      if (devToolsActive) closeDevTools();
+      else openDevTools();
+    });
+
+    devtoolsCloseBtn.addEventListener('click', closeDevTools);
+
+    /* ── Message handler from parent ─────────────────────────────── */
+    window.addEventListener('message', function (event) {
+      var data = event.data;
+      if (!data || !data.type) return;
+
+      switch (data.type) {
+        case 'init':
+          applyTheme(data.theme);
+          initArdens().then(function () {
+            // Apply initial settings
+            if (data.settings) {
+              var s = data.settings;
+              setSimParam('z', '1');
+              setSimParam('af', s.af || '1');
+              if (s.p) setSimParam('p', s.p);
+              if (s.g) setSimParam('g', s.g);
+              if (s.f) setSimParam('f', s.f);
+              if (s.ori) setSimParam('ori', s.ori);
+              if (s.v) setSimParam('v', s.v);
+              if (s.i) setSimParam('i', s.i);
+              if (s.display) setSimParam('display', s.display);
+              if (s.fxport) setSimParam('fxport', s.fxport);
+              if (s.c) setSimParam('c', s.c);
+            }
+            placeholder.classList.add('hidden');
+            // Tell parent we're ready
+            if (window.opener) {
+              window.opener.postMessage({ type: 'popout-ready' }, '*');
+            }
+            // Load initial hex if provided
+            if (data.hex && data.fxData) {
+              loadArduboyPackage(data.hex, data.fxData);
+            } else if (data.hex) {
+              loadHex(data.hex);
+            }
+          });
+          break;
+
+        case 'load-hex':
+          initArdens().then(function () {
+            placeholder.classList.add('hidden');
+            loadHex(data.hex);
+          });
+          break;
+
+        case 'load-arduboy':
+          initArdens().then(function () {
+            placeholder.classList.add('hidden');
+            loadArduboyPackage(data.hex, data.fxData);
+          });
+          break;
+
+        case 'set-param':
+          setSimParam(data.name, data.value);
+          break;
+
+        case 'theme':
+          applyTheme(data.theme);
+          break;
+      }
+    });
+
+    /* ── Notify parent on close ───────────────────────────────────── */
+    window.addEventListener('beforeunload', function () {
+      if (window.opener) {
+        window.opener.postMessage({ type: 'popout-closed' }, '*');
+      }
+    });
+
+    /* ── Hidden class ─────────────────────────────────────────────── */
+    var style = document.createElement('style');
+    style.textContent = '.hidden { display: none !important; }';
+    document.head.appendChild(style);
+  })();
+  </script>
+</body>
+</html>

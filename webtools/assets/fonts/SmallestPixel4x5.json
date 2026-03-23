@@ -1,0 +1,7947 @@
+{
+  "export": {
+    "id": "smallestpixel4x5-native",
+    "font": "SmallestPixel4x5.ttf",
+    "ppem": 10,
+    "mode": "all-encoded",
+    "omitCodepoints": [],
+    "preserveBlankCodepoints": [
+      32,
+      160
+    ],
+    "notes": "Inferred native pixel size of 10px from the font coordinate grid. Filename hints at a 4x5 sprite cell."
+  },
+  "font": {
+    "id": "smallestpixel4x5-native",
+    "family": "Smallest",
+    "fullname": "Smallest Pixel-7",
+    "sourceFont": "SmallestPixel4x5.ttf",
+    "sourcePath": "D:\\Projects\\PixelFonts\\Source Fonts\\SmallestPixel4x5.ttf",
+    "ppem": 10,
+    "em": 1000,
+    "ascent": 750,
+    "descent": 250,
+    "glyphCount": 311,
+    "encodedGlyphCount": 311,
+    "missingPrintableAscii": [],
+    "mode": "all-encoded",
+    "preserveBlankCodepoints": [
+      32,
+      160
+    ],
+    "notes": "Inferred native pixel size of 10px from the font coordinate grid. Filename hints at a 4x5 sprite cell.",
+    "sizeHint": {
+      "width": 4,
+      "height": 5
+    },
+    "omittedBlankCodepoints": []
+  },
+  "cell": {
+    "width": 12,
+    "height": 10,
+    "leftPad": 0,
+    "ascent": 8,
+    "descent": 2,
+    "maxAdvance": 13
+  },
+  "glyphs": [
+    {
+      "codepoint": 32,
+      "char": " ",
+      "display": "SPACE",
+      "name": "space",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 1,
+        "height": 1,
+        "left": 0,
+        "top": 1,
+        "rows": [
+          "0"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 7
+      }
+    },
+    {
+      "codepoint": 33,
+      "char": "!",
+      "display": "!",
+      "name": "exclam",
+      "include": true,
+      "advance": 2,
+      "bitmap": {
+        "width": 1,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1",
+          "1",
+          "1",
+          "0",
+          "1"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 34,
+      "char": "\"",
+      "display": "\"",
+      "name": "quotedbl",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 2,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "101",
+          "101"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 35,
+      "char": "#",
+      "display": "#",
+      "name": "numbersign",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01010",
+          "11111",
+          "01010",
+          "11111",
+          "01010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 36,
+      "char": "$",
+      "display": "$",
+      "name": "dollar",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 6,
+        "rows": [
+          "00100",
+          "01111",
+          "10100",
+          "01110",
+          "00101",
+          "11110",
+          "00100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 37,
+      "char": "%",
+      "display": "%",
+      "name": "percent",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10001",
+          "00010",
+          "00100",
+          "01000",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 38,
+      "char": "&",
+      "display": "&",
+      "name": "ampersand",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01100",
+          "10010",
+          "01101",
+          "10010",
+          "01101"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 39,
+      "char": "'",
+      "display": "'",
+      "name": "quotesingle",
+      "include": true,
+      "advance": 2,
+      "bitmap": {
+        "width": 1,
+        "height": 2,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1",
+          "1"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 40,
+      "char": "(",
+      "display": "(",
+      "name": "parenleft",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01",
+          "10",
+          "10",
+          "10",
+          "01"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 41,
+      "char": ")",
+      "display": ")",
+      "name": "parenright",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10",
+          "01",
+          "01",
+          "01",
+          "10"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 42,
+      "char": "*",
+      "display": "*",
+      "name": "asterisk",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 3,
+        "left": 0,
+        "top": 4,
+        "rows": [
+          "101",
+          "010",
+          "101"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 4
+      }
+    },
+    {
+      "codepoint": 43,
+      "char": "+",
+      "display": "+",
+      "name": "plus",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 3,
+        "left": 0,
+        "top": 4,
+        "rows": [
+          "010",
+          "111",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 4
+      }
+    },
+    {
+      "codepoint": 44,
+      "char": ",",
+      "display": ",",
+      "name": "comma",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 2,
+        "left": 0,
+        "top": 1,
+        "rows": [
+          "10",
+          "01"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 7
+      }
+    },
+    {
+      "codepoint": 45,
+      "char": "-",
+      "display": "-",
+      "name": "hyphen",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 1,
+        "left": 0,
+        "top": 3,
+        "rows": [
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 5
+      }
+    },
+    {
+      "codepoint": 46,
+      "char": ".",
+      "display": ".",
+      "name": "period",
+      "include": true,
+      "advance": 2,
+      "bitmap": {
+        "width": 1,
+        "height": 1,
+        "left": 0,
+        "top": 1,
+        "rows": [
+          "1"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 7
+      }
+    },
+    {
+      "codepoint": 47,
+      "char": "/",
+      "display": "/",
+      "name": "slash",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "00001",
+          "00010",
+          "00100",
+          "01000",
+          "10000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 48,
+      "char": "0",
+      "display": "0",
+      "name": "zero",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 49,
+      "char": "1",
+      "display": "1",
+      "name": "one",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "010",
+          "110",
+          "010",
+          "010",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 50,
+      "char": "2",
+      "display": "2",
+      "name": "two",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "0001",
+          "0110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 51,
+      "char": "3",
+      "display": "3",
+      "name": "three",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "0001",
+          "0110",
+          "0001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 52,
+      "char": "4",
+      "display": "4",
+      "name": "four",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1001",
+          "1111",
+          "0001",
+          "0001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 53,
+      "char": "5",
+      "display": "5",
+      "name": "five",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "1000",
+          "1110",
+          "0001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 54,
+      "char": "6",
+      "display": "6",
+      "name": "six",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110",
+          "1000",
+          "1110",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 55,
+      "char": "7",
+      "display": "7",
+      "name": "seven",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "0001",
+          "0010",
+          "0100",
+          "0100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 56,
+      "char": "8",
+      "display": "8",
+      "name": "eight",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110",
+          "1001",
+          "0110",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 57,
+      "char": "9",
+      "display": "9",
+      "name": "nine",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110",
+          "1001",
+          "0111",
+          "0001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 58,
+      "char": ":",
+      "display": ":",
+      "name": "colon",
+      "include": true,
+      "advance": 2,
+      "bitmap": {
+        "width": 1,
+        "height": 3,
+        "left": 0,
+        "top": 4,
+        "rows": [
+          "1",
+          "0",
+          "1"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 4
+      }
+    },
+    {
+      "codepoint": 59,
+      "char": ";",
+      "display": ";",
+      "name": "semicolon",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 5,
+        "left": 0,
+        "top": 4,
+        "rows": [
+          "10",
+          "00",
+          "00",
+          "10",
+          "01"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 4
+      }
+    },
+    {
+      "codepoint": 60,
+      "char": "<",
+      "display": "<",
+      "name": "less",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "001",
+          "010",
+          "100",
+          "010",
+          "001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 61,
+      "char": "=",
+      "display": "=",
+      "name": "equal",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 3,
+        "left": 0,
+        "top": 4,
+        "rows": [
+          "111",
+          "000",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 4
+      }
+    },
+    {
+      "codepoint": 62,
+      "char": ">",
+      "display": ">",
+      "name": "greater",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "100",
+          "010",
+          "001",
+          "010",
+          "100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 63,
+      "char": "?",
+      "display": "?",
+      "name": "question",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "0001",
+          "0110",
+          "0000",
+          "0100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 64,
+      "char": "@",
+      "display": "@",
+      "name": "at",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110",
+          "1001",
+          "1011",
+          "1000",
+          "0111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 65,
+      "char": "A",
+      "display": "A",
+      "name": "A",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 66,
+      "char": "B",
+      "display": "B",
+      "name": "B",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "1001",
+          "1110",
+          "1001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 67,
+      "char": "C",
+      "display": "C",
+      "name": "C",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1000",
+          "1000",
+          "1000",
+          "0111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 68,
+      "char": "D",
+      "display": "D",
+      "name": "D",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "1001",
+          "1001",
+          "1001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 69,
+      "char": "E",
+      "display": "E",
+      "name": "E",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "1000",
+          "1110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 70,
+      "char": "F",
+      "display": "F",
+      "name": "F",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "1000",
+          "1110",
+          "1000",
+          "1000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 71,
+      "char": "G",
+      "display": "G",
+      "name": "G",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1000",
+          "1011",
+          "1001",
+          "0111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 72,
+      "char": "H",
+      "display": "H",
+      "name": "H",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 73,
+      "char": "I",
+      "display": "I",
+      "name": "I",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "111",
+          "010",
+          "010",
+          "010",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 74,
+      "char": "J",
+      "display": "J",
+      "name": "J",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "0001",
+          "0001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 75,
+      "char": "K",
+      "display": "K",
+      "name": "K",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1010",
+          "1100",
+          "1010",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 76,
+      "char": "L",
+      "display": "L",
+      "name": "L",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1000",
+          "1000",
+          "1000",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 77,
+      "char": "M",
+      "display": "M",
+      "name": "M",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10001",
+          "11011",
+          "10101",
+          "10001",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 78,
+      "char": "N",
+      "display": "N",
+      "name": "N",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1101",
+          "1011",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 79,
+      "char": "O",
+      "display": "O",
+      "name": "O",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 80,
+      "char": "P",
+      "display": "P",
+      "name": "P",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "1001",
+          "1110",
+          "1000",
+          "1000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 81,
+      "char": "Q",
+      "display": "Q",
+      "name": "Q",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 6,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110",
+          "0001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 82,
+      "char": "R",
+      "display": "R",
+      "name": "R",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "1001",
+          "1110",
+          "1010",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 83,
+      "char": "S",
+      "display": "S",
+      "name": "S",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1000",
+          "0110",
+          "0001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 84,
+      "char": "T",
+      "display": "T",
+      "name": "T",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "111",
+          "010",
+          "010",
+          "010",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 85,
+      "char": "U",
+      "display": "U",
+      "name": "U",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 86,
+      "char": "V",
+      "display": "V",
+      "name": "V",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "101",
+          "101",
+          "101",
+          "101",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 87,
+      "char": "W",
+      "display": "W",
+      "name": "W",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10001",
+          "10101",
+          "10101",
+          "10101",
+          "01010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 88,
+      "char": "X",
+      "display": "X",
+      "name": "X",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1001",
+          "0110",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 89,
+      "char": "Y",
+      "display": "Y",
+      "name": "Y",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "101",
+          "101",
+          "010",
+          "010",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 90,
+      "char": "Z",
+      "display": "Z",
+      "name": "Z",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "0001",
+          "0110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 91,
+      "char": "[",
+      "display": "[",
+      "name": "bracketleft",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "11",
+          "10",
+          "10",
+          "10",
+          "11"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 92,
+      "char": "\\",
+      "display": "\\",
+      "name": "backslash",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10000",
+          "01000",
+          "00100",
+          "00010",
+          "00001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 93,
+      "char": "]",
+      "display": "]",
+      "name": "bracketright",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "11",
+          "01",
+          "01",
+          "01",
+          "11"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 94,
+      "char": "^",
+      "display": "^",
+      "name": "asciicircum",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 3,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "00100",
+          "01010",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 95,
+      "char": "_",
+      "display": "_",
+      "name": "underscore",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 1,
+        "left": 0,
+        "top": 1,
+        "rows": [
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 7
+      }
+    },
+    {
+      "codepoint": 96,
+      "char": "`",
+      "display": "`",
+      "name": "grave",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 2,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10",
+          "01"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 97,
+      "char": "a",
+      "display": "a",
+      "name": "a",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 98,
+      "char": "b",
+      "display": "b",
+      "name": "b",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "1001",
+          "1110",
+          "1001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 99,
+      "char": "c",
+      "display": "c",
+      "name": "c",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1000",
+          "1000",
+          "1000",
+          "0111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 100,
+      "char": "d",
+      "display": "d",
+      "name": "d",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "1001",
+          "1001",
+          "1001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 101,
+      "char": "e",
+      "display": "e",
+      "name": "e",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "1000",
+          "1110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 102,
+      "char": "f",
+      "display": "f",
+      "name": "f",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "1000",
+          "1110",
+          "1000",
+          "1000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 103,
+      "char": "g",
+      "display": "g",
+      "name": "g",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1000",
+          "1011",
+          "1001",
+          "0111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 104,
+      "char": "h",
+      "display": "h",
+      "name": "h",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 105,
+      "char": "i",
+      "display": "i",
+      "name": "i",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "111",
+          "010",
+          "010",
+          "010",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 106,
+      "char": "j",
+      "display": "j",
+      "name": "j",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "0001",
+          "0001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 107,
+      "char": "k",
+      "display": "k",
+      "name": "k",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1010",
+          "1100",
+          "1010",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 108,
+      "char": "l",
+      "display": "l",
+      "name": "l",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1000",
+          "1000",
+          "1000",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 109,
+      "char": "m",
+      "display": "m",
+      "name": "m",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10001",
+          "11011",
+          "10101",
+          "10001",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 110,
+      "char": "n",
+      "display": "n",
+      "name": "n",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1101",
+          "1011",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 111,
+      "char": "o",
+      "display": "o",
+      "name": "o",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 112,
+      "char": "p",
+      "display": "p",
+      "name": "p",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "1001",
+          "1110",
+          "1000",
+          "1000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 113,
+      "char": "q",
+      "display": "q",
+      "name": "q",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 6,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110",
+          "0001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 114,
+      "char": "r",
+      "display": "r",
+      "name": "r",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "1001",
+          "1110",
+          "1010",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 115,
+      "char": "s",
+      "display": "s",
+      "name": "s",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1000",
+          "0110",
+          "0001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 116,
+      "char": "t",
+      "display": "t",
+      "name": "t",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "111",
+          "010",
+          "010",
+          "010",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 117,
+      "char": "u",
+      "display": "u",
+      "name": "u",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 118,
+      "char": "v",
+      "display": "v",
+      "name": "v",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "101",
+          "101",
+          "101",
+          "101",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 119,
+      "char": "w",
+      "display": "w",
+      "name": "w",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10001",
+          "10101",
+          "10101",
+          "10101",
+          "01010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 120,
+      "char": "x",
+      "display": "x",
+      "name": "x",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1001",
+          "0110",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 121,
+      "char": "y",
+      "display": "y",
+      "name": "y",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "101",
+          "101",
+          "010",
+          "010",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 122,
+      "char": "z",
+      "display": "z",
+      "name": "z",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "0001",
+          "0110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 123,
+      "char": "{",
+      "display": "{",
+      "name": "braceleft",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "011",
+          "010",
+          "110",
+          "010",
+          "011"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 124,
+      "char": "|",
+      "display": "|",
+      "name": "bar",
+      "include": true,
+      "advance": 2,
+      "bitmap": {
+        "width": 1,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 125,
+      "char": "}",
+      "display": "}",
+      "name": "braceright",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "110",
+          "010",
+          "011",
+          "010",
+          "110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 126,
+      "char": "~",
+      "display": "~",
+      "name": "asciitilde",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 2,
+        "left": 0,
+        "top": 4,
+        "rows": [
+          "0101",
+          "1010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 4
+      }
+    },
+    {
+      "codepoint": 161,
+      "char": "¡",
+      "display": "¡",
+      "name": "exclamdown",
+      "include": true,
+      "advance": 2,
+      "bitmap": {
+        "width": 1,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1",
+          "0",
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 162,
+      "char": "¢",
+      "display": "¢",
+      "name": "cent",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 6,
+        "rows": [
+          "00100",
+          "01111",
+          "10100",
+          "10100",
+          "10100",
+          "01111",
+          "00100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 163,
+      "char": "£",
+      "display": "£",
+      "name": "sterling",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0011",
+          "0100",
+          "1110",
+          "0100",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 164,
+      "char": "¤",
+      "display": "¤",
+      "name": "currency",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 4,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "0110",
+          "0110",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 165,
+      "char": "¥",
+      "display": "¥",
+      "name": "yen",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 6,
+        "left": 0,
+        "top": 6,
+        "rows": [
+          "101",
+          "101",
+          "010",
+          "111",
+          "010",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 166,
+      "char": "¦",
+      "display": "¦",
+      "name": "brokenbar",
+      "include": true,
+      "advance": 2,
+      "bitmap": {
+        "width": 1,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1",
+          "1",
+          "0",
+          "1",
+          "1"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 167,
+      "char": "§",
+      "display": "§",
+      "name": "section",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 6,
+        "rows": [
+          "0111",
+          "1000",
+          "1110",
+          "1001",
+          "0111",
+          "0001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 168,
+      "char": "¨",
+      "display": "¨",
+      "name": "dieresis",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 1,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "101"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 169,
+      "char": "©",
+      "display": "©",
+      "name": "copyright",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 7,
+        "height": 8,
+        "left": 0,
+        "top": 6,
+        "rows": [
+          "0111110",
+          "1000001",
+          "1011101",
+          "1010001",
+          "1010001",
+          "1011101",
+          "1000001",
+          "0111110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 170,
+      "char": "ª",
+      "display": "ª",
+      "name": "ordfeminine",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110",
+          "0001",
+          "0111",
+          "1001",
+          "0111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 171,
+      "char": "«",
+      "display": "«",
+      "name": "guillemotleft",
+      "include": true,
+      "advance": 7,
+      "bitmap": {
+        "width": 6,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "001001",
+          "010010",
+          "100100",
+          "010010",
+          "001001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 172,
+      "char": "¬",
+      "display": "¬",
+      "name": "logicalnot",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 2,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "0001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 173,
+      "char": "­",
+      "display": "U+00AD",
+      "name": "uni00AD",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 1,
+        "left": 0,
+        "top": 3,
+        "rows": [
+          "11"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 5
+      }
+    },
+    {
+      "codepoint": 174,
+      "char": "®",
+      "display": "®",
+      "name": "registered",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 7,
+        "height": 8,
+        "left": 0,
+        "top": 6,
+        "rows": [
+          "0111110",
+          "1000001",
+          "1011001",
+          "1010101",
+          "1011001",
+          "1010101",
+          "1000001",
+          "0111110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 176,
+      "char": "°",
+      "display": "°",
+      "name": "degree",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 3,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "010",
+          "101",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 177,
+      "char": "±",
+      "display": "±",
+      "name": "plusminus",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "010",
+          "111",
+          "010",
+          "000",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 178,
+      "char": "²",
+      "display": "²",
+      "name": "twosuperior",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1110",
+          "0001",
+          "0110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 179,
+      "char": "³",
+      "display": "³",
+      "name": "threesuperior",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1110",
+          "0001",
+          "0110",
+          "0001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 180,
+      "char": "´",
+      "display": "´",
+      "name": "acute",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 2,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01",
+          "10"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 181,
+      "char": "µ",
+      "display": "µ",
+      "name": "mu",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 6,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10001",
+          "10001",
+          "10001",
+          "11011",
+          "10101",
+          "10000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 182,
+      "char": "¶",
+      "display": "¶",
+      "name": "paragraph",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "11111",
+          "11010",
+          "01010",
+          "01010",
+          "01010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 183,
+      "char": "·",
+      "display": "·",
+      "name": "periodcentered",
+      "include": true,
+      "advance": 2,
+      "bitmap": {
+        "width": 1,
+        "height": 1,
+        "left": 0,
+        "top": 3,
+        "rows": [
+          "1"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 5
+      }
+    },
+    {
+      "codepoint": 184,
+      "char": "¸",
+      "display": "¸",
+      "name": "cedilla",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 2,
+        "left": 0,
+        "top": 0,
+        "rows": [
+          "001",
+          "110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 8
+      }
+    },
+    {
+      "codepoint": 185,
+      "char": "¹",
+      "display": "¹",
+      "name": "onesuperior",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "010",
+          "110",
+          "010",
+          "010",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 186,
+      "char": "º",
+      "display": "º",
+      "name": "ordmasculine",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 187,
+      "char": "»",
+      "display": "»",
+      "name": "guillemotright",
+      "include": true,
+      "advance": 7,
+      "bitmap": {
+        "width": 6,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "100100",
+          "010010",
+          "001001",
+          "010010",
+          "100100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 188,
+      "char": "¼",
+      "display": "¼",
+      "name": "onequarter",
+      "include": true,
+      "advance": 13,
+      "bitmap": {
+        "width": 12,
+        "height": 9,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "110000000000",
+          "010000000000",
+          "010000010000",
+          "010000100000",
+          "111001001001",
+          "000010001001",
+          "000100001111",
+          "000000000001",
+          "000000000001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 189,
+      "char": "½",
+      "display": "½",
+      "name": "onehalf",
+      "include": true,
+      "advance": 13,
+      "bitmap": {
+        "width": 12,
+        "height": 9,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "110000000000",
+          "010000000000",
+          "010000010000",
+          "010000100000",
+          "111001001110",
+          "000010000001",
+          "000100000110",
+          "000000001000",
+          "000000001111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 190,
+      "char": "¾",
+      "display": "¾",
+      "name": "threequarters",
+      "include": true,
+      "advance": 13,
+      "bitmap": {
+        "width": 12,
+        "height": 9,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "111000000000",
+          "000100000000",
+          "011000010000",
+          "000100100000",
+          "111001001001",
+          "000010001001",
+          "000100001111",
+          "000000000001",
+          "000000000001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 191,
+      "char": "¿",
+      "display": "¿",
+      "name": "questiondown",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0010",
+          "0000",
+          "0110",
+          "1000",
+          "0111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 192,
+      "char": "À",
+      "display": "À",
+      "name": "Agrave",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "1000",
+          "0100",
+          "0000",
+          "0110",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 193,
+      "char": "Á",
+      "display": "Á",
+      "name": "Aacute",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0001",
+          "0010",
+          "0000",
+          "0110",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 194,
+      "char": "Â",
+      "display": "Â",
+      "name": "Acircumflex",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0110",
+          "1001",
+          "0000",
+          "0110",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 195,
+      "char": "Ã",
+      "display": "Ã",
+      "name": "Atilde",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0101",
+          "1010",
+          "0000",
+          "0110",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 196,
+      "char": "Ä",
+      "display": "Ä",
+      "name": "Adieresis",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1001",
+          "0000",
+          "0110",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 197,
+      "char": "Å",
+      "display": "Å",
+      "name": "Aring",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "0110",
+          "1001",
+          "0110",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 198,
+      "char": "Æ",
+      "display": "Æ",
+      "name": "AE",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01111",
+          "10100",
+          "11110",
+          "10100",
+          "10111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 199,
+      "char": "Ç",
+      "display": "Ç",
+      "name": "Ccedilla",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1000",
+          "1000",
+          "1000",
+          "0111",
+          "0010",
+          "1100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 200,
+      "char": "È",
+      "display": "È",
+      "name": "Egrave",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "1000",
+          "0100",
+          "0000",
+          "1111",
+          "1000",
+          "1110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 201,
+      "char": "É",
+      "display": "É",
+      "name": "Eacute",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0001",
+          "0010",
+          "0000",
+          "1111",
+          "1000",
+          "1110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 202,
+      "char": "Ê",
+      "display": "Ê",
+      "name": "Ecircumflex",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0110",
+          "1001",
+          "0000",
+          "1111",
+          "1000",
+          "1110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 203,
+      "char": "Ë",
+      "display": "Ë",
+      "name": "Edieresis",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1001",
+          "0000",
+          "1111",
+          "1000",
+          "1110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 204,
+      "char": "Ì",
+      "display": "Ì",
+      "name": "Igrave",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "100",
+          "010",
+          "000",
+          "111",
+          "010",
+          "010",
+          "010",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 205,
+      "char": "Í",
+      "display": "Í",
+      "name": "Iacute",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "001",
+          "010",
+          "000",
+          "111",
+          "010",
+          "010",
+          "010",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 206,
+      "char": "Î",
+      "display": "Î",
+      "name": "Icircumflex",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "010",
+          "101",
+          "000",
+          "111",
+          "010",
+          "010",
+          "010",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 207,
+      "char": "Ï",
+      "display": "Ï",
+      "name": "Idieresis",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "101",
+          "000",
+          "111",
+          "010",
+          "010",
+          "010",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 208,
+      "char": "Ð",
+      "display": "Ð",
+      "name": "Eth",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01110",
+          "01001",
+          "11101",
+          "01001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 209,
+      "char": "Ñ",
+      "display": "Ñ",
+      "name": "Ntilde",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0101",
+          "1010",
+          "0000",
+          "1001",
+          "1101",
+          "1011",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 210,
+      "char": "Ò",
+      "display": "Ò",
+      "name": "Ograve",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "1000",
+          "0100",
+          "0000",
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 211,
+      "char": "Ó",
+      "display": "Ó",
+      "name": "Oacute",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0001",
+          "0010",
+          "0000",
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 212,
+      "char": "Ô",
+      "display": "Ô",
+      "name": "Ocircumflex",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0110",
+          "1001",
+          "0000",
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 213,
+      "char": "Õ",
+      "display": "Õ",
+      "name": "Otilde",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0101",
+          "1010",
+          "0000",
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 214,
+      "char": "Ö",
+      "display": "Ö",
+      "name": "Odieresis",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1001",
+          "0000",
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 215,
+      "char": "×",
+      "display": "×",
+      "name": "multiply",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 3,
+        "left": 0,
+        "top": 4,
+        "rows": [
+          "101",
+          "010",
+          "101"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 4
+      }
+    },
+    {
+      "codepoint": 216,
+      "char": "Ø",
+      "display": "Ø",
+      "name": "Oslash",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01110",
+          "10011",
+          "10101",
+          "11001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 217,
+      "char": "Ù",
+      "display": "Ù",
+      "name": "Ugrave",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "1000",
+          "0100",
+          "0000",
+          "1001",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 218,
+      "char": "Ú",
+      "display": "Ú",
+      "name": "Uacute",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0001",
+          "0010",
+          "0000",
+          "1001",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 219,
+      "char": "Û",
+      "display": "Û",
+      "name": "Ucircumflex",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0110",
+          "1001",
+          "0000",
+          "1001",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 220,
+      "char": "Ü",
+      "display": "Ü",
+      "name": "Udieresis",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1001",
+          "0000",
+          "1001",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 221,
+      "char": "Ý",
+      "display": "Ý",
+      "name": "Yacute",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "001",
+          "010",
+          "000",
+          "101",
+          "101",
+          "010",
+          "010",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 222,
+      "char": "Þ",
+      "display": "Þ",
+      "name": "Thorn",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1000",
+          "1110",
+          "1001",
+          "1110",
+          "1000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 223,
+      "char": "ß",
+      "display": "ß",
+      "name": "germandbls",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110",
+          "1001",
+          "1110",
+          "1001",
+          "1010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 224,
+      "char": "à",
+      "display": "à",
+      "name": "agrave",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "1000",
+          "0100",
+          "0000",
+          "0110",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 225,
+      "char": "á",
+      "display": "á",
+      "name": "aacute",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0001",
+          "0010",
+          "0000",
+          "0110",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 226,
+      "char": "â",
+      "display": "â",
+      "name": "acircumflex",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0110",
+          "1001",
+          "0000",
+          "0110",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 227,
+      "char": "ã",
+      "display": "ã",
+      "name": "atilde",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0101",
+          "1010",
+          "0000",
+          "0110",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 228,
+      "char": "ä",
+      "display": "ä",
+      "name": "adieresis",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1001",
+          "0000",
+          "0110",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 229,
+      "char": "å",
+      "display": "å",
+      "name": "aring",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "0110",
+          "1001",
+          "0110",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 230,
+      "char": "æ",
+      "display": "æ",
+      "name": "ae",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01111",
+          "10100",
+          "11110",
+          "10100",
+          "10111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 231,
+      "char": "ç",
+      "display": "ç",
+      "name": "ccedilla",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1000",
+          "1000",
+          "1000",
+          "0111",
+          "0010",
+          "1100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 232,
+      "char": "è",
+      "display": "è",
+      "name": "egrave",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "1000",
+          "0100",
+          "0000",
+          "1111",
+          "1000",
+          "1110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 233,
+      "char": "é",
+      "display": "é",
+      "name": "eacute",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0001",
+          "0010",
+          "0000",
+          "1111",
+          "1000",
+          "1110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 234,
+      "char": "ê",
+      "display": "ê",
+      "name": "ecircumflex",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0110",
+          "1001",
+          "0000",
+          "1111",
+          "1000",
+          "1110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 235,
+      "char": "ë",
+      "display": "ë",
+      "name": "edieresis",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1001",
+          "0000",
+          "1111",
+          "1000",
+          "1110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 236,
+      "char": "ì",
+      "display": "ì",
+      "name": "igrave",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "100",
+          "010",
+          "000",
+          "111",
+          "010",
+          "010",
+          "010",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 237,
+      "char": "í",
+      "display": "í",
+      "name": "iacute",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "001",
+          "010",
+          "000",
+          "111",
+          "010",
+          "010",
+          "010",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 238,
+      "char": "î",
+      "display": "î",
+      "name": "icircumflex",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "010",
+          "101",
+          "000",
+          "111",
+          "010",
+          "010",
+          "010",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 239,
+      "char": "ï",
+      "display": "ï",
+      "name": "idieresis",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "101",
+          "000",
+          "111",
+          "010",
+          "010",
+          "010",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 240,
+      "char": "ð",
+      "display": "ð",
+      "name": "eth",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01110",
+          "01001",
+          "11101",
+          "01001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 241,
+      "char": "ñ",
+      "display": "ñ",
+      "name": "ntilde",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0101",
+          "1010",
+          "0000",
+          "1001",
+          "1101",
+          "1011",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 242,
+      "char": "ò",
+      "display": "ò",
+      "name": "ograve",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "1000",
+          "0100",
+          "0000",
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 243,
+      "char": "ó",
+      "display": "ó",
+      "name": "oacute",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0001",
+          "0010",
+          "0000",
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 244,
+      "char": "ô",
+      "display": "ô",
+      "name": "ocircumflex",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0110",
+          "1001",
+          "0000",
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 245,
+      "char": "õ",
+      "display": "õ",
+      "name": "otilde",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0101",
+          "1010",
+          "0000",
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 246,
+      "char": "ö",
+      "display": "ö",
+      "name": "odieresis",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1001",
+          "0000",
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 247,
+      "char": "÷",
+      "display": "÷",
+      "name": "divide",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "010",
+          "000",
+          "111",
+          "000",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 248,
+      "char": "ø",
+      "display": "ø",
+      "name": "oslash",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01110",
+          "10011",
+          "10101",
+          "11001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 249,
+      "char": "ù",
+      "display": "ù",
+      "name": "ugrave",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "1000",
+          "0100",
+          "0000",
+          "1001",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 250,
+      "char": "ú",
+      "display": "ú",
+      "name": "uacute",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0001",
+          "0010",
+          "0000",
+          "1001",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 251,
+      "char": "û",
+      "display": "û",
+      "name": "ucircumflex",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0110",
+          "1001",
+          "0000",
+          "1001",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 252,
+      "char": "ü",
+      "display": "ü",
+      "name": "udieresis",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1001",
+          "0000",
+          "1001",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 253,
+      "char": "ý",
+      "display": "ý",
+      "name": "yacute",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "001",
+          "010",
+          "000",
+          "101",
+          "101",
+          "010",
+          "010",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 254,
+      "char": "þ",
+      "display": "þ",
+      "name": "thorn",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1000",
+          "1110",
+          "1001",
+          "1110",
+          "1000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 255,
+      "char": "ÿ",
+      "display": "ÿ",
+      "name": "ydieresis",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "101",
+          "000",
+          "101",
+          "101",
+          "010",
+          "010",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 338,
+      "char": "Œ",
+      "display": "Œ",
+      "name": "OE",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01111",
+          "10100",
+          "10110",
+          "10100",
+          "01111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 339,
+      "char": "œ",
+      "display": "œ",
+      "name": "oe",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01111",
+          "10100",
+          "10110",
+          "10100",
+          "01111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 352,
+      "char": "Š",
+      "display": "Š",
+      "name": "Scaron",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0101",
+          "0010",
+          "0000",
+          "0111",
+          "1000",
+          "0110",
+          "0001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 353,
+      "char": "š",
+      "display": "š",
+      "name": "scaron",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0101",
+          "0010",
+          "0000",
+          "0111",
+          "1000",
+          "0110",
+          "0001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 376,
+      "char": "Ÿ",
+      "display": "Ÿ",
+      "name": "Ydieresis",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "101",
+          "000",
+          "101",
+          "101",
+          "010",
+          "010",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 381,
+      "char": "Ž",
+      "display": "Ž",
+      "name": "Zcaron",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0101",
+          "0010",
+          "0000",
+          "1111",
+          "0001",
+          "0110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 382,
+      "char": "ž",
+      "display": "ž",
+      "name": "zcaron",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0101",
+          "0010",
+          "0000",
+          "1111",
+          "0001",
+          "0110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 402,
+      "char": "ƒ",
+      "display": "ƒ",
+      "name": "florin",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0011",
+          "0100",
+          "1110",
+          "0100",
+          "0100",
+          "0100",
+          "1000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 710,
+      "char": "ˆ",
+      "display": "ˆ",
+      "name": "circumflex",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 2,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "010",
+          "101"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 732,
+      "char": "˜",
+      "display": "˜",
+      "name": "tilde",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 2,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0101",
+          "1010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1025,
+      "char": "Ё",
+      "display": "Ё",
+      "name": "afii10023",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1001",
+          "0000",
+          "1111",
+          "1000",
+          "1110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 1026,
+      "char": "Ђ",
+      "display": "Ђ",
+      "name": "afii10051",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "11100",
+          "01000",
+          "01110",
+          "01001",
+          "01010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1027,
+      "char": "Ѓ",
+      "display": "Ѓ",
+      "name": "afii10052",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0001",
+          "0010",
+          "0000",
+          "1111",
+          "1000",
+          "1000",
+          "1000",
+          "1000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 1028,
+      "char": "Є",
+      "display": "Є",
+      "name": "afii10053",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1000",
+          "1110",
+          "1000",
+          "0111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1029,
+      "char": "Ѕ",
+      "display": "Ѕ",
+      "name": "afii10054",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1000",
+          "0110",
+          "0001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1030,
+      "char": "І",
+      "display": "І",
+      "name": "afii10055",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "111",
+          "010",
+          "010",
+          "010",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1031,
+      "char": "Ї",
+      "display": "Ї",
+      "name": "afii10056",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "101",
+          "000",
+          "111",
+          "010",
+          "010",
+          "010",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 1032,
+      "char": "Ј",
+      "display": "Ј",
+      "name": "afii10057",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "0001",
+          "0001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1033,
+      "char": "Љ",
+      "display": "Љ",
+      "name": "afii10058",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01100",
+          "10100",
+          "10110",
+          "10101",
+          "10110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1034,
+      "char": "Њ",
+      "display": "Њ",
+      "name": "afii10059",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10100",
+          "10100",
+          "11110",
+          "10101",
+          "10110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1035,
+      "char": "Ћ",
+      "display": "Ћ",
+      "name": "afii10060",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "11100",
+          "01000",
+          "01110",
+          "01001",
+          "01001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1036,
+      "char": "Ќ",
+      "display": "Ќ",
+      "name": "afii10061",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0001",
+          "0010",
+          "0000",
+          "1001",
+          "1010",
+          "1100",
+          "1010",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 1038,
+      "char": "Ў",
+      "display": "Ў",
+      "name": "afii10062",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "101",
+          "010",
+          "000",
+          "101",
+          "101",
+          "010",
+          "010",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 1039,
+      "char": "Џ",
+      "display": "Џ",
+      "name": "afii10145",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 6,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "101",
+          "101",
+          "101",
+          "101",
+          "111",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1040,
+      "char": "А",
+      "display": "А",
+      "name": "afii10017",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1041,
+      "char": "Б",
+      "display": "Б",
+      "name": "afii10018",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "1000",
+          "1110",
+          "1001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1042,
+      "char": "В",
+      "display": "В",
+      "name": "afii10019",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "1001",
+          "1110",
+          "1001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1043,
+      "char": "Г",
+      "display": "Г",
+      "name": "afii10020",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "1000",
+          "1000",
+          "1000",
+          "1000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1044,
+      "char": "Д",
+      "display": "Д",
+      "name": "afii10021",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 6,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "00110",
+          "01010",
+          "01010",
+          "01010",
+          "11111",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1045,
+      "char": "Е",
+      "display": "Е",
+      "name": "afii10022",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "1000",
+          "1110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1046,
+      "char": "Ж",
+      "display": "Ж",
+      "name": "afii10024",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10101",
+          "10101",
+          "01110",
+          "10101",
+          "10101"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1047,
+      "char": "З",
+      "display": "З",
+      "name": "afii10025",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "0001",
+          "0110",
+          "0001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1048,
+      "char": "И",
+      "display": "И",
+      "name": "afii10026",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1001",
+          "1011",
+          "1101",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1049,
+      "char": "Й",
+      "display": "Й",
+      "name": "afii10027",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "0110",
+          "0000",
+          "1001",
+          "1001",
+          "1011",
+          "1101",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 1050,
+      "char": "К",
+      "display": "К",
+      "name": "afii10028",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1010",
+          "1100",
+          "1010",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1051,
+      "char": "Л",
+      "display": "Л",
+      "name": "afii10029",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1001",
+          "1001",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1052,
+      "char": "М",
+      "display": "М",
+      "name": "afii10030",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10001",
+          "11011",
+          "10101",
+          "10001",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1053,
+      "char": "Н",
+      "display": "Н",
+      "name": "afii10031",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1054,
+      "char": "О",
+      "display": "О",
+      "name": "afii10032",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1055,
+      "char": "П",
+      "display": "П",
+      "name": "afii10033",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "1001",
+          "1001",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1056,
+      "char": "Р",
+      "display": "Р",
+      "name": "afii10034",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "1001",
+          "1110",
+          "1000",
+          "1000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1057,
+      "char": "С",
+      "display": "С",
+      "name": "afii10035",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1000",
+          "1000",
+          "1000",
+          "0111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1058,
+      "char": "Т",
+      "display": "Т",
+      "name": "afii10036",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "111",
+          "010",
+          "010",
+          "010",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1059,
+      "char": "У",
+      "display": "У",
+      "name": "afii10037",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1001",
+          "0111",
+          "0001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1060,
+      "char": "Ф",
+      "display": "Ф",
+      "name": "afii10038",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01110",
+          "10101",
+          "10101",
+          "01110",
+          "00100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1061,
+      "char": "Х",
+      "display": "Х",
+      "name": "afii10039",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1001",
+          "0110",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1062,
+      "char": "Ц",
+      "display": "Ц",
+      "name": "afii10040",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 6,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10010",
+          "10010",
+          "10010",
+          "10010",
+          "11111",
+          "00001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1063,
+      "char": "Ч",
+      "display": "Ч",
+      "name": "afii10041",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1001",
+          "0111",
+          "0001",
+          "0001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1064,
+      "char": "Ш",
+      "display": "Ш",
+      "name": "afii10042",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10101",
+          "10101",
+          "10101",
+          "10101",
+          "11111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1065,
+      "char": "Щ",
+      "display": "Щ",
+      "name": "afii10043",
+      "include": true,
+      "advance": 7,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "101010",
+          "101010",
+          "101010",
+          "101010",
+          "111111",
+          "000001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1066,
+      "char": "Ъ",
+      "display": "Ъ",
+      "name": "afii10044",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "11000",
+          "01000",
+          "01110",
+          "01001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1067,
+      "char": "Ы",
+      "display": "Ы",
+      "name": "afii10045",
+      "include": true,
+      "advance": 7,
+      "bitmap": {
+        "width": 6,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "100001",
+          "100001",
+          "111001",
+          "100101",
+          "111001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1068,
+      "char": "Ь",
+      "display": "Ь",
+      "name": "afii10046",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1000",
+          "1000",
+          "1110",
+          "1001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1069,
+      "char": "Э",
+      "display": "Э",
+      "name": "afii10047",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "0001",
+          "0111",
+          "0001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1070,
+      "char": "Ю",
+      "display": "Ю",
+      "name": "afii10048",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10010",
+          "10101",
+          "11101",
+          "10101",
+          "10010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1071,
+      "char": "Я",
+      "display": "Я",
+      "name": "afii10049",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1001",
+          "0111",
+          "0101",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1072,
+      "char": "а",
+      "display": "а",
+      "name": "afii10065",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1073,
+      "char": "б",
+      "display": "б",
+      "name": "afii10066",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "1000",
+          "1110",
+          "1001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1074,
+      "char": "в",
+      "display": "в",
+      "name": "afii10067",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "1001",
+          "1110",
+          "1001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1075,
+      "char": "г",
+      "display": "г",
+      "name": "afii10068",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "1000",
+          "1000",
+          "1000",
+          "1000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1076,
+      "char": "д",
+      "display": "д",
+      "name": "afii10069",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 6,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "00110",
+          "01010",
+          "01010",
+          "01010",
+          "11111",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1077,
+      "char": "е",
+      "display": "е",
+      "name": "afii10070",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "1000",
+          "1110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1078,
+      "char": "ж",
+      "display": "ж",
+      "name": "afii10072",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10101",
+          "10101",
+          "01110",
+          "10101",
+          "10101"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1079,
+      "char": "з",
+      "display": "з",
+      "name": "afii10073",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "0001",
+          "0110",
+          "0001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1080,
+      "char": "и",
+      "display": "и",
+      "name": "afii10074",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1001",
+          "1011",
+          "1101",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1081,
+      "char": "й",
+      "display": "й",
+      "name": "afii10075",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "0110",
+          "0000",
+          "1001",
+          "1001",
+          "1011",
+          "1101",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 1082,
+      "char": "к",
+      "display": "к",
+      "name": "afii10076",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1010",
+          "1100",
+          "1010",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1083,
+      "char": "л",
+      "display": "л",
+      "name": "afii10077",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1001",
+          "1001",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1084,
+      "char": "м",
+      "display": "м",
+      "name": "afii10078",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10001",
+          "11011",
+          "10101",
+          "10001",
+          "10001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1085,
+      "char": "н",
+      "display": "н",
+      "name": "afii10079",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1001",
+          "1111",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1086,
+      "char": "о",
+      "display": "о",
+      "name": "afii10080",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0110",
+          "1001",
+          "1001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1087,
+      "char": "п",
+      "display": "п",
+      "name": "afii10081",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "1001",
+          "1001",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1088,
+      "char": "р",
+      "display": "р",
+      "name": "afii10082",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "1001",
+          "1110",
+          "1000",
+          "1000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1089,
+      "char": "с",
+      "display": "с",
+      "name": "afii10083",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1000",
+          "1000",
+          "1000",
+          "0111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1090,
+      "char": "т",
+      "display": "т",
+      "name": "afii10084",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "111",
+          "010",
+          "010",
+          "010",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1091,
+      "char": "у",
+      "display": "у",
+      "name": "afii10085",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1001",
+          "0111",
+          "0001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1092,
+      "char": "ф",
+      "display": "ф",
+      "name": "afii10086",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01110",
+          "10101",
+          "10101",
+          "01110",
+          "00100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1093,
+      "char": "х",
+      "display": "х",
+      "name": "afii10087",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1001",
+          "0110",
+          "1001",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1094,
+      "char": "ц",
+      "display": "ц",
+      "name": "afii10088",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 6,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10010",
+          "10010",
+          "10010",
+          "10010",
+          "11111",
+          "00001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1095,
+      "char": "ч",
+      "display": "ч",
+      "name": "afii10089",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1001",
+          "1001",
+          "0111",
+          "0001",
+          "0001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1096,
+      "char": "ш",
+      "display": "ш",
+      "name": "afii10090",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10101",
+          "10101",
+          "10101",
+          "10101",
+          "11111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1097,
+      "char": "щ",
+      "display": "щ",
+      "name": "afii10091",
+      "include": true,
+      "advance": 7,
+      "bitmap": {
+        "width": 6,
+        "height": 6,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "101010",
+          "101010",
+          "101010",
+          "101010",
+          "111111",
+          "000001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1098,
+      "char": "ъ",
+      "display": "ъ",
+      "name": "afii10092",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "11000",
+          "01000",
+          "01110",
+          "01001",
+          "01110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1099,
+      "char": "ы",
+      "display": "ы",
+      "name": "afii10093",
+      "include": true,
+      "advance": 7,
+      "bitmap": {
+        "width": 6,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "100001",
+          "100001",
+          "111001",
+          "100101",
+          "111001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1100,
+      "char": "ь",
+      "display": "ь",
+      "name": "afii10094",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1000",
+          "1000",
+          "1110",
+          "1001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1101,
+      "char": "э",
+      "display": "э",
+      "name": "afii10095",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1110",
+          "0001",
+          "0111",
+          "0001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1102,
+      "char": "ю",
+      "display": "ю",
+      "name": "afii10096",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10010",
+          "10101",
+          "11101",
+          "10101",
+          "10010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1103,
+      "char": "я",
+      "display": "я",
+      "name": "afii10097",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1001",
+          "0111",
+          "0101",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1105,
+      "char": "ё",
+      "display": "ё",
+      "name": "afii10071",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "1001",
+          "0000",
+          "1111",
+          "1000",
+          "1110",
+          "1000",
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 1106,
+      "char": "ђ",
+      "display": "ђ",
+      "name": "afii10099",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "11100",
+          "01000",
+          "01110",
+          "01001",
+          "01010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1107,
+      "char": "ѓ",
+      "display": "ѓ",
+      "name": "afii10100",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0001",
+          "0010",
+          "0000",
+          "1111",
+          "1000",
+          "1000",
+          "1000",
+          "1000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 1108,
+      "char": "є",
+      "display": "є",
+      "name": "afii10101",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1000",
+          "1110",
+          "1000",
+          "0111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1109,
+      "char": "ѕ",
+      "display": "ѕ",
+      "name": "afii10102",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "0111",
+          "1000",
+          "0110",
+          "0001",
+          "1110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1110,
+      "char": "і",
+      "display": "і",
+      "name": "afii10103",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "111",
+          "010",
+          "010",
+          "010",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1111,
+      "char": "ї",
+      "display": "ї",
+      "name": "afii10104",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 7,
+        "left": 0,
+        "top": 7,
+        "rows": [
+          "101",
+          "000",
+          "111",
+          "010",
+          "010",
+          "010",
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "codepoint": 1112,
+      "char": "ј",
+      "display": "ј",
+      "name": "afii10105",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1111",
+          "0001",
+          "0001",
+          "1001",
+          "0110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1113,
+      "char": "љ",
+      "display": "љ",
+      "name": "afii10106",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "01100",
+          "10100",
+          "10110",
+          "10101",
+          "10110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1114,
+      "char": "њ",
+      "display": "њ",
+      "name": "afii10107",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10100",
+          "10100",
+          "11110",
+          "10101",
+          "10110"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1115,
+      "char": "ћ",
+      "display": "ћ",
+      "name": "afii10108",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "11100",
+          "01000",
+          "01110",
+          "01001",
+          "01001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1116,
+      "char": "ќ",
+      "display": "ќ",
+      "name": "afii10109",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "0001",
+          "0010",
+          "0000",
+          "1001",
+          "1010",
+          "1100",
+          "1010",
+          "1001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 1118,
+      "char": "ў",
+      "display": "ў",
+      "name": "afii10110",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 8,
+        "left": 0,
+        "top": 8,
+        "rows": [
+          "101",
+          "010",
+          "000",
+          "101",
+          "101",
+          "010",
+          "010",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "codepoint": 1119,
+      "char": "џ",
+      "display": "џ",
+      "name": "afii10193",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 6,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "101",
+          "101",
+          "101",
+          "101",
+          "111",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 1168,
+      "char": "Ґ",
+      "display": "Ґ",
+      "name": "afii10050",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 6,
+        "left": 0,
+        "top": 6,
+        "rows": [
+          "0001",
+          "1111",
+          "1000",
+          "1000",
+          "1000",
+          "1000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 1169,
+      "char": "ґ",
+      "display": "ґ",
+      "name": "afii10098",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 6,
+        "left": 0,
+        "top": 6,
+        "rows": [
+          "0001",
+          "1111",
+          "1000",
+          "1000",
+          "1000",
+          "1000"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 8211,
+      "char": "–",
+      "display": "–",
+      "name": "endash",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 1,
+        "left": 0,
+        "top": 3,
+        "rows": [
+          "111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 5
+      }
+    },
+    {
+      "codepoint": 8212,
+      "char": "—",
+      "display": "—",
+      "name": "emdash",
+      "include": true,
+      "advance": 5,
+      "bitmap": {
+        "width": 4,
+        "height": 1,
+        "left": 0,
+        "top": 3,
+        "rows": [
+          "1111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 5
+      }
+    },
+    {
+      "codepoint": 8216,
+      "char": "‘",
+      "display": "‘",
+      "name": "quoteleft",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 2,
+        "left": 0,
+        "top": 6,
+        "rows": [
+          "01",
+          "10"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 8217,
+      "char": "’",
+      "display": "’",
+      "name": "quoteright",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 2,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10",
+          "01"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 8218,
+      "char": "‚",
+      "display": "‚",
+      "name": "quotesinglbase",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 2,
+        "left": 0,
+        "top": 1,
+        "rows": [
+          "10",
+          "01"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 7
+      }
+    },
+    {
+      "codepoint": 8220,
+      "char": "“",
+      "display": "“",
+      "name": "quotedblleft",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 2,
+        "left": 0,
+        "top": 6,
+        "rows": [
+          "10010",
+          "01001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 8221,
+      "char": "”",
+      "display": "”",
+      "name": "quotedblright",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 2,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "10010",
+          "01001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 8222,
+      "char": "„",
+      "display": "„",
+      "name": "quotedblbase",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 2,
+        "left": 0,
+        "top": 1,
+        "rows": [
+          "10010",
+          "01001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 7
+      }
+    },
+    {
+      "codepoint": 8224,
+      "char": "†",
+      "display": "†",
+      "name": "dagger",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "010",
+          "111",
+          "010",
+          "010",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 8225,
+      "char": "‡",
+      "display": "‡",
+      "name": "daggerdbl",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "010",
+          "111",
+          "010",
+          "111",
+          "010"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 8226,
+      "char": "•",
+      "display": "•",
+      "name": "bullet",
+      "include": true,
+      "advance": 3,
+      "bitmap": {
+        "width": 2,
+        "height": 2,
+        "left": 0,
+        "top": 4,
+        "rows": [
+          "11",
+          "11"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 4
+      }
+    },
+    {
+      "codepoint": 8230,
+      "char": "…",
+      "display": "…",
+      "name": "ellipsis",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 1,
+        "left": 0,
+        "top": 1,
+        "rows": [
+          "10101"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 7
+      }
+    },
+    {
+      "codepoint": 8240,
+      "char": "‰",
+      "display": "‰",
+      "name": "perthousand",
+      "include": true,
+      "advance": 8,
+      "bitmap": {
+        "width": 7,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "1000100",
+          "1001000",
+          "0010000",
+          "0100101",
+          "1000101"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 8249,
+      "char": "‹",
+      "display": "‹",
+      "name": "guilsinglleft",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "001",
+          "010",
+          "100",
+          "010",
+          "001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 8250,
+      "char": "›",
+      "display": "›",
+      "name": "guilsinglright",
+      "include": true,
+      "advance": 4,
+      "bitmap": {
+        "width": 3,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "100",
+          "010",
+          "001",
+          "010",
+          "100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 8364,
+      "char": "€",
+      "display": "€",
+      "name": "Euro",
+      "include": true,
+      "advance": 6,
+      "bitmap": {
+        "width": 5,
+        "height": 7,
+        "left": 0,
+        "top": 6,
+        "rows": [
+          "00111",
+          "01000",
+          "11110",
+          "01000",
+          "11110",
+          "01000",
+          "00111"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 2
+      }
+    },
+    {
+      "codepoint": 8470,
+      "char": "№",
+      "display": "№",
+      "name": "afii61352",
+      "include": true,
+      "advance": 7,
+      "bitmap": {
+        "width": 6,
+        "height": 5,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "100111",
+          "110100",
+          "101101",
+          "100100",
+          "100100"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "codepoint": 8482,
+      "char": "™",
+      "display": "™",
+      "name": "trademark",
+      "include": true,
+      "advance": 9,
+      "bitmap": {
+        "width": 8,
+        "height": 4,
+        "left": 0,
+        "top": 5,
+        "rows": [
+          "11110001",
+          "01011011",
+          "01010101",
+          "01010001"
+        ]
+      },
+      "preview": {
+        "x": 0,
+        "y": 3
+      }
+    }
+  ]
+}
